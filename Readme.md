@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Xenia Panayot](https://up.htmlacademy.ru/htmlcss/27/user/476001).
-* Наставник: `Неизвестно`.
+* Наставник: [Tatyana Simonenko](https://htmlacademy.ru/profile/tatien).
 
 ---
 
