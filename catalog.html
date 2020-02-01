@@ -142,21 +142,35 @@
      </div>
     </footer>
 <!--Модальное окно Корзины-->
-    <table>
-      <th class="visually-hidden">Содержание корзины товаров</th>
+    <form class="cart" action="#" method="post">
+      <h2 class="visually-hidden">Содержание корзины товаров</h2>
+      <table>
       <tr>
-        <td>
-          <span></span>
-        </td>
-        <td>
-          <img src="" alt="">
-        </td>
-        <td class="cart_item">
-        </td>
+        <td><span class="close"></span></td>
+        <td><img src="img/cart_icecream-1.jpg" height="33" width="33" alt="Изображение выбранного мороженого"></td>
+        <td class="cart_item"></td>
         <td class="cart_item_amount">1,5 кг &#215;</td>
         <td class="cart_item_price">200 руб.</td>
-        <td>300 руб.</td>
+        <td class="cart_item_total">300 руб.</td>
+      </tr>
+      <tr>
+        <td><span class="close"></span></td>
+        <td><img src="img/cart_icecream-2.jpg" height="33" width="33" alt="Изображение выбранного мороженого"></td>
+        <td class="cart_item"></td>
+        <td class="cart_item_amount">1,5 кг &#215;</td>
+        <td class="cart_item_price">200 руб.</td>
+        <td class="cart_item_total">300 руб.</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="cart_total">750 руб.</td>
       </tr>
     </table>
+    <button type="submit" name="cart_button">Оформить</button>
+  </form>
   </body>
 </html>
