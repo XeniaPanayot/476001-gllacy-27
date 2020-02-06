@@ -77,3 +77,28 @@ h3 {
 
 
 /*-----------BONUS section--------------*/
+.bonus-list {
+  list-style: none;
+}
+
+/*-----------Bestsellers section--------------*/
+.bestsellers-list {
+  list-style: none;
+}
+.bestseller-item {
+  width: 293px;
+  height: 405px;
+}
+.bestseller-item:hover {
+  width: 293px;
+  height: 405px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #9bafa3;
+  border-radius: 10px;
+}
+.bestseller-text {
+  color: #ffffff;
+}
+.bestseller-price {
+  font-size: 45px;
+}
