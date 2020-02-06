@@ -5,11 +5,11 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet"> <!--to have background to make svg visible-->
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-menu">
         <a><img src="img/logo.svg" alt="Логотип Глейси"></a>
         <ul class="site-menu">
           <li><a href="#">Каталог</a>
@@ -29,7 +29,7 @@
         <a href="#" class="cart">Пусто</a>
       </nav>
       <p class="contact">С 10 до 20, ежедневно<br>
-      <a href="tel:88124502525">8 812 450-25-25</a></p>
+      <a href="tel:88124502525" class="contact-telephone">8 812 450-25-25</a></p>
     </header>
     <main>
       <!-- <section class="slider">
@@ -41,7 +41,7 @@
         <ul class="bonus-list">
           <li>
            <h3>Малинка даром!</h3>
-           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+           <p class="bonus-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
            <button type="button" class="button bonus-button">Хочу варенье!</button>
           </li>
           <li>
@@ -51,34 +51,29 @@
           </li>
         </ul>
       </section>
-<!-- Will I use sprite for images? does it matter for html?-->
       <section class="bestsellers">
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="bestsellers-list">
           <li class="bestsellers-item">
-            <!-- for the HIT icon <span></span>??-->
-            <a href="#"><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <img src="img/bestseller-1.jpg" width="270" height="275" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
             <span>310&#8381;</span>
             <span>&#8260;кг</span>
           </li>
           <li class="bestsellers-item">
-              <!-- for the HIT icon <span></span>??-->
-              <a href="#"><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
+              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
               <img src="img/bestseller-2.jpg" width="270" height="275" alt="Сливочно-кофейное мороженое с кусочками шоколада">
               <span>380&#8381;</span>
               <span>&#8260;кг</span>
           </li>
           <li class="bestsellers-item">
-              <!-- for the HIT icon <span></span>??-->
-              <a href="#"><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></a>
+              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               <img src="img/bestseller-3.jpg" width="270" height="275" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
               <span>355&#8381;</span>
               <span>&#8260;кг</span>
           </li>
           <li class="bestsellers-item">
-              <!-- for the HIT icon <span></span>??-->
-              <a href="#"><h3>Сливочное крем-брюле с карамельной подливкой</h3></a>
+              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
               <img src="img/bestseller-4.jpg" width="270" height="275" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
               <span>415&#8381;</span>
               <span>&#8260;кг</span>
@@ -88,13 +83,13 @@
       <article class="about-company">
         <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес.</h1>
         <ul class="features">
-          <li><img src="#" alt="icecream-icon"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <li class="features-item"><img src="#" alt="icecream-icon"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           </li>
-          <li><img src="#" alt="leaf-icon"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
+          <li class="features-item"><img src="#" alt="leaf-icon"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
           </li>
-          <li><img src="#" alt="cow-icon"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <li class="features-item"><img src="#" alt="cow-icon"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           </li>
-          <li><img src="#" alt="temperature-icon"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          <li class="features-item"><img src="#" alt="temperature-icon"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
       </article>

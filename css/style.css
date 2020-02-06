@@ -34,6 +34,24 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*----------- FONT-------------------*/
+h1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+h3 {
+  font-size:35px;
+}
+.contact {
+  font-size: 14px;
+}
+.contact-telephone {
+  font-size: 22px;
+}
+.bonus-text {
+  font-size: 18px;
+}
+
 
 /* --------- NAVIGATION -------------*/
 .site-menu,
@@ -47,5 +65,15 @@ body {
 
 .site-menu a:hover,
 .site-menu a:active {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+
+  color: #323232;
+  text-decoration: none;
+
   background-color: #f7f6f3;
 }
+
+
+/*-----------BONUS section--------------*/
