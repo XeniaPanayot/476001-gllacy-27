@@ -45,9 +45,7 @@ h3 {
 .contact {
   font-size: 14px;
 }
-.contact-telephone {
-  font-size: 22px;
-}
+
 .bonus-text {
   font-size: 18px;
 }
@@ -74,7 +72,12 @@ h3 {
 
   background-color: #f7f6f3;
 }
-
+.contact-telephone {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+}
 
 /*-----------BONUS section--------------*/
 .bonus-list {
@@ -121,6 +124,49 @@ h3 {
   font-weight: 500;
   line-height: 30px;
 }
+.about-glaccy,
+.features-text {
+  color: #323232;
+}
 .features {
   list-style: none;
+}
+/*---------------NEWS-----------------*/
+.news {
+  background-image: url("../img/Strawberry_background.jpg");
+}
+.news-title {
+  font-size: 16px;
+  line-height: 22px;
+}
+.news-item {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.news-title,
+.news-item {
+  color: #323232;
+}
+
+/*---------------Subscribe-----------------*/
+.subscribe-text {
+  color: #5a5a5a;
+}
+
+/*-----------------Footer-----------------*/
+.social-list,
+.documents-list {
+  list-style: none;
+}
+
+.documents-list a {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+}
+.copyright-text {
+  color: #fefefe;
+  font-size: 12px;
+  line-height: 18px;
 }
