@@ -79,12 +79,22 @@ h3 {
 /*-----------BONUS section--------------*/
 .bonus-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
+.bonus-raspberry {
+  background-image: url("../img/raspberry.jpg");
+  background-repeat: no-repeat;
+}
+.bonus-chockolate {
+  background-image: url("../img/chockolate.jpg");
+  background-repeat: no-repeat;
+}
 /*-----------Bestsellers section--------------*/
 .bestsellers-list {
   list-style: none;
 }
+
 .bestseller-item {
   width: 293px;
   height: 405px;
@@ -101,4 +111,16 @@ h3 {
 }
 .bestseller-price {
   font-size: 45px;
+}
+/*---------------FEATURES-----------------*/
+.about-company {
+  background-image: url("../img/waffer-background.jpg");
+}
+.about-glaccy {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.features {
+  list-style: none;
 }
