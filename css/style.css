@@ -55,28 +55,81 @@ h3 {
 .site-menu,
 .submenu {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .site-menu a,
 .submenu a {
   color: #ffffff;
 }
 
-.site-menu a:hover,
-.site-menu a:active {
+.site-menu > li > a:hover,
+.site-menu > li > a:active {
   display: inline-block;
+  width: 87px;
   padding: 5px 12px;
   border-radius: 20px;
 
   color: #323232;
   text-decoration: none;
-
   background-color: #f7f6f3;
 }
+.site-menu > li > a:active  {
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+}
+.active > a {
+  display: inline-block;
+  width: 87px;
+  height: 32px;
+  padding: 5px 12px;
+  border-radius: 20px;
+
+  background-color: #d07058;
+  text-decoration: none;
+  color: #ffffff;
+}
+.submenu li {
+  padding-left: 20px;
+}
+.submenu a {
+  display: block;
+  width: 143px;
+
+  background-color: #ffffff;
+  color: #323232;
+  text-decoration: none;
+
+  padding-left: 20px;
+}
+.submenu li:first-child {
+  font-weight: bold;
+}
+.submenu a:hover {
+  background-color: #fbded7;
+}
+.submenu a:active {
+  background-color: #f6b5a5;
+}
+
+.login-button {
+  color: #ffffff;
+  font-size: 14px;
+}
+
 .contact-telephone {
   color: #ffffff;
   font-size: 22px;
   line-height: 24px;
   text-decoration: none;
+}
+.cart {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+.cart-full {
+  color: #323232;
 }
 
 /*-----------BONUS section--------------*/
@@ -93,26 +146,31 @@ h3 {
   background-image: url("../img/chockolate.jpg");
   background-repeat: no-repeat;
 }
-/*-----------Bestsellers section--------------*/
-.bestsellers-list {
+/*-----------GOODS section--------------*/
+.bestsellers-list,
+.catalog-list {
   list-style: none;
 }
 
-.bestseller-item {
+.bestseller-item,
+.catalog-item {
   width: 293px;
   height: 405px;
 }
-.bestseller-item:hover {
+.bestseller-item:hover,
+.catalog-item:hover {
   width: 293px;
   height: 405px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #9bafa3;
   border-radius: 10px;
 }
-.bestseller-text {
+.bestseller-text,
+.catalog-text {
   color: #ffffff;
 }
-.bestseller-price {
+.bestseller-price,
+.catalog-price {
   font-size: 45px;
 }
 /*---------------FEATURES-----------------*/
@@ -169,4 +227,11 @@ h3 {
   color: #fefefe;
   font-size: 12px;
   line-height: 18px;
+}
+/*----------------CATALOGUE ------------------*/
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs a {
+  color: #ffffff;
 }
