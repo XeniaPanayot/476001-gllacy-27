@@ -113,8 +113,18 @@ h3 {
 }
 
 .login-button {
+  width: 93px;
+  height: 32px;
+  border-radius: 20px;
+
   color: #ffffff;
   font-size: 14px;
+  font-weight: 500;
+  background-color: #9db1a5;
+}
+.login-button:hover {
+  color: #323232;
+  background-color: #f8f7f4;
 }
 
 .contact-telephone {
