@@ -60,6 +60,7 @@ h3 {
 }
 .site-menu a,
 .submenu a {
+  line-height: 18px;
   color: #ffffff;
 }
 
@@ -67,12 +68,13 @@ h3 {
 .site-menu > li > a:active {
   display: inline-block;
   width: 87px;
-  padding: 5px 12px;
   border-radius: 20px;
+  padding: 9px 10px 10px 12px;
 
   color: #323232;
   text-decoration: none;
   background-color: #f7f6f3;
+  text-align: center;
 }
 .site-menu > li > a:active  {
   box-shadow: inset 0px 2px 1px 0 #696969;
@@ -81,26 +83,30 @@ h3 {
 .active > a {
   display: inline-block;
   width: 87px;
-  height: 32px;
-  padding: 5px 12px;
+  padding: 9px 10px 10px 12px;
   border-radius: 20px;
 
   background-color: #d07058;
   text-decoration: none;
   color: #ffffff;
+  text-align: center;
+}
+.submenu {
+  width: 143px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 5px;
 }
 .submenu li {
-  padding-left: 20px;
+
 }
 .submenu a {
   display: block;
-  width: 143px;
-
-  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
   color: #323232;
   text-decoration: none;
-
-  padding-left: 20px;
+  padding: 10px 10px 10px 20px;
 }
 .submenu li:first-child {
   font-weight: bold;
@@ -110,6 +116,14 @@ h3 {
 }
 .submenu a:active {
   background-color: #f6b5a5;
+}
+.submenu li:first-child a:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.submenu li:last-child a:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .login-button {
