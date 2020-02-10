@@ -7,8 +7,34 @@ body {
   color: #ffffff;
 
   background-color: #849d8f;
+  /*--FOR OUTLINES ONLY----*/
+/*  background-image: url("../img/OUTLINES background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 2500px;*/
+
+}
+/*=======OUTLINES & SIZES=========*/
+.main-header {
+  /*-- temporary!!--*/
+  min-height: 130px;
+}
+.nav-menu {
+  /*-- temporary!!--*/
+  min-height: 61px;
+  margin-bottom: 10px;
+  display: flex;
+}
+.logo {
+  width: 154px;
+  height: 62px;
+/*-- temporary!!--*/
+  display: block;
 }
 
+
+
+
+/*=======STYLES==========*/
 .button {
  font-size: 18px;
  line-height: 24px;
@@ -56,6 +82,9 @@ h3 {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.submenu {
+  display: none;
 }
 .site-menu a,
 .submenu a {
@@ -244,7 +273,11 @@ h3 {
 .subscribe-text {
   color: #5a5a5a;
 }
-
+.submit-subscribe-button {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 18px 10px 18px;
+}
 /*-----------------Footer-----------------*/
 .social-list,
 .documents-list {
@@ -267,4 +300,12 @@ h3 {
 }
 .breadcrumbs a {
   color: #ffffff;
+}
+
+/*-------------MODAL popouts--------------------*/
+.login-submit-button {
+  padding: 11px 25px 10px 25px;
+}
+.submit-cart-button {
+  padding: 11px 13px 11px 14px;
 }
