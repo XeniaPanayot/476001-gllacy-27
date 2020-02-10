@@ -268,6 +268,9 @@ h3 {
 }
 
 /*---------------Subscribe-----------------*/
+.subscribe {
+  background-color: #f8f7f4;
+}
 .subscribe-text {
   color: #5a5a5a;
 }
@@ -381,15 +384,60 @@ h3 {
 .bestseller-item {
   margin-right: 26px;
 }
+
 .features {
   display: flex;
+  justify-content: space-between;
 }
 .features-column {
   flex-direction: column;
+  margin-right: 30px;
 }
 .features-item {
   display: flex;
 }
 .features-text {
   padding-left: 5px;
+}
+
+.about-company {
+  width: 1200px;
+  margin-bottom: 40px;
+}
+.marketing {
+  width: 1200px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.news,
+.subscribe {
+  min-height: 230px;
+  min-width: 560px;
+  display: flex;
+  flex-direction: column;
+}
+.subscribe {
+  margin-left: 26px;
+}
+.subscribe-text {
+  margin: 0;
+  padding: 33px 22px 40px 21px;
+}
+.subscribe-email {
+  padding-left: 20px;
+}
+.subscribe-email-input {
+  width: 368px;
+  height: 44px;
+}
+.news-title {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 26px;
+  padding-bottom: 15px;
+}
+.news-item {
+  width: 290px;
+  padding-left: 20px;
 }
