@@ -283,8 +283,9 @@ h3 {
 .social-list,
 .documents-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 .documents-list a {
   color: #ffffff;
   font-size: 13px;
@@ -440,4 +441,50 @@ h3 {
 .news-item {
   width: 290px;
   padding-left: 20px;
+}
+.map{
+  margin-bottom: 15px;
+}
+
+.footer-container {
+  width: 1200px;
+  display: flex;
+}
+.social {
+  width: 420px;
+}
+.social-list {
+  display: flex;
+  padding-top: 15px;
+}
+/*---- alternative for links
+.twitter {
+  background-image: url("../img/twitter.svg");
+}
+.instagram {
+  background-image: url("../img/instagram.svg");
+}
+.facebook {
+  background-image: url("img/fb.svg");
+}
+.vkontakte {
+  background-image: url("../img/vk.svg");
+}
+  background-repeat: no-repeat;
+*/
+.social-item {
+  padding-right: 17px;
+}
+.documents {
+  width: 550px;
+}
+.documents-list {
+  display: flex;
+  width: 550px;
+  padding-top: 17px;
+}
+.documents-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 27px;
 }
