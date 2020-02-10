@@ -7,32 +7,14 @@ body {
   color: #ffffff;
 
   background-color: #849d8f;
+/*---TEMPORARY?????------*/
+  width: 1200px;
   /*--FOR OUTLINES ONLY----*/
 /*  background-image: url("../img/OUTLINES background.jpg");
   background-repeat: no-repeat;
   background-size: 1200px 2500px;*/
 
 }
-/*=======OUTLINES & SIZES=========*/
-.main-header {
-  /*-- temporary!!--*/
-  min-height: 130px;
-}
-.nav-menu {
-  /*-- temporary!!--*/
-  min-height: 61px;
-  margin-bottom: 10px;
-  display: flex;
-}
-.logo {
-  width: 154px;
-  height: 62px;
-/*-- temporary!!--*/
-  display: block;
-}
-
-
-
 
 /*=======STYLES==========*/
 .button {
@@ -78,11 +60,14 @@ h3 {
 
 /* --------- NAVIGATION -------------*/
 .site-menu,
-.submenu {
+.submenu,
+.user-menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+/*??????????????????*/
 .submenu {
   display: none;
 }
@@ -308,4 +293,69 @@ h3 {
 }
 .submit-cart-button {
   padding: 11px 13px 11px 14px;
+}
+
+/*=======temporary OUTLINES & SIZES=========*/
+.container {
+  margin-left: 52px;
+  margin-right: 52px;
+}
+.main-header {
+  /*-- temporary!!--*/
+  min-height: 130px;
+}
+.nav-menu {
+  /*-- temporary!!--*/
+  min-height: 61px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+}
+.contact {
+  display: block;
+  min-height: 55px;
+}
+.logo {
+  width: 154px;
+  height: 62px;
+}
+
+.site-menu {
+  width: 60%;
+  padding: 30px 20px 20px 15px;
+  display: flex;
+}
+.site-menu li {
+  padding-right: 20px;
+}
+.user-menu {
+  width: 40%;
+  display: flex;
+  padding: 30px 0px 20px 9px;
+  justify-content: flex-end;
+}
+.user-menu li {
+  padding-left: 9px;
+}
+.user-menu li:last-child {
+  margin-top: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.slider {
+  min-height: 600px;
+}
+.bonus-list {
+  display: flex;
+  min-height: 230px;
+}
+.bonus-raspberry,
+.bonus-chockolate  {
+  min-height: 230px;
+  min-width: 560px;
+  margin-left: 25px;
 }
