@@ -172,7 +172,18 @@ h3 {
 .cart-full {
   color: #323232;
 }
-
+/*-----------SLIDER --------------------*/
+.slider-text {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.slider-button {
+  font-size: 32px;
+  line-height: 44px;
+  padding: 17px 43px 16px 41px;
+  border-radius: 44px;
+}
 /*-----------BONUS section--------------*/
 .bonus-list {
   list-style: none;
