@@ -67,7 +67,6 @@ h3 {
   padding: 0;
 }
 
-/*??????????????????*/
 .submenu {
   display: none;
 }
@@ -75,6 +74,7 @@ h3 {
 .submenu a {
   line-height: 18px;
   color: #ffffff;
+  padding: 9px 10px 10px 12px;
 }
 
 .site-menu > li > a:hover,
@@ -130,7 +130,17 @@ h3 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
+.search-button {
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  border: none;
+  background-image: url(../img/loupe.svg);
+  background-color: #a0b5a9;
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 10px;
+}
 .login-button {
   width: 93px;
   border-radius: 20px;
