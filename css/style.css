@@ -67,8 +67,18 @@ h3 {
   padding: 0;
 }
 
+.site-menu > li {
+  position: relative;
+}
 .submenu {
   display: none;
+  position: absolute;
+  top: 35px;
+
+  width: 143px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 5px;
 }
 .site-menu a,
 .submenu a {
@@ -77,9 +87,39 @@ h3 {
   padding: 9px 10px 10px 12px;
 }
 
+.submenu a {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  text-decoration: none;
+  padding: 10px 10px 10px 20px;
+}
+
+.submenu li:first-child {
+  font-weight: bold;
+}
+.submenu a:hover {
+  background-color: #fbded7;
+}
+.submenu a:active {
+  background-color: #f6b5a5;
+}
+.submenu li:first-child a:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.submenu li:last-child a:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.site-menu > li:hover .submenu {
+  display: block;
+}
 .site-menu > li > a:hover,
 .site-menu > li > a:active {
   border-radius: 20px;
+  width: 143px;
   padding: 9px 10px 10px 12px;
   color: #323232;
   text-decoration: none;
@@ -98,38 +138,7 @@ h3 {
   color: #ffffff;
   text-align: center;
 }
-.submenu {
-  width: 143px;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  background-color: #f8f7f4;
-  border-radius: 5px;
-}
 
-.submenu a {
-  display: block;
-  font-size: 14px;
-  line-height: 16px;
-  color: #323232;
-  text-decoration: none;
-  padding: 10px 10px 10px 20px;
-}
-.submenu li:first-child {
-  font-weight: bold;
-}
-.submenu a:hover {
-  background-color: #fbded7;
-}
-.submenu a:active {
-  background-color: #f6b5a5;
-}
-.submenu li:first-child a:hover {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.submenu li:last-child a:hover {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
 .search-button {
   border-radius: 50%;
   width: 33px;
@@ -291,6 +300,9 @@ h3 {
 .subscribe-text {
   color: #5a5a5a;
 }
+.subscribe-email-input {
+  margin-right: 11px;
+}
 .submit-subscribe-button {
   font-size: 18px;
   line-height: 24px;
@@ -355,7 +367,7 @@ h3 {
   padding: 30px 20px 20px 15px;
   display: flex;
 }
-.site-menu li {
+.site-menu > li {
   padding-right: 20px;
 }
 .user-menu {
