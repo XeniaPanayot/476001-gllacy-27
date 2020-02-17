@@ -162,6 +162,22 @@ h3 {
   background-color: #9db1a5;
   padding: 10px 17px 10px 44px;
 }
+.login-text {
+  position: relative;
+}
+.login-text::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0px;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../img/login_icon.png");
+  background-repeat: no-repeat;
+
+}
 .login-button:hover {
   color: #323232;
   background-color: #f8f7f4;
@@ -347,8 +363,8 @@ h3 {
   margin-right: 20px;
 }
 .nav-menu {
-  /*-- temporary!!--*/
-  min-height: 61px;
+  /*-- temporary!!
+  min-height: 61px;--*/
   width: 100%;
   margin-bottom: 10px;
   display: flex;
@@ -366,6 +382,7 @@ h3 {
   width: 60%;
   padding: 30px 20px 20px 15px;
   display: flex;
+  flex-wrap: wrap;
 }
 .site-menu > li {
   padding-right: 20px;
@@ -373,6 +390,7 @@ h3 {
 .user-menu {
   width: 40%;
   display: flex;
+  flex-wrap: wrap;
   padding: 30px 0px 20px 9px;
   justify-content: flex-end;
 }
@@ -384,6 +402,7 @@ h3 {
 }
 .contact {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -392,6 +411,7 @@ h3 {
 }
 .bonus-list {
   display: flex;
+  flex-wrap: wrap;
   min-height: 230px;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -405,12 +425,13 @@ h3 {
 .bestsellers-list,
 .catalog-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 40px;
 }
-.catalog-list {
+/*.catalog-list {
   flex-wrap: wrap;
-}
+}*/
 
 .bestseller-item {
   margin-right: 26px;
@@ -418,6 +439,7 @@ h3 {
 
 .features {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .features-column {
@@ -426,6 +448,7 @@ h3 {
 }
 .features-item {
   display: flex;
+  flex-wrap: wrap;
 }
 .features-text {
   padding-left: 5px;
@@ -439,6 +462,7 @@ h3 {
   width: 1200px;
   margin-bottom: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .news,
@@ -446,6 +470,7 @@ h3 {
   min-height: 230px;
   min-width: 560px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 .subscribe {
@@ -485,6 +510,7 @@ h3 {
 }
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 15px;
 }
 /*---- alternative for links
