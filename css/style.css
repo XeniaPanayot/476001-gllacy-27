@@ -196,20 +196,28 @@ h3 {
   line-height: 16px;
   font-weight: 500;
   background-color: #9db1a5;
-  padding: 10px 6px 10px 15px;
+  padding: 10px 17px 10px 44px;
   text-align: left;
 }
-.login-button img {
-  margin-right: 5px;
+.login-text {
+  position: relative;
+}
+.login-text::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 20px;
+  background-image: url("../img/login_icon.png");
+  background-repeat: no-repeat;
+  left: -25px;
+  top: -2px;
 }
 .login-button:hover {
-  color: #323232;
   background-color: #f8f7f4;
 }
-.login-button img:hover {
-  filter: invert(1);
+.login-text:hover {
+  filter: invert();
 }
-
 .cart {
   display: block;
   border-radius: 20px;
