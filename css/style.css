@@ -41,6 +41,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 /*----------- FONT-------------------*/
 h1 {
   font-size: 24px;
@@ -59,6 +64,15 @@ h3 {
 
 
 /* --------- NAVIGATION -------------*/
+.nav-menu {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+}
+.logo {
+  width: 154px;
+  height: 62px;
+}
 .site-menu,
 .submenu,
 .user-menu {
@@ -67,6 +81,26 @@ h3 {
   padding: 0;
 }
 
+.site-menu {
+  width: 60%;
+  padding: 30px 20px 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-menu > li {
+  padding-right: 20px;
+}
+.user-menu {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0px 20px 9px;
+  justify-content: flex-end;
+}
+
+.user-menu li {
+  padding-left: 9px;
+}
 .site-menu > li {
   position: relative;
 }
@@ -74,8 +108,8 @@ h3 {
   display: none;
   position: absolute;
   top: 35px;
-
   width: 143px;
+
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 5px;
@@ -86,7 +120,6 @@ h3 {
   color: #ffffff;
   padding: 9px 10px 10px 12px;
 }
-
 .submenu a {
   display: block;
   font-size: 14px;
@@ -144,59 +177,92 @@ h3 {
   width: 33px;
   height: 33px;
   border: none;
-  background-image: url(../img/loupe.svg);
   background-color: #a0b5a9;
-  background-repeat: no-repeat;
-  background-position-x: 10px;
-  background-position-y: 10px;
 }
+.search-button:hover {
+  background-color: #f8f7f4;
+}
+.search-button:hover path {
+  fill: #323232;
+}
+
 .login-button {
+  display:flex;
   width: 93px;
   border-radius: 20px;
   border: none;
-
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   background-color: #9db1a5;
-  padding: 10px 17px 10px 44px;
+  padding: 10px 6px 10px 15px;
+  text-align: left;
 }
-.login-text {
-  position: relative;
-}
-.login-text::before {
-  content: "";
-  position: absolute;
-  left: -25px;
-  top: 0px;
-
-  width: 21px;
-  height: 21px;
-
-  background-image: url("../img/login_icon.png");
-  background-repeat: no-repeat;
-
+.login-button img {
+  margin-right: 5px;
 }
 .login-button:hover {
   color: #323232;
   background-color: #f8f7f4;
 }
+.login-button img:hover {
+  filter: invert(1);
+}
 
+.cart {
+  display: block;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: right;
+  text-decoration: none;
+  background-color: #9db1a5;
+  padding: 10px 17px 10px 45px;
+}
+
+
+/*.cart-full {
+  color: #323232;
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+}*/
+.cart-text,
+.cart-text_empty {
+  position: relative;
+}
+.cart-text_empty::before {
+  content: "";
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  left: -21px;
+  background-image: url("../img/basket.svg");
+  background-size: 17px 17px;
+}
+.cart-text::before {
+  content: "";
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  left: -21px;
+  background-image: url("../img/basket-red.svg");
+  background-size: 17px 17px;
+}
+.contact {
+  display: block;
+  min-height: 55px;
+}
 .contact-telephone {
   color: #ffffff;
   font-size: 22px;
   line-height: 24px;
   text-decoration: none;
 }
-.cart {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-}
-.cart-full {
-  color: #323232;
-}
+
 /*-----------SLIDER --------------------*/
 .slider-text {
   font-size: 60px;
@@ -358,48 +424,7 @@ h3 {
 }
 
 /*=======temporary OUTLINES & SIZES=========*/
-.container {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.nav-menu {
-  /*-- temporary!!
-  min-height: 61px;--*/
-  width: 100%;
-  margin-bottom: 10px;
-  display: flex;
-}
-.contact {
-  display: block;
-  min-height: 55px;
-}
-.logo {
-  width: 154px;
-  height: 62px;
-}
 
-.site-menu {
-  width: 60%;
-  padding: 30px 20px 20px 15px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.site-menu > li {
-  padding-right: 20px;
-}
-.user-menu {
-  width: 40%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px 0px 20px 9px;
-  justify-content: flex-end;
-}
-.user-menu li {
-  padding-left: 9px;
-}
-.user-menu li:last-child {
-  margin-top: 10px;
-}
 .contact {
   display: flex;
   flex-wrap: wrap;
