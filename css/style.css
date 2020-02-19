@@ -544,7 +544,11 @@ h3 {
 }
 /*---------------NEWS-----------------*/
 .news {
+  border-radius: 20px;
   background-image: url("../img/Strawberry_background.jpg");
+  background-position-y: 38%;
+  background-position-x: 17%;
+
 }
 .news-title {
   font-size: 16px;
