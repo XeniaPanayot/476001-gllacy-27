@@ -467,27 +467,80 @@ h3 {
 }
 /*---------------FEATURES-----------------*/
 .about-company {
+  width: 1156px;
   background-image: url("../img/waffer-background.jpg");
   border-radius: 10px;
+  padding-left: 20px;
 }
 
 .about-glaccy {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  margin: 0;
-  padding: 29px 112px 5px 20px;
+  margin: 0 0 25px 0;
+  padding: 29px 50px 0 0;
 }
 
 .about-glaccy,
 .features-text {
   color: #323232;
 }
+.features-text {
+  line-height: 1.4;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-column {
+  flex-direction: column;
+  /*padding: 5px 25px 15px 15px;*/
+}
+.features-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .features,
 .features-column {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.features-text_icecream,
+.features-text_eco,
+.features-text_cow,
+.features-text_thermo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-left: 55px;
+  margin-bottom: 25px;
+  padding-right: 30px;
+}
+.features-text_icecream::before,
+.features-text_eco::before,
+.features-text_cow::before,
+.features-text_thermo::before {
+  content: "";
+  position: absolute;
+  left: -56px;
+  top: -11px;
+  width: 49px;
+  height: 49px;
+}
+.features-text_icecream::before {
+  background-image: url("../img/ice-cream.svg");
+}
+.features-text_eco::before  {
+  background-image: url("../img/eco.svg");
+}
+.features-text_cow::before {
+  background-image: url("../img/cow.svg");
+}
+.features-text_thermo::before {
+  background-image: url("../img/thermometer.svg");
 }
 /*---------------NEWS-----------------*/
 .news {
@@ -578,21 +631,8 @@ h3 {
 }
 
 
-.features {
-  display: flex;
-  justify-content: space-between;
-}
-.features-column {
-  flex-direction: column;
-  padding: 5px 25px 15px 15px;
-}
-.features-item {
-  display: flex;
-  flex-wrap: wrap;
-}
-.features-text {
-  padding-left: 5px;
-}
+
+
 
 .about-company {
   width: 1200px;
