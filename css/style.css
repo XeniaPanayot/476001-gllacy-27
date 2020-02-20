@@ -621,10 +621,45 @@ h3 {
   margin: 0;
   padding: 0;
 }
+.social-icon {
+  opacity: 0.8;
+  border: solid 3px #c2cec7;
+  border-radius: 50%;
+}
+.social-icon:hover {
+  opacity: 1;
+  border: solid 3px #c8d4cd;
+}
+.social-icon:active {
+  opacity: 0.6;
+  border: solid 3px #dae2de;
+}
 .documents-column a {
   color: #ffffff;
   font-size: 13px;
   line-height: 18px;
+}
+.documents-suppliers {
+  position: relative;
+}
+.documents-suppliers::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 2px;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/heart.svg");
+}
+.copyright-text {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
+}
+.documents-column a:hover,
+.documents-column a:active,
+.copyright-text:hover {
+  color: #ffbc9e;
 }
 .copyright-text {
   color: #fefefe;
