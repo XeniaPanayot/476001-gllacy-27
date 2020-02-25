@@ -458,7 +458,7 @@ h3 {
 .catalog-text {
   color: #ffffff;
 }
-.bestseller-price,
+.item-price-number,
 .catalog-price {
   font-size: 45px;
   line-height: 45px;
@@ -469,21 +469,16 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 1152px;
   margin-bottom: 40px;
 }
 
-.bestseller-item {
-  margin-right: 15px;
-}
 .item-card {
   margin: 0;
   padding: 0;
   list-style: none;
-
-  /*display: flex;
-  flex-direction: column;*/
 }
-.item-card li:first-child::before {
+.bestseller-card li:first-child::before {
   content: "";
   height: 67px;
   width: 67px;
@@ -491,34 +486,33 @@ h3 {
   background-image: url(../img/hit.svg);
   background-repeat: no-repeat;
 }
-.bestseller-image {
+.item-image {
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
-.bestseller-mask {
+.item-image-mask {
   height: 267px;
   width: 267px;
   border-radius: 50%;
   margin: 0 auto;
   overflow: hidden;
 }
-.bestseller-slash {
+.item-price-slash {
   font-size: 34px;
 }
-.bestseller-kg {
+.item-price-kg {
   font-size: 30px;
   line-height: 45px;
   font-weight: bold;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
-.bestseller-text {
-
+.item-text {
   display: block;
   line-height: 22px;
-
-  max-width: 247px;
+  max-width: 260px;
   text-align: center;
+  color: #ffffff;
 }
 .item-image,
 .item-price {
