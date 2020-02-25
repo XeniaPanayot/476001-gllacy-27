@@ -461,6 +461,8 @@ h3 {
 .bestseller-price,
 .catalog-price {
   font-size: 45px;
+  line-height: 45px;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 .bestsellers-list,
 .catalog-list {
@@ -473,6 +475,48 @@ h3 {
 .bestseller-item {
   margin-right: 15px;
 }
+.item-card {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+}
+.item-card li:first-child::before {
+  content: "";
+  height: 67px;
+  width: 67px;
+  position: absolute;
+  background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
+}
+.bestseller-image {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+.bestseller-mask {
+  height: 267px;
+  width: 267px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.bestseller-price,
+.bestseller-kg {
+  z-index: 10;
+
+}
+.bestseller-text {
+
+  display: block;
+  line-height: 22px;
+
+  max-width: 247px;
+  text-align: center;
+}
+
 /*---------------FEATURES-----------------*/
 .about-company {
   width: 1156px;
