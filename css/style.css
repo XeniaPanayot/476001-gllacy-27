@@ -527,6 +527,12 @@ h3 {
   line-height: 24px;
   font-weight: bold;
   margin-left: 42px;
+
+  display: none;
+}
+.bestseller-item:hover .item-card-button,
+.catalog-item:hover .item-card-button {
+  display: block;
 }
 
 /*---------------FEATURES-----------------*/
