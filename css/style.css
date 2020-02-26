@@ -784,6 +784,7 @@ h3 {
   padding-bottom: 15px;
 }
 .news-item {
+  display: block;
   width: 290px;
   padding-left: 20px;
 }
