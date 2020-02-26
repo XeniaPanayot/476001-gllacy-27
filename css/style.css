@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1250px;
+  /*width: 1250px;*/
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #ffffff;
@@ -19,7 +19,6 @@ body {
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -477,6 +476,7 @@ h3 {
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
 }
 .bestseller-card li:first-child::before {
   content: "";
@@ -516,12 +516,16 @@ h3 {
 }
 .item-image,
 .item-price {
-  position: relative;
+  /*position: absolute;*/
 }
 .item-price {
-  top: -60px;
+  position: absolute;
+  top: 210px;
 }
-
+.item-name {
+  position: absolute;
+  top: 290px;
+}
 
 /*---------------FEATURES-----------------*/
 .about-company {
