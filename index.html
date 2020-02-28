@@ -13,8 +13,9 @@
   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
 
   <div class="site-wrapper">
-  <div class="container">
+
     <header class="main-header">
+      <div class="container">
       <nav class="nav-menu">
         <a><img src="img/logo.svg" alt="Логотип Глейси" class="logo"></a>
         <ul class="site-menu">
@@ -42,9 +43,10 @@
       </nav>
       <p class="contact">С 10 до 20, ежедневно<br>
         <a href="tel:88124502525" class="contact-telephone">8 812 450-25-25</a></p>
+      </div>
       </header>
-      <main>
        <section class="slider">
+         <div class="container">
           <div class="slider-controls">
             <label for="product-1">Первый</label>
             <label for="product-2">Второй</label>
@@ -70,21 +72,11 @@
               <a class="button slide-button" href="#">Давайте оба!</a>
             </li>
           </ul>
+        </div>
         </section>
-        <!--<div class="slider">
-          <div class="slider-1">
-            <img src="img/Slider-icecream_1.png" alt="Изображение мороженого">
-            <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
-            <button type="button" name="slider-button_1" class="button slider-button">Давайте оба!</button>
-          </div>
-
-          <div class="slider-2">
-
-          </div>
-        </div>-->
         <section class="bonus">
+          <div class="container">
           <h2 class="visually-hidden">Специальные предложения</h2>
-
           <ul class="bonus-list">
             <li class="bonus-raspberry">
               <h3>Малинка даром!</h3>
@@ -97,12 +89,12 @@
               <button type="button" class="button bonus-button">Хочу шоколадки!</button>
             </li>
           </ul>
+        </div>
         </section>
         <section class="bestsellers">
+          <div class="container">
           <h2 class="visually-hidden">Хиты продаж</h2>
-
           <ul class="bestsellers-list">
-
             <li class="bestseller-item">
               <ul class="item-card bestseller-card">
                <li class="item-image"><div class="item-image-mask"><img src="img/bestseller-1.jpg" class="item-image-image" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></div></li>
@@ -111,7 +103,6 @@
                <li><button class="button item-card-button">Быстрый просмотр</button></li>
               </ul>
             </li>
-
             <li class="bestseller-item">
               <ul class="item-card bestseller-card">
               <li class="item-image"><div class="item-image-mask"><img src="img/bestseller-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада"></div></li>
@@ -138,29 +129,25 @@
               </ul>
             </li>
           </ul>
+        </div>
         </section>
         <article class="about-company">
+          <div class="container features-container">
           <h1 class="about-glaccy">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес.</h1>
           <ul class="features">
-            <li>
-              <ul class="features-column">
                <li class="features-item"><p class="features-text features-text_icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                </li>
                <li class="features-item"><p class="features-text features-text_eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
                </li>
-             </ul>
-            </li>
-            <li>
-              <ul class="features-column">
               <li class="features-item"><p class="features-text features-text_cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
               </li>
               <li class="features-item"><p class="features-text features-text_thermo">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
               </li>
-            </ul>
-            </li>
           </ul>
+        </div>
         </article>
         <section class="marketing">
+          <div class="container marketing-container">
           <div class="news">
             <h2 class="visually-hidden">Новости компании</h2>
             <h3 class="news-title">Новое в нашем блоге</h3>
@@ -176,13 +163,16 @@
             </form>
           </div>
           </div>
+        </div>
         </section>
+
         <section class="map">
           <h2 class="visually-hidden">Схема проезда</h2>
           <img src="img/map.jpg" width="1250" height="430" alt="Офис Глейси по адресу Санкт-Петербург, Большая Конюшенная, дом 19&#47;8">
         </section>
-      </main>
+
       <footer>
+        <div class="container">
         <div class="footer-container">
           <div class="social">
             <ul class="social-list">
@@ -206,10 +196,12 @@
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy logo"></a><br><span class="copyright-text">Сделано в </span><a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-text">HTML Academy</a>&copy;2019
           </div>
         </div>
+      </div>
       </footer>
     </div>
-   </div>
+    <!--</div>-->
     </body>
+
     <!--Модальные окна-->
     <!--Логин-->
     <form class="login" action="index.html" method="post">
@@ -235,7 +227,17 @@
     <form class="" action="#" method="post">
       <input type="search" name="search" placeholder="Крем-брюле" aria-label="Поиск по сайту" class="search_input">
       <input type="submit" class="search_submit" value="">
-      <!--?????? как later сделать, чтоб кнопки не было, а функция отправки была?__-->
     </form>
+    <!--Адреc и Форма обратной связи-->
+    <div class="modal-address">
+      <h2 class="visually-hidden">Адреc, телефон и форма обратной связи</h2>
+      <p class="modal-text">Адрес главного офиса и офлайн-магазина:</p>
+      <b class="modal-address-location">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+      <p>Для заказов по телефону:</p>
+      <b>8 812 450-25-25</b>
+      <p class="modal-address-open">(с 10 до 20 ежедневно)</p>
+      <button type="button" name="button" class="button modal-address-button">Форма обратной связи</button>
+    </div>
+
 
   </html>
