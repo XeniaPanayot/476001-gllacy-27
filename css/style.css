@@ -31,11 +31,9 @@ body {
 }
 
 .container {
-  width: 1152px;
+  width: 1160px;
   margin: 0 auto;
-  /*padding: 0 20px;*/
 }
-
 
 /*=======STYLES==========*/
 .button {
@@ -442,6 +440,10 @@ h3 {
   box-shadow:  inset 0px 2px 2px 0 #942718;;
 }
 /*-----------GOODS section--------------*/
+.catalog-container {
+  width: 1160px;
+  padding: 0 20px;
+}
 .bestsellers-list,
 .catalog-list {
   list-style: none;
