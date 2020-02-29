@@ -31,7 +31,7 @@ body {
 }
 .inner-wrapper {
   background-color: #849d8f;
-  width: 1250px;
+  /*width: 1250px;*/
 }
 .container {
   width: 1152px;
@@ -558,8 +558,7 @@ h3 {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  margin: 0 0 25px 0;
-  padding: 29px 50px 0 0;
+  margin-bottom: 25px;
 }
 
 .features-container,
@@ -570,7 +569,7 @@ h3 {
   line-height: 1.4;
 }
 .features {
-  height: 255px;
+  height: 255px; /* how to delete the height and still make the li elements move to the new line???*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -649,40 +648,39 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-
+.news {
+/* NOOOOOO height for blocks with text*/
+  width: 520px;
+}
+/*NB!!! add paddinds to width for the actual sizes*/
+.news {
+  padding: 26px 20px 10px 20px;
+}
 .news-title {
   margin: 0;
-  padding-left: 20px;
-  padding-top: 26px;
-  padding-bottom: 15px;
 }
 .news-item {
   display: block;
   width: 290px;
-  padding-left: 20px;
+  margin-bottom: 70px;
 }
-.news,
+
 .subscribe-wrapper {
-  min-height: 230px;
+  min-height: 220px;
   width: 560px;
-  /*display: flex;
-  flex-direction: column;*/
-}
-.subscribe-wrapper {
+
   position: relative;
   background-image: url("../img/subscribe-background.png");
   background-repeat: no-repeat;
-
 }
 .subscribe {
   position: absolute;
   left: 6px;
   top: 5px;
-  width: 549px;
-  min-height: 211px;
+  width: 507px;
   background-color: #f8f7f4;
   border-radius: 20px;
-
+  padding: 33px 22px 29px 20px;
 }
 .subscribe-text {
   color: #5a5a5a;
@@ -698,10 +696,8 @@ h3 {
 
 .subscribe-text {
   margin: 0;
-  padding: 33px 22px 40px 21px;
 }
 .subscribe-email {
-  padding-left: 20px;
 }
 .subscribe-email-input {
   width: 354px;
@@ -730,13 +726,35 @@ h3 {
   opacity: 0.6;
   border: solid 3px #dae2de;
 }
-.documents-column a {
+.documents-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.documents-list li {
+  height: min-content;
+}
+.documents-list a {
   color: #ffffff;
   font-size: 13px;
   line-height: 18px;
+  display: block;
 }
 .documents-suppliers {
   position: relative;
+  font-weight: bold;
+  padding-right: 30px;
+}
+.documents-production {
+  padding-right: 41px;
+}
+.documents-main,
+.documents-eco {
+  padding-right: 20px;
 }
 .documents-suppliers::before {
   content: "";
@@ -787,9 +805,6 @@ h3 {
   align-items: flex-end;
 }
 
-
-
-
 .map{
   margin-bottom: 15px;
 }
@@ -824,19 +839,7 @@ h3 {
 .social-item {
   padding-right: 17px;
 }
-.documents {
-  width: 550px;
-}
-.documents-list {
-  display: flex;
-  width: 550px;
-  padding-top: 17px;
-}
-.documents-column {
-  display: flex;
-  flex-direction: column;
-  margin-right: 27px;
-}
+
 .breadcrumbs {
   margin: 0;
   padding: 0;
