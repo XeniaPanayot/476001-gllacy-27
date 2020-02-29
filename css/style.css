@@ -569,9 +569,7 @@ h3 {
   line-height: 1.4;
 }
 .features {
-  height: 255px; /* how to delete the height and still make the li elements move to the new line???*/
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 
