@@ -216,27 +216,31 @@
   </div>
 
     <!--Окно обратной связи-->
+    <div class="modal-feedback">
     <form class="feedback" action="index.html" method="post">
       <h2>Мы обязательно вам ответим!</h2>
-      <input type="text" name="feedback_name" placeholder="Как вас зовут?" aria-label="Ваше имя">
+      <input type="text" class="modal-feedback-name" name="feedback_name" placeholder="Имя Фамилия" aria-label="Ваше имя">
       <br>
-      <input type="email" name="feedback_email" placeholder="Ваша электронная почта для ответа?" aria-label="Ваша электронная почта">
+      <input type="email" class="modal-feedback-email" name="feedback_email" placeholder="email@example.com" aria-label="Ваша электронная почта">
       <br>
-      <textarea name="feedback_text" rows="5" cols="80" placeholder="Напишите что-нибудь" aria-label="Поле для ввода сообщения"></textarea>
+      <textarea name="feedback_text" rows="5" cols="80" placeholder="В свободной форме" aria-label="Поле для ввода сообщения"></textarea>
     </form>
+    </div>
+
     <!--Окно поиска по сайту-->
     <form class="" action="#" method="post">
       <input type="search" name="search" placeholder="Крем-брюле" aria-label="Поиск по сайту" class="search_input">
       <input type="submit" class="search_submit" value="">
     </form>
+
     <!--Адреc и Форма обратной связи-->
     <div class="modal-address">
       <h2 class="visually-hidden">Адреc, телефон и форма обратной связи</h2>
-      <p class="modal-text">Адрес главного офиса и офлайн-магазина:</p>
+      <span class="modal-text">Адрес главного офиса и офлайн-магазина:</span>
       <b class="modal-address-location">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-      <p>Для заказов по телефону:</p>
-      <b>8 812 450-25-25</b>
-      <p class="modal-address-open">(с 10 до 20 ежедневно)</p>
+      <span class="modal-telephone-order">Для заказов по телефону:</span>
+      <b class="modal-telephone">8 812 450-25-25</b>
+      <span class="modal-address-open">(с 10 до 20 ежедневно)</span>
       <button type="button" name="button" class="button modal-address-button">Форма обратной связи</button> <!-- or input type="submit"???>
     </div>
 
