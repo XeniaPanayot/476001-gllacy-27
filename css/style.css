@@ -213,7 +213,7 @@ h3 {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  background:rgba(255,255,255, 0.3);
+  background: rgba(255,255,255, 0.3);
 
   padding: 10px 17px 10px 44px;
   text-align: left;
@@ -879,4 +879,38 @@ h3 {
 }
 .modal-address-open {
   margin-bottom: 26px;
+}
+
+/*----------------MODAL login--------------------------*/
+.modal-login {
+  position: relative;
+  width: 277px;
+  background-color: #f8f7f3;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  padding: 20px 17px 22px 19px;
+  border-radius: 10px;
+}
+.modal-login-email,
+.modal-login-password {
+  width: 241px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  border-radius: 5px;
+  border: solid 1px #d3d3d2;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.modal-login-forgot {
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+  margin-left: 150px;
+  display: block;
+}
+
+.login-submit-button {
+  position: absolute;
+  bottom: 22px;
 }

@@ -200,15 +200,20 @@
 
     <!--Модальные окна-->
     <!--Логин-->
+    <div class="modal-login">
+
     <form class="login" action="index.html" method="post">
       <h2 class="visually-hidden">Вход в личный кабинет</h2>
-      <input type="email" name="email" placeholder="email@example.com" aria-label="Ваша элетронная почта для входа в личный кабинет"><br>
-      <input type="password" name="password" placeholder="&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;" aria-label="Ваш пароль для входа в личный кабинет">
+      <input type="email" name="email" placeholder="email@example.com" aria-label="Ваша элетронная почта для входа в личный кабинет" class="modal-login-email"><br>
+      <input type="password" name="password" placeholder="&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;" aria-label="Ваш пароль для входа в личный кабинет" class="modal-login-password">
       <br>
+
+      <a href="#" class="modal-login-forgot">Забыли пароль?</a>
+      <a href="#" class="modal-login-forgot">Новая регистрация</a>
       <button type="submit" name="login-submit" class="button login-submit-button">Войти</button>
-      <a href="#">Забыли пароль?</a>
-      <a href="#">Новая регистрация</a>
     </form>
+
+  </div>
 
     <!--Окно обратной связи-->
     <form class="feedback" action="index.html" method="post">
@@ -232,7 +237,7 @@
       <p>Для заказов по телефону:</p>
       <b>8 812 450-25-25</b>
       <p class="modal-address-open">(с 10 до 20 ежедневно)</p>
-      <button type="button" name="button" class="button modal-address-button">Форма обратной связи</button>
+      <button type="button" name="button" class="button modal-address-button">Форма обратной связи</button> <!-- or input type="submit"???>
     </div>
 
 
