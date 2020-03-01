@@ -955,5 +955,10 @@ h3 {
   margin-bottom: 20px;
 }
 .modal-feedback textarea {
-margin-bottom: 23px;
+  width: 428px;
+  margin-bottom: 23px;
+}
+.feedback-submit-button {
+  padding: 12px 24px 11px 24px;
+  margin-left: 300px;
 }
