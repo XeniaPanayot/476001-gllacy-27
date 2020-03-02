@@ -234,7 +234,7 @@ h3 {
 .login-button:hover {
   background-color: #f8f7f4;
 }
-.login-text:hover {
+.login-button:hover .login-text {
   filter: invert(1);
 }
 /*problem with :hover: the black text doesn't syncronize with the white background of the button, if cursor is not exactly on the text, the whole button is white. Wierd*/
