@@ -798,9 +798,6 @@ h3 {
 .login-submit-button {
   padding: 11px 25px 10px 25px;
 }
-.submit-cart-button {
-  padding: 11px 13px 11px 14px;
-}
 
 /*=======temporary OUTLINES & SIZES=========*/
 
@@ -980,4 +977,73 @@ h3 {
   line-height: 24px;
   border-radius: 10px;
   padding: 15px;
+}
+/*-------MODAL cart------------------*/
+.modal-cart {
+  width: 539px;
+  background-color: #f8f7f3;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px 12px 20px 12px;
+}
+.modal-cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px; /*measuring from the line*/
+}
+.modal-cart-table td {
+  /*border: solid 1px red; /*temporary!!!!!*/
+  padding: 10px 0;
+}
+.modal-cart-table td:first-child {
+  background-image: url("../img/cross-small.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.modal-cart-table td:nth-child(2) {
+  width: 50px;
+}
+.modal-cart-table td:nth-child(3) {
+  width: 224px;
+}
+.modal-cart-table td:nth-child(4) {
+  text-align: right;
+  width: 120px;
+}
+.modal-cart-table td:last-child {
+  width: 77px;
+  text-align: right;
+}
+
+.cart_total-cost {
+  display: block;
+  text-align: right;
+  color: #323232;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+
+.cart_item,
+.cart_item_amount,
+.cart_item_total {
+  color: #323232;
+  font-size: 13px;
+  line-height: 16px;
+}
+.cart_item_price {
+  opacity: 0.3;
+}
+.cart_total-text,
+.cart_total {
+  color: #323232;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.submit-cart-button {
+  padding: 11px 13px 11px 14px;
+  margin-left: 355px;
 }
