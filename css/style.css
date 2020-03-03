@@ -454,25 +454,12 @@ h3 {
   list-style: none;
   margin: 0;
   padding: 0;
-  /*min-width: 1180px;*/ /*why did i need it???*/
 }
 
 .bestseller-item,
 .catalog-item {
   width: 280px;
-  /*height: 405px; - this is hover height*/
 }
-.bestseller-item:hover,
-/*.catalog-item:hover --- :hover for catalog items is described via Li class="item-background" with position:absolute*/{
-  /*position: relative;*/
-  width: 280px;
-  height: 405px;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  /*background-color: #9bafa3;*/ /*background-color is supposed to change matching the slide color, so I'm making it with opacity*/
-  border-radius: 10px;
-  background:rgba(255,255,255, 0.3);
-}
-
 
 .bestseller-text,
 .catalog-text {
@@ -498,14 +485,16 @@ h3 {
   list-style: none;
   position: relative;
 }
-.bestseller-card li:first-child::before {
+
+.bestseller-card .item-image::before {
   content: "";
   height: 67px;
   width: 67px;
   position: absolute;
-  background-image: url(../img/hit.svg);
+  background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
 }
+
 .item-image {
   width: 100%;
   height: 100%;
@@ -589,6 +578,10 @@ height: 550px;
   display: none;
 }
 .catalog-item:hover .item-background {
+  display: block;
+  z-index: 2;
+}
+.bestseller-item:hover .item-background {
   display: block;
   z-index: 2;
 }
