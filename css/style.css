@@ -572,10 +572,11 @@ height: 360px;
 }
 .catalog-item:hover .item-card{
 height: 550px;
-}*/
+}
 .catalog-item {
   position: relative;
-}
+  z-index: 1;
+}*/
 .item-background {
   position:absolute;
   width: 280px;
@@ -589,6 +590,7 @@ height: 550px;
 }
 .catalog-item:hover .item-background {
   display: block;
+  z-index: 2;
 }
 /*---------------FEATURES-----------------*/
 .features-container {
