@@ -460,10 +460,11 @@ h3 {
 .bestseller-item,
 .catalog-item {
   width: 280px;
-  height: 405px;
+  /*height: 405px; - this is hover height*/
 }
 .bestseller-item:hover,
-.catalog-item:hover {
+/*.catalog-item:hover --- :hover for catalog items is described via Li class="item-background" with position:absolute*/{
+  /*position: relative;*/
   width: 280px;
   height: 405px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -472,9 +473,7 @@ h3 {
   background:rgba(255,255,255, 0.3);
 }
 
-.catalog-item:hover {
 
-}
 .bestseller-text,
 .catalog-text {
   color: #ffffff;
@@ -548,6 +547,7 @@ h3 {
   line-height: 24px;
   font-weight: bold;
   margin-left: 42px;
+  margin-top: 340px;
 
   display: none;
 }
@@ -555,7 +555,41 @@ h3 {
 .catalog-item:hover .item-card-button {
   display: block;
 }
+/*--------------deviations!!!/*how can i check if it works???
+.catalog-item {
+  position: relative;
+}
+.catalog-item:hover > .item-card {
+  position: absolute;
+  height: 550px;
+}
+.catalog-item {
+  position: relative;
+}
+.item-card {
+position: absolute;
+height: 360px;
+}
+.catalog-item:hover .item-card{
+height: 550px;
+}*/
+.catalog-item {
+  position: relative;
+}
+.item-background {
+  position:absolute;
+  width: 280px;
+  height: 405px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  /*background-color: #9bafa3;*/ /*background-color is supposed to change matching the slide color, so I'm making it with opacity*/
+  border-radius: 10px;
+  background:rgba(255,255,255, 0.3);
 
+  display: none;
+}
+.catalog-item:hover .item-background {
+  display: block;
+}
 /*---------------FEATURES-----------------*/
 .features-container {
   width: 1112px; /* 1152px of the container width minus paddings that add 50px to the total width*/
