@@ -32,12 +32,31 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-menu">
-          <li>
-            <button class="search-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" class="svg-loupe"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
-            </button>
+          <li class="user-menu-search">
+             <button class="search-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" class="svg-loupe"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+             </button>
+             <div class="modal-search">
+              <form class="" action="#" method="post">
+               <input type="search" class="modal-search-field" name="search" placeholder="Крем-брюле" aria-label="Поиск по сайту" class="search_input">
+               <input type="submit" class="visually-hidden" value="">
+             </form>
+            </div>
           </li>
-          <li><button type="button" class="login-button"><span class="login-text">Вход</span></button></li>
+          <li class="user-menu-login">
+            <button type="button" class="login-button"><span class="login-text">Вход</span></button>
+          <div class="modal-login">
+          <form class="login" action="index.html" method="post">
+            <h2 class="visually-hidden">Вход в личный кабинет</h2>
+            <input type="email" name="email" placeholder="email@example.com" aria-label="Ваша элетронная почта для входа в личный кабинет" class="modal-login-email"><br>
+            <input type="password" name="password" placeholder="&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;" aria-label="Ваш пароль для входа в личный кабинет" class="modal-login-password">
+            <br>
+            <a href="#" class="modal-login-forgot">Забыли пароль?</a>
+            <a href="#" class="modal-login-forgot">Новая регистрация</a>
+            <button type="submit" name="login-submit" class="button login-submit-button">Войти</button>
+          </form>
+        </div>
+        </li>
           <li><a href="#" class="cart"><span class="cart-text_empty">Пусто</span></a></li>
         </ul>
       </nav>
@@ -169,6 +188,15 @@
         <section class="map">
           <h2 class="visually-hidden">Схема проезда</h2>
           <img src="img/map.jpg" width="1250" height="430" alt="Офис Глейси по адресу Санкт-Петербург, Большая Конюшенная, дом 19&#47;8">
+          <div class="modal-address">
+            <h2 class="visually-hidden">Адреc, телефон и форма обратной связи</h2>
+            <span class="modal-text">Адрес главного офиса и офлайн-магазина:</span>
+            <b class="modal-address-location">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+            <span class="modal-telephone-order">Для заказов по телефону:</span>
+            <b class="modal-telephone">8 812 450-25-25</b>
+            <span class="modal-address-open">(с 10 до 20 ежедневно)</span>
+            <button type="button" name="button" class="button modal-address-button">Форма обратной связи</button> <!-- or input type="submit"???-->
+          </div>
         </section>
 
       <footer>
@@ -200,20 +228,7 @@
 
     <!--Модальные окна-->
     <!--Логин-->
-    <div class="modal-login">
 
-    <form class="login" action="index.html" method="post">
-      <h2 class="visually-hidden">Вход в личный кабинет</h2>
-      <input type="email" name="email" placeholder="email@example.com" aria-label="Ваша элетронная почта для входа в личный кабинет" class="modal-login-email"><br>
-      <input type="password" name="password" placeholder="&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;" aria-label="Ваш пароль для входа в личный кабинет" class="modal-login-password">
-      <br>
-
-      <a href="#" class="modal-login-forgot">Забыли пароль?</a>
-      <a href="#" class="modal-login-forgot">Новая регистрация</a>
-      <button type="submit" name="login-submit" class="button login-submit-button">Войти</button>
-    </form>
-
-  </div>
 
     <!--Окно обратной связи-->
     <div class="modal-feedback">
@@ -230,23 +245,10 @@
     </div>
 
     <!--Выпадающее Окно поиска по сайту-->
-    <div class="modal-search">
-    <form class="" action="#" method="post">
-      <input type="search" class="modal-search-field" name="search" placeholder="Крем-брюле" aria-label="Поиск по сайту" class="search_input">
-      <input type="submit" class="visually-hidden" value="">
-    </form>
-    </div>
+
 
     <!--Адреc и Форма обратной связи-->
-    <div class="modal-address">
-      <h2 class="visually-hidden">Адреc, телефон и форма обратной связи</h2>
-      <span class="modal-text">Адрес главного офиса и офлайн-магазина:</span>
-      <b class="modal-address-location">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-      <span class="modal-telephone-order">Для заказов по телефону:</span>
-      <b class="modal-telephone">8 812 450-25-25</b>
-      <span class="modal-address-open">(с 10 до 20 ежедневно)</span>
-      <button type="button" name="button" class="button modal-address-button">Форма обратной связи</button> <!-- or input type="submit"???>
-    </div>
+
 
 
   </html>

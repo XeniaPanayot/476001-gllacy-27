@@ -189,7 +189,9 @@ h3 {
   color: #ffffff;
   text-align: center;
 }
-
+.user-menu-search {
+  position: relative;
+}
 .search-button {
   border-radius: 50%;
   width: 33px;
@@ -203,7 +205,21 @@ h3 {
 .search-button:hover path {
   fill: #323232;
 }
+.modal-search {
+  position: absolute;
+  top: 41px;
+  right: -3px;
 
+  display: none;
+}
+.search-button:hover + .modal-search {
+  display: block;
+}
+
+/*------------------LOGIN user menu------------------*/
+.user-menu-login {
+  position: relative;
+}
 .login-button {
   display:flex;
   width: 93px;
@@ -237,7 +253,52 @@ h3 {
 .login-button:hover .login-text {
   filter: invert(1);
 }
-/*problem with :hover: the black text doesn't syncronize with the white background of the button, if cursor is not exactly on the text, the whole button is white. Wierd*/
+/*problem with :hover: the black text doesn't syncronize with the white background of the button, if cursor is not exactly on the text, the whole button is white. Solved by combining them .login-button:hover .login-text*/
+.modal-login {
+  /*position: relative; I needed it designing the html, but for positioning I need position: absolute*/
+  position: absolute;
+  top: 41px;
+  right: 1px;
+  width: 277px;
+  background-color: #f8f7f3;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  padding: 20px 17px 22px 19px;
+  border-radius: 10px;
+
+  display: none;
+}
+.modal-login-email,
+.modal-login-password {
+  width: 241px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  border-radius: 5px;
+  border: solid 1px #d3d3d2;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.modal-login-forgot {
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+  margin-left: 150px;
+  display: block;
+}
+
+.login-submit-button {
+  position: absolute;
+  bottom: 22px;
+}
+
+.login-button:hover + .modal-login  {
+  display: block;
+}
+/*--------------------CART user menu---------*/
+.user-menu-cart {
+  position: relative;
+}
 .cart {
   display: block;
   border-radius: 20px;
@@ -283,6 +344,72 @@ h3 {
   font-size: 22px;
   line-height: 24px;
   text-decoration: none;
+}
+.modal-cart {
+  position: absolute;
+  top: 41px;
+  right: 1px;
+  z-index: 5;
+  width: 539px;
+  background-color: #f8f7f3;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px 12px 20px 12px;
+  display: none;
+}
+.modal-cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px; /*measuring from the line*/
+}
+.modal-cart-table td {
+  /*border: solid 1px red; /*temporary!!!!!*/
+  padding: 10px 0;
+}
+.close {
+  background-image: url("../img/cross-small.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.modal-cart-table td:nth-child(2) {
+  width: 50px;
+}
+.modal-cart-table td:nth-child(3) {
+  width: 224px;
+}
+.modal-cart-table td:nth-child(4) {
+  text-align: right;
+  width: 120px;
+}
+.modal-cart-table td:last-child {
+  width: 77px;
+  text-align: right;
+}
+
+.cart_item,
+.cart_item_amount,
+.cart_item_total {
+  color: #323232;
+  font-size: 13px;
+  line-height: 16px;
+}
+.cart_item_price {
+  opacity: 0.3;
+}
+.cart_total-text,
+.cart_total {
+  color: #323232;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.submit-cart-button {
+  padding: 11px 13px 11px 14px;
+  margin-left: 355px;
+}
+.cart-full:hover + .modal-cart {
+ display: block;
 }
 
 /*-----------SLIDER --------------------*/
@@ -888,13 +1015,18 @@ height: 550px;
   padding-right: 20px;
 }
 /*---------MODAL Elements--------------*/
+.map {
+  position: relative;
+}
 .modal-address {
+  position: absolute;
+  top: 50px;
+  right: 24px;
   background-color: #fefdfc;
   color: #323232;
   width: 252px;
   border-radius: 10px;
   padding: 30px 25px 30px 25px;
-  border: solid 1px black; /*temporary*/
 }
 .modal-address span {
   display: block;
@@ -929,38 +1061,7 @@ height: 550px;
 }
 
 /*----------------MODAL login--------------------------*/
-.modal-login {
-  position: relative;
-  width: 277px;
-  background-color: #f8f7f3;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  padding: 20px 17px 22px 19px;
-  border-radius: 10px;
-}
-.modal-login-email,
-.modal-login-password {
-  width: 241px;
-  font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-  border-radius: 5px;
-  border: solid 1px #d3d3d2;
-  background-color: #ffffff;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-.modal-login-forgot {
-  color: #323232;
-  font-size: 13px;
-  line-height: 24px;
-  margin-left: 150px;
-  display: block;
-}
 
-.login-submit-button {
-  position: absolute;
-  bottom: 22px;
-}
 /*------------MODAL feedback ----------------*/
 .modal-feedback {
   position: relative;
@@ -1027,61 +1128,3 @@ height: 550px;
   padding: 15px;
 }
 /*-------MODAL cart------------------*/
-.modal-cart {
-  width: 539px;
-  background-color: #f8f7f3;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  padding: 20px 12px 20px 12px;
-}
-.modal-cart-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 16px; /*measuring from the line*/
-}
-.modal-cart-table td {
-  /*border: solid 1px red; /*temporary!!!!!*/
-  padding: 10px 0;
-}
-.close {
-  background-image: url("../img/cross-small.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
-.modal-cart-table td:nth-child(2) {
-  width: 50px;
-}
-.modal-cart-table td:nth-child(3) {
-  width: 224px;
-}
-.modal-cart-table td:nth-child(4) {
-  text-align: right;
-  width: 120px;
-}
-.modal-cart-table td:last-child {
-  width: 77px;
-  text-align: right;
-}
-
-.cart_item,
-.cart_item_amount,
-.cart_item_total {
-  color: #323232;
-  font-size: 13px;
-  line-height: 16px;
-}
-.cart_item_price {
-  opacity: 0.3;
-}
-.cart_total-text,
-.cart_total {
-  color: #323232;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: bold;
-}
-.submit-cart-button {
-  padding: 11px 13px 11px 14px;
-  margin-left: 355px;
-}
