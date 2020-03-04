@@ -880,6 +880,7 @@ height: 550px;
 /*-----------------Footer-----------------*/
 .footer-container {
   width: 1154px;
+
   padding: 18px 22px 25px 24px;
   display: flex;
   justify-content: space-between;
@@ -1022,7 +1023,7 @@ height: 550px;
 .map {
   background-image: url("../img/map.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: cover; /*is it ok??---*/
   margin-bottom: 15px;
 }
 .map-container{
@@ -1041,7 +1042,8 @@ height: 550px;
   padding: 30px 25px 30px 25px;
 }
 .modal-address span {
-  display: block;
+  display: block; /*comment---*/
+
 }
 .modal-text {
   margin: 0;
