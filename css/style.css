@@ -845,13 +845,13 @@ height: 550px;
   width: 507px;
   background-color: #f8f7f4;
   border-radius: 20px;
-  padding: 33px 22px 29px 20px;
+  padding: 33px 18px 38px 18px;
 }
 .subscribe-text {
   color: #5a5a5a;
 }
 .subscribe-email-input {
-  margin-right: 11px;
+  margin-right: 1px;
 }
 .submit-subscribe-button {
   font-size: 18px;
@@ -861,6 +861,7 @@ height: 550px;
 
 .subscribe-text {
   margin: 0;
+  margin-bottom: 34px;
 }
 .subscribe-email {
 }
@@ -870,6 +871,11 @@ height: 550px;
   padding-left: 14px;
   font-size: 16px;
   line-height: 1.5;
+}
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 /*-----------------Footer-----------------*/
 .footer-container {
@@ -973,9 +979,7 @@ height: 550px;
   align-items: flex-end;
 }
 
-.map{
-  margin-bottom: 15px;
-}
+
 
 
 .social {
@@ -1016,7 +1020,15 @@ height: 550px;
 }
 /*---------MODAL Elements--------------*/
 .map {
+  background-image: url("../img/map.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+.map-container{
   position: relative;
+  height: 430px;
+  width: 1200px;
 }
 .modal-address {
   position: absolute;

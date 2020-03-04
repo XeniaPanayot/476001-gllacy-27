@@ -177,8 +177,10 @@
             <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
             <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-email" action="#" method="post">
+              <div class="subscribe-form">              
               <input type="email" name="email" placeholder="email@example.com" class="subscribe-email-input" aria-label="Ваша электронная почта для оформления подписки">
               <input type="submit" name="subscribe-button" class="button submit-subscribe-button" value="Отправить">
+            </div>
             </form>
           </div>
           </div>
@@ -186,8 +188,9 @@
         </section>
 
         <section class="map">
-          <h2 class="visually-hidden">Схема проезда</h2>
-          <img src="img/map.jpg" width="1250" height="430" alt="Офис Глейси по адресу Санкт-Петербург, Большая Конюшенная, дом 19&#47;8">
+          <div class="map-container">
+          <h2 class="visually-hidden">Офис Глейси по адресу Санкт-Петербург, Большая Конюшенная, дом 19&#47;8</h2>
+          <!--<img src="img/map.jpg" width="1250" height="430" alt="Офис Глейси по адресу Санкт-Петербург, Большая Конюшенная, дом 19&#47;8">-->
           <div class="modal-address">
             <h2 class="visually-hidden">Адреc, телефон и форма обратной связи</h2>
             <span class="modal-text">Адрес главного офиса и офлайн-магазина:</span>
@@ -197,6 +200,7 @@
             <span class="modal-address-open">(с 10 до 20 ежедневно)</span>
             <button type="button" name="button" class="button modal-address-button">Форма обратной связи</button> <!-- or input type="submit"???-->
           </div>
+        </div>
         </section>
 
       <footer>
