@@ -67,9 +67,11 @@ a {
 h1 {
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
 }
 h3 {
   font-size:35px;
+  margin: 0;
 }
 
 
@@ -344,6 +346,13 @@ h3 {
   line-height: 24px;
   text-decoration: none;
 }
+.contact-telephone:hover,
+.contact-telephone:focus {
+  color: #ffbc9e;
+}
+.contact-telephone:active {
+  color: #e84d37;
+}
 .modal-cart {
   position: absolute;
   top: 41px;
@@ -572,8 +581,30 @@ h3 {
   background-image: linear-gradient(to top, #f26843, #e74a35);
   box-shadow:  inset 0px 2px 2px 0 #942718;;
 }
+/*--------------BREADCRUMBS---------------*/
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs a,
+.breadcrumbs li:last-child {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #ffbc9e;
+}
+.breadcrumbs a:active {
+  color: #e84d37;
+}
 /*-----------GOODS section--------------*/
-.catalog-container {
+.catalog-heading {
+  margin-bottom: 30px;
+}
+.catalog-container,
+.filters-container,
+.heading-container {
   width: 1160px;
   padding: 0 20px;
 }
@@ -669,31 +700,12 @@ h3 {
   display: none;
 }
 .bestseller-item:hover .item-card-button,
-.catalog-item:hover .item-card-button {
+.bestseller-item:focus .item-card-button,
+.catalog-item:hover .item-card-button,
+.catalog-item:focus .item-card-button {
   display: block;
 }
-/*--------------deviations!!!/*how can i check if it works???
-.catalog-item {
-  position: relative;
-}
-.catalog-item:hover > .item-card {
-  position: absolute;
-  height: 550px;
-}
-.catalog-item {
-  position: relative;
-}
-.item-card {
-position: absolute;
-height: 360px;
-}
-.catalog-item:hover .item-card{
-height: 550px;
-}
-.catalog-item {
-  position: relative;
-  z-index: 1;
-}*/
+
 .item-background {
   position:absolute;
   width: 280px;
@@ -972,12 +984,6 @@ color: #e84d37;
 color: #e84d37;
 }
 /*----------------Крошки ------------------*/
-.breadcrumbs {
-  list-style: none;
-}
-.breadcrumbs a {
-  color: #ffffff;
-}
 
 /*-------------MODAL popouts--------------------*/
 .login-submit-button {
@@ -1200,4 +1206,23 @@ color: #e84d37;
   color: #ffffff;
   text-transform: lowercase;
   position: relative; /*--to make ::after ---*/
+}
+
+/*--------------FILTER Button----------------*/
+input[type=submit] {
+width: 144px;
+border: solid 2px #ffffff;
+border-radius: 20px;
+background: rgba(255,255,255, 0.3);
+color: #ffffff;
+}
+input[type=submit]:hover,
+input[type=submit]:focus {
+  background-color: #ffffff;
+  color: #323232;
+}
+input[type=submit]:active {
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+  color: #323232;
 }
