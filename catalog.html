@@ -119,17 +119,28 @@
              <label for="range-price">Цена: 100 руб. – 500 руб.</label>
              <input type="range" name="price-range" value="100" min="100" max="500" id="range-price">
             </div>
-            <div class="filter-radio">
-          <label for="fat-choice">Жирность:</label>
+
+          <div class="filter-radio">
+          <label for="fat-choice" class="radio-filter-label">Жирность:</label>
+
           <div class="radio-filter" id="fat-choice">
-          <label for="fat-choice1">0&#37;</label>
-          <input type="radio" name="fat" value="0%" id="fat-choice1">
-          <label for="fat-choice2">до 10&#37;</label>
-          <input type="radio" name="fat" value="below 10%" id="fat-choice2" checked>
-          <label for="fat-choice3">до 30&#37;</label>
-          <input type="radio" name="fat" value="above 30%" id="fat-choice3">
-          <label for="fat-choice4">выше 30&#37;</label>
-          <input type="radio" name="fat" value="above 30%" id="fat-choice4">
+
+          <label class="radio-choice1">
+          <input type="radio" name="fat" value="0%" id="fat-choice1" class="visually-hidden">
+          <span class="radio-indicator1"></span>
+          0&#37;</label>
+          <label class="radio-choice2">
+          <input type="radio" name="fat" value="below 10%" id="fat-choice2" class="visually-hidden" checked>
+          <span class="radio-indicator2"></span>
+          до 10&#37;</label>
+          <label class="radio-choice3">
+          <input type="radio" name="fat" value="above 30%" id="fat-choice3" class="visually-hidden">
+          <span class="radio-indicator3"></span>
+          до 30&#37;</label>
+          <label class="radio-choice4">
+          <input type="radio" name="fat" value="above 30%" id="fat-choice4" class="visually-hidden">
+          <span class="radio-indicator4"></span>
+          выше 30&#37;</label>
         </div>
       </div>
       <div class="filter-checkbox">

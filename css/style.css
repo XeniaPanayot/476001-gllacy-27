@@ -1176,14 +1176,28 @@ color: #e84d37;
 
 .pagination a {
   color: #ffffff;
-  padding: 8px 16px;
+  padding: 4px 10px 4px 10px;
   text-decoration: none;
 }
+.pagination a:hover,
+.pagination a:focus {
+background: rgba(255,255,255, 0.3);
+color: #ffffff;
+border-radius: 50%;
+}
+
 .pagination a:active,
 .pagination .active > a {
   color: #323232;
   background-color: #ffffff;
   border-radius: 50%;
+}
+.pagination-list li:first-child a:hover,
+.pagination-list li:first-child a:focus,
+.pagination-list li:last-child a:hover,
+.pagination-list li:last-child a:focus {
+  background: none;
+  color: rgba(255,255,255, 0.3);
 }
 
 /*------------FILTERS ---------------------*/
@@ -1208,7 +1222,102 @@ color: #e84d37;
   position: relative; /*--to make ::after ---*/
 }
 
+/*-------------FILTER  Radio -----------------*/
+/*----    ---*/
+.radio-filter-label {
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 6px;
+  padding-left: 11px;
+  cursor: pointer;
+}
+
+.radio-filter {
+  display: flex;
+  width: 415px;
+  border-radius: 20px;
+  background: rgba(255,255,255, 0.3);
+  color: #ffffff;
+  justify-content: space-around;
+  padding: 14px 1px 12px 14px;
+}
+
+.radio-choice1,
+.radio-choice2,
+.radio-choice3,
+.radio-choice4 {
+  position: relative;
+  font-size: medium;
+}
+.radio-choice1 input[type="radio"] + .radio-indicator1,
+.radio-choice2 input[type="radio"] + .radio-indicator2,
+.radio-choice3 input[type="radio"] + .radio-indicator3,
+.radio-choice4 input[type="radio"] + .radio-indicator4 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 3px #ffffff;
+  cursor: pointer;
+}
+.radio-choice1 input[type="radio"] + .radio-indicator1 {
+  top: 0;
+  right: 30px;
+}
+.radio-choice2 input[type="radio"] + .radio-indicator2 {
+  top: 0;
+  right: 60px;
+}
+
+.radio-choice3 input[type="radio"] + .radio-indicator3 {
+  top: 0;
+  right: 60px;
+}
+.radio-choice4 input[type="radio"] + .radio-indicator4 {
+  top: 0;
+  right: 85px;
+}
+.radio-choice1 input[type="radio"] {
+  top: 2px;
+  right: 33px;
+  position: absolute;
+}
+.radio-choice1 input[type="radio"]:focus + .radio-indicator1,
+.radio-choice2 input[type="radio"]:focus + .radio-indicator2,
+.radio-choice3 input[type="radio"]:focus + .radio-indicator3,
+.radio-choice4 input[type="radio"]:focus + .radio-indicator4 {
+  border-color: #ffffff;
+  outline: solid;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.radio-choice1 input[type="radio"]:checked + .radio-indicator1::before,
+.radio-choice1 input[type="radio"]:checked + .radio-indicator1::after,
+.radio-choice2 input[type="radio"]:checked + .radio-indicator2::before,
+.radio-choice2 input[type="radio"]:checked + .radio-indicator2::after,
+.radio-choice3 input[type="radio"]:checked + .radio-indicator3::before,
+.radio-choice3 input[type="radio"]:checked + .radio-indicator3::after,
+.radio-choice4 input[type="radio"]:checked + .radio-indicator4::before,
+.radio-choice4 input[type="radio"]:checked + .radio-indicator4::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: 2px;
+  left: 2px;
+}
+.radio-choice1 input[type="radio"]:disabled + .radio-indicator1,
+.radio-choice2 input[type="radio"]:disabled + .radio-indicator2,
+.radio-choice3 input[type="radio"]:disabled + .radio-indicator3,
+.radio-choice4 input[type="radio"]:disabled + .radio-indicator4 {
+  border: solid 3px #b5c4bc;
+}
+
 /*--------------FILTER Button----------------*/
+
 input[type=submit] {
 width: 144px;
 border: solid 2px #ffffff;
