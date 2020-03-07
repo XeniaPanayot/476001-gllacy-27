@@ -35,7 +35,7 @@ body {
   margin: 0 auto;
 }
 
-/*=======STYLES==========*/
+/*=======GLOBAL STYLES==========*/
 .button {
  font-size: 18px;
  line-height: 24px;
@@ -49,6 +49,9 @@ body {
  text-align: center;
  vertical-align: middle;
 }
+a {
+  text-underline-position: under;
+}
 
 .visually-hidden {
   position: absolute;
@@ -61,8 +64,6 @@ body {
   overflow: hidden;
 }
 
-
-/*----------- FONT-------------------*/
 h1 {
   font-size: 24px;
   line-height: 30px;
@@ -70,9 +71,7 @@ h1 {
 h3 {
   font-size:35px;
 }
-.contact {
-  font-size: 14px;
-}
+
 
 
 
@@ -411,7 +410,9 @@ h3 {
 .cart-full:hover + .modal-cart {
  display: block;
 }
-
+.contact {
+  font-size: 14px;
+}
 /*-----------SLIDER --------------------*/
 .slider {
   position: relative;
@@ -880,6 +881,7 @@ height: 550px;
 /*-----------------Footer-----------------*/
 .footer-container {
   width: 1154px;
+  border-top: solid 1px #a9bbb1;
 
   padding: 18px 22px 25px 24px;
   display: flex;
@@ -1141,4 +1143,26 @@ height: 550px;
   border-radius: 10px;
   padding: 15px;
 }
-/*-------MODAL cart------------------*/
+/*-------PAGINATION ------------------*/
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.pagination a {
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination a:active,
+.pagination .active > a {
+  color: #323232;
+  background-color: #ffffff;
+  border-radius: 50%;
+}

@@ -93,15 +93,53 @@
           <h1>Сливочное мороженое</h1>
           <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
+            <li>&#187;</li>
             <li><a href="#">Каталог</a></li>
+            <li>&#187;</li>
             <li>Сливочное</li>
           </ul>
         </div>
         </section>
-        <section>
+
+        <section class="filters">
           <div class="container">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <!-- filters' forms-->
+          <label for="sorter">Сортировка:</label>
+          <select class="select-sort" name="sort" id="sorter">
+            <option value="popular">По популярности</option>
+            <option value=""></option>
+          </select>
+
+          <label for="range-price">Цена: 100 руб. – 500 руб.</label>
+          <input type="range" name="price-range" value="100" min="100" max="500" id="range-price">
+
+          <label for="fat-choice">Жирность:</label>
+          <div class="radio-filter" id="fat-choice">
+          <label for="fat-choice1">0&#37;</label>
+          <input type="radio" name="fat" value="0%" id="fat-choice1">
+          <label for="fat-choice2">до 10&#37;</label>
+          <input type="radio" name="fat" value="below 10%" id="fat-choice2" checked>
+          <label for="fat-choice3">до 30&#37;</label>
+          <input type="radio" name="fat" value="above 30%" id="fat-choice3">
+          <label for="fat-choice4">выше 30&#37;</label>
+          <input type="radio" name="fat" value="above 30%" id="fat-choice4">
+        </div>
+        <label for="fillers">Наполнители:</label>
+        <div class="checkbox-filter" id="fillers">
+          <label for="choco-filler"></label>
+          <input type="checkbox" name="filler" value="chocolate" id="choco-filler">
+          <label for="sugar-filler"></label>
+          <input type="checkbox" name="filler" value="sugar" id="sugar-filler">
+          <label for="fruit-filler"></label>
+          <input type="checkbox" name="filler" value="fruit" id="fruit-filler">
+          <label for="syrop-filler"></label>
+          <input type="checkbox" name="filler" value="syrop" id="syrop-filler">
+          <label for="jam-filler"></label>
+          <input type="checkbox" name="filler" value="jam" id="jam-filler">
+        </div>
+        <input type="submit" name="submit-filter" value="Применить">
+
+
         </div>
         </section>
         <section>
@@ -209,6 +247,22 @@
           </ul>
         </div>
         </section>
+
+
+<section class="pagination">
+<div class="container pagination-container">
+<h2 class="visually-hidden">Переход на следующую страницу</h2>
+<ul class="pagination-list">
+  <li><a href="#">&#8249;</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&#8250;</a></li>
+  </ul>
+</div>
+</section>
       </main>
       <footer>
         <div class="container footer-container">
