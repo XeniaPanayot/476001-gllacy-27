@@ -1223,8 +1223,12 @@ border-radius: 50%;
 }
 
 /*-------------FILTER  Radio -----------------*/
-/*----    ---*/
-.radio-filter-label {
+/*----In html: <label class="labelclass"><input type="radio" class="visually-hidden"><span class="customized-indicator"></span>an option<label>;
+---CSS selector for the hidden element: .labelclass input[type="radio"]
+---CSS selector for the new element: .customized-indicator;
+---flex container with justify-content: space around (absolutely positioned radiobuttons)---*/
+.radio-filter-label,
+.checkbox-filter-label {
   font-size: 14px;
   line-height: 16px;
   display: block;
@@ -1315,7 +1319,51 @@ border-radius: 50%;
 .radio-choice4 input[type="radio"]:disabled + .radio-indicator4 {
   border: solid 3px #b5c4bc;
 }
-
+/*-------------FILTER Checkboxes-------------*/
+.checkbox-filter {
+  display: flex;
+  width: 703px;
+  border-radius: 20px;
+  background: rgba(255,255,255, 0.3);
+  color: #ffffff;
+  justify-content: space-around;
+  padding: 15px 2px 11px 10px;
+}
+.checkbox-indicator {
+  width: 23px;
+  height: 20px;
+  border: solid 2px #ffffff;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+}
+.checkbox-option {
+  position: relative;
+  font-size: medium;
+}
+.checkbox-option input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+}
+.option1 input[type="checkbox"] + .indicator1 {
+  right: 100px;
+  top: -2px;
+}
+.option2 input[type="checkbox"] + .indicator2 {
+  right: 156px;
+  top: -2px;
+}
+.option3 input[type="checkbox"] + .indicator3 {
+  right: 61px;
+  top: -2px;
+}
+.option4 input[type="checkbox"] + .indicator4 {
+  right: 61px;
+  top: -2px;
+}
+.option5 input[type="checkbox"] + .indicator5 {
+  right: 59px;
+  top: -2px;
+}
 /*--------------FILTER Button----------------*/
 
 input[type=submit] {

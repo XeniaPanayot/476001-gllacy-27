@@ -143,19 +143,30 @@
           выше 30&#37;</label>
         </div>
       </div>
+
       <div class="filter-checkbox">
-        <label for="fillers">Наполнители:</label>
+        <label for="fillers" class="checkbox-filter-label">Наполнители:</label>
          <div class="checkbox-filter" id="fillers">
-          <input type="checkbox" name="filler" value="chocolate" id="choco-filler">
-          <label for="choco-filler">Шоколадные</label>
-          <input type="checkbox" name="filler" value="sugar" id="sugar-filler">
-          <label for="sugar-filler">Сахарные присыпки</label>
-          <input type="checkbox" name="filler" value="fruit" id="fruit-filler">
-          <label for="fruit-filler">Фрукты</label>
-          <input type="checkbox" name="filler" value="syrop" id="syrop-filler">
-          <label for="syrop-filler">Сиропы</label>
-          <input type="checkbox" name="filler" value="jam" id="jam-filler">
-          <label for="jam-filler">Джемы</label>
+           <label class="checkbox-option option1">
+          <input type="checkbox" name="filler" value="chocolate" id="choco-filler" class="visually-hidden">
+          <span class="checkbox-indicator indicator1"></span>
+          Шоколадные</label>
+          <label class="checkbox-option option2">
+          <input type="checkbox" name="filler" value="sugar" id="sugar-filler" class="visually-hidden">
+          <span class="checkbox-indicator indicator2"></span>
+          Сахарные присыпки</label>
+          <label class="checkbox-option option3">
+          <input type="checkbox" name="filler" value="fruit" id="fruit-filler" class="visually-hidden">
+          <span class="checkbox-indicator indicator3"></span>
+          Фрукты</label>
+          <label class="checkbox-option option4">
+          <input type="checkbox" name="filler" value="syrop" id="syrop-filler" class="visually-hidden">
+          <span class="checkbox-indicator indicator4"></span>
+          Сиропы</label>
+          <label class="checkbox-option option5">
+          <input type="checkbox" name="filler" value="jam" id="jam-filler" class="visually-hidden"> 
+          <span class="checkbox-indicator indicator5"></span>
+          Джемы</label>
          </div>
         </div>
       <input type="submit" name="submit-filter" value="Применить">
