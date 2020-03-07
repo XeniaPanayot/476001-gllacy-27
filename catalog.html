@@ -103,16 +103,23 @@
 
         <section class="filters">
           <div class="container">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-          <label for="sorter">Сортировка:</label>
-          <select class="select-sort" name="sort" id="sorter">
-            <option value="popular">По популярности</option>
-            <option value=""></option>
-          </select>
+           <form class="filters-form" action="index.html" method="post">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
 
-          <label for="range-price">Цена: 100 руб. – 500 руб.</label>
-          <input type="range" name="price-range" value="100" min="100" max="500" id="range-price">
-
+            <div class="filter-sorter"> <!--problem with padding and hiding the default arrow-->
+             <label for="sorter">Сортировка:</label>
+             <select name="sort" id="sorter">
+              <option value="popular">По популярности</option>
+              <option value="">Сначала недорогие</option>
+              <option value="">Сначала дорогие</option>
+              <option value="">По жирности</option>
+             </select>
+            </div>
+            <div class="filter-range">
+             <label for="range-price">Цена: 100 руб. – 500 руб.</label>
+             <input type="range" name="price-range" value="100" min="100" max="500" id="range-price">
+            </div>
+            <div class="filter-radio">
           <label for="fat-choice">Жирность:</label>
           <div class="radio-filter" id="fat-choice">
           <label for="fat-choice1">0&#37;</label>
@@ -124,22 +131,24 @@
           <label for="fat-choice4">выше 30&#37;</label>
           <input type="radio" name="fat" value="above 30%" id="fat-choice4">
         </div>
+      </div>
+      <div class="filter-checkbox">
         <label for="fillers">Наполнители:</label>
-        <div class="checkbox-filter" id="fillers">
-          <label for="choco-filler"></label>
+         <div class="checkbox-filter" id="fillers">
           <input type="checkbox" name="filler" value="chocolate" id="choco-filler">
-          <label for="sugar-filler"></label>
+          <label for="choco-filler">Шоколадные</label>
           <input type="checkbox" name="filler" value="sugar" id="sugar-filler">
-          <label for="fruit-filler"></label>
+          <label for="sugar-filler">Сахарные присыпки</label>
           <input type="checkbox" name="filler" value="fruit" id="fruit-filler">
-          <label for="syrop-filler"></label>
+          <label for="fruit-filler">Фрукты</label>
           <input type="checkbox" name="filler" value="syrop" id="syrop-filler">
-          <label for="jam-filler"></label>
+          <label for="syrop-filler">Сиропы</label>
           <input type="checkbox" name="filler" value="jam" id="jam-filler">
+          <label for="jam-filler">Джемы</label>
+         </div>
         </div>
-        <input type="submit" name="submit-filter" value="Применить">
-
-
+      <input type="submit" name="submit-filter" value="Применить">
+    </form>
         </div>
         </section>
         <section>
@@ -246,23 +255,24 @@
             </li>
           </ul>
         </div>
+
+        <div class="pagination">
+        <div class="container pagination-container">
+        <h2 class="visually-hidden">Переход на следующую страницу каталога</h2>
+        <ul class="pagination-list">
+          <li><a href="#">&#8249;</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&#8250;</a></li>
+          </ul>
+        </div>
+      </div>
         </section>
 
 
-<section class="pagination">
-<div class="container pagination-container">
-<h2 class="visually-hidden">Переход на следующую страницу</h2>
-<ul class="pagination-list">
-  <li><a href="#">&#8249;</a></li>
-  <li class="active"><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#">&#8250;</a></li>
-  </ul>
-</div>
-</section>
       </main>
       <footer>
         <div class="container footer-container">
@@ -283,7 +293,8 @@
           </ul>
         </div>
           <div class="copyright">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy logo"></a><br><span class="copyright-text">Сделано в </span><a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-text">HTML Academy</a>&copy;2019
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy logo"></a><br>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-text">Сделано в <span class="copyright-name">HTML Academy </span>&copy; 2019</a>
           </div>
         </div>
       </footer>

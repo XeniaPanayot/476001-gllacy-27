@@ -924,6 +924,13 @@ height: 550px;
   line-height: 18px;
   display: block;
 }
+.documents-list a:hover,
+.documents-list a:focus {
+color: #ffbc9e;
+}
+.documents-list a:active {
+color: #e84d37;
+}
 .documents-suppliers {
   position: relative;
   font-weight: bold;
@@ -945,22 +952,26 @@ height: 550px;
   height: 13px;
   background-image: url("../img/heart.svg");
 }
-.copyright-text {
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 18px;
-}
-.documents-column a:hover,
-.documents-column a:active,
-.copyright-text:hover {
-  color: #ffbc9e;
-}
+
 .copyright-text {
   color: #fefefe;
   font-size: 12px;
   line-height: 18px;
+  text-decoration: none;
+  cursor: pointer;
 }
-/*----------------CATALOGUE ------------------*/
+.copyright-name {
+  text-decoration: underline;
+  text-underline-position: below;
+}
+.copyright-text:hover,
+.copyright-text:focus {
+  color: #ffbc9e;
+}
+.copyright-text:active {
+color: #e84d37;
+}
+/*----------------Крошки ------------------*/
 .breadcrumbs {
   list-style: none;
 }
@@ -1076,7 +1087,6 @@ height: 550px;
   color: #fefefe;
 }
 
-/*----------------MODAL login--------------------------*/
 
 /*------------MODAL feedback ----------------*/
 .modal-feedback {
@@ -1116,7 +1126,10 @@ height: 550px;
   padding: 12px 24px 11px 24px;
   margin-left: 300px;
 }
-.modal-feedback-close {
+.modal-close {
+  border: 0;
+  cursor: pointer;
+
   position: absolute;
   top: 34px;
   left: 467px;
@@ -1165,4 +1178,26 @@ height: 550px;
   color: #323232;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+/*------------FILTERS ---------------------*/
+.filters-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-sorter,
+.filter-range {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-filter label{
+  text-transform: lowercase;
+}
+.filter-sorter select {
+  width: 194px;
+  background: #a9bab0;
+  color: #ffffff;
+  text-transform: lowercase;
+  position: relative; /*--to make ::after ---*/
 }
