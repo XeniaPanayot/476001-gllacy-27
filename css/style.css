@@ -1176,12 +1176,40 @@ color: #e84d37;
   margin: 0;
   padding: 0;
   display: flex;
+      position: relative;
 }
 
 .pagination a {
   color: #ffffff;
   padding: 4px 10px 4px 10px;
   text-decoration: none;
+}
+.pagination-arrow {
+  display: none;
+}
+.pagination-list li:first-child::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-image: url(../img/icon-right-small.svg);
+
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  left: -25px;
+  top: -3px;
+}
+.pagination-list li:last-child::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-image: url("../img/icon-right-small0.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  left: 145px;
+    top: 3px;
 }
 .pagination a:hover,
 .pagination a:focus {
