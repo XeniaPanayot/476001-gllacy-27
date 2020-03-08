@@ -1205,6 +1205,7 @@ color: #e84d37;
   display: inline-block;
   position: absolute;
   background-image: url("../img/icon-right-small0.svg");
+background-color: red;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -1243,9 +1244,7 @@ border-radius: 50%;
   flex-direction: column;
 }
 
-.checkbox-filter label{
-  text-transform: lowercase;
-}
+
 .filter-sorter select {
   width: 194px;
   background: #a9bab0;
@@ -1253,6 +1252,7 @@ border-radius: 50%;
   text-transform: lowercase;
   position: relative; /*--to make ::after ---*/
 }
+
 
 /*-------------FILTER  Radio -----------------*/
 /*----In html: <label class="labelclass"><input type="radio" class="visually-hidden"><span class="customized-indicator"></span>an option<label>;
@@ -1352,6 +1352,10 @@ border-radius: 50%;
   border: solid 3px #b5c4bc;
 }
 /*-------------FILTER Checkboxes-------------*/
+.checkbox-filter label{
+  text-transform: lowercase;
+}
+
 .checkbox-filter {
   display: flex;
   width: 703px;
@@ -1362,11 +1366,12 @@ border-radius: 50%;
   padding: 15px 2px 11px 10px;
 }
 .checkbox-indicator {
+  position: absolute;
   width: 23px;
-  height: 20px;
-  border: solid 2px #ffffff;
-  border-radius: 5px;
-  display: block;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  filter: opacity(0.8);
   cursor: pointer;
 }
 .checkbox-option {
@@ -1376,6 +1381,7 @@ border-radius: 50%;
 .checkbox-option input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
 }
+/*------ Положение нового чекбокса относительно лейбла-- */
 .option1 input[type="checkbox"] + .indicator1 {
   right: 100px;
   top: -2px;
@@ -1395,6 +1401,47 @@ border-radius: 50%;
 .option5 input[type="checkbox"] + .indicator5 {
   right: 59px;
   top: -2px;
+}
+/*--- Over :hover the color is #ffffff, no opacity, but :checked has the same opacity as regular mode---*/
+.option1 input[type="checkbox"]:focus + .indicator1,
+.option1 input[type="checkbox"]:hover + .indicator1,
+.option2 input[type="checkbox"]:focus + .indicator2,
+.option2 input[type="checkbox"]:hover + .indicator2,
+.option3 input[type="checkbox"]:focus + .indicator3,
+.option3 input[type="checkbox"]:hover + .indicator3,
+.option4 input[type="checkbox"]:focus + .indicator4,
+.option4 input[type="checkbox"]:hover + .indicator4,
+.option5 input[type="checkbox"]:focus + .indicator5,
+.option5 input[type="checkbox"]:hover + .indicator5 {
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.option1 input[type="checkbox"]:checked + .indicator1,
+.option2 input[type="checkbox"]:checked + .indicator2,
+.option3 input[type="checkbox"]:checked + .indicator3,
+.option4 input[type="checkbox"]:checked + .indicator4,
+.option5 input[type="checkbox"]:checked + .indicator5 {
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  filter: opacity(0.8);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.option1 input[type="checkbox"]:disabled + .indicator1,
+.option2 input[type="checkbox"]:disabled + .indicator2,
+.option3 input[type="checkbox"]:disabled + .indicator3,
+.option4 input[type="checkbox"]:disabled + .indicator4,
+.option5 input[type="checkbox"]:disabled + .indicator5 {
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  filter: opacity(0.4);
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 /*--------------FILTER Button----------------*/
 
