@@ -1242,15 +1242,47 @@ border-radius: 50%;
   display: flex;
   flex-direction: column;
 }
-
-
+.filter-sorter label {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
 .filter-sorter select {
+  /* Hide default arrow */
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+/* Cosmetics for the select box */
   width: 194px;
   background: #a9bab0;
   color: #ffffff;
+  font-size: 16px;
   text-transform: lowercase;
   position: relative; /*--to make ::after ---*/
+  padding: 11px 53px 9px 12px;
+  border-radius: 20px;
 }
+.filter-sorter::after:hover  {
+  color: black;
+}
+/* [CUSTOM ARROW] */
+.filter-sorter {
+  overflow: hidden;
+  position: relative;
+}
+.filter-sorter:after {
+  /* [HTML symbol you want to use] */
+  content: "\25bc";
+  color: #ffffff;
+  /* Positioning for the custom arrow */
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  text-align: center;
+  pointer-events: none;
+}
+
 /*-------------------RANGE Filter------------------*/
 
 /*=== We need two range inputs inside a wrapper. They both have the same minimum and maximum value.
