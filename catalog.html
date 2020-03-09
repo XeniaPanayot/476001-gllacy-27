@@ -115,12 +115,25 @@
               <option value="">По жирности</option>
              </select>
             </div>
-            <div class="filter-range">
-             <label for="range-price">Цена: 100 руб. – 500 руб.</label>
-             <input type="range" name="price-range" value="100" min="100" max="500" id="range-price">
-            </div>
+        <!--    <div class="filter-range range-wrap" role="group" aria-labelledby="range-price">
+             <div id="range-price">Цена: 100 руб. – 500 руб.</div>
+             <label for="range-price1" class="visually-hidden">Стоимость от:</label>
+             <input type="range" name="price-range" value="120" min="100" max="500" id="range-price1">
+             <label for="range-price2" class="visually-hidden">Стоимость до:</label>
+             <input type="range" name="price-range" value="400" min="100" max="500" id="range-price2">
+           </div> --->
+           <div class="range-wrap" role="group" aria-labelledby="range-price">
+                <div class="range-label" id="range-price">Цена: 100 руб. – 500 руб.</div>
+                <div class="filter-range">
+                <label for="range-price1" class="visually-hidden">Стоимость от:</label>
+                <input type="range" class="range-slider" name="price-range" value="120" min="100" max="250" id="range-price1">
+                <label for="range-price2" class="visually-hidden">Стоимость до:</label>
+                <input type="range" name="price-range" value="400" min="250" max="500" id="range-price2">
 
-          <div class="filter-radio">
+              </div>
+              </div>
+
+          <div class="filter-radio" role="radiogroup">
           <label for="fat-choice" class="radio-filter-label">Жирность:</label>
 
           <div class="radio-filter" id="fat-choice">
