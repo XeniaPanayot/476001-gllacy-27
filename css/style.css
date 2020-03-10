@@ -1184,8 +1184,8 @@ color: #e84d37;
   padding: 4px 10px 4px 10px;
   text-decoration: none;
 }
-.pagination-arrow {
-  display: none;
+.pagination-arrow:hover {
+
 }
 .pagination-list li:first-child::before {
   content: "";
@@ -1197,7 +1197,7 @@ color: #e84d37;
   height: 20px;
   background-repeat: no-repeat;
   transform: rotate(180deg);
-  left: -25px;
+  left: -7px;
   top: -3px;
 }
 .pagination-list li:last-child::after {
@@ -1205,12 +1205,12 @@ color: #e84d37;
   display: inline-block;
   position: absolute;
   background-image: url("../img/icon-right-small0.svg");
-background-color: red;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  left: 145px;
+  left: 170px;
     top: 3px;
+        cursor: pointer;
 }
 .pagination a:hover,
 .pagination a:focus {
@@ -1225,12 +1225,12 @@ border-radius: 50%;
   background-color: #ffffff;
   border-radius: 50%;
 }
-.pagination-list li:first-child a:hover,
-.pagination-list li:first-child a:focus,
-.pagination-list li:last-child a:hover,
-.pagination-list li:last-child a:focus {
-  background: none;
-  color: rgba(255,255,255, 0.3);
+.pagination-list li:first-child:hover::before,
+.pagination-list li:first-child:focus::before {
+  background: red;
+}
+.pagination-arrow {
+  opacity: 0;
 }
 
 /*------------FILTERS ---------------------*/
@@ -1495,15 +1495,7 @@ https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html ----*/
   justify-content: space-around;
   padding: 15px 2px 11px 10px;
 }
-.checkbox-indicator {
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  filter: opacity(0.8);
-  cursor: pointer;
-}
+
 .checkbox-option {
   position: relative;
   font-size: medium;
@@ -1511,7 +1503,7 @@ https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html ----*/
 .checkbox-option input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
 }
-/*------ Положение нового чекбокса относительно лейбла-- */
+/*------ Положение нового чекбокса относительно лейбла, option1 -1ый элемент-- */
 .option1 input[type="checkbox"] + .indicator1 {
   right: 100px;
   top: -2px;
@@ -1532,40 +1524,46 @@ https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html ----*/
   right: 59px;
   top: -2px;
 }
+
+.checkbox-indicator {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  cursor: pointer;
+}
 /*--- Over :hover the color is #ffffff, no opacity, but :checked has the same opacity as regular mode---*/
-.option1 input[type="checkbox"]:focus + .indicator1,
-.option1 input[type="checkbox"]:hover + .indicator1,
-.option2 input[type="checkbox"]:focus + .indicator2,
-.option2 input[type="checkbox"]:hover + .indicator2,
-.option3 input[type="checkbox"]:focus + .indicator3,
-.option3 input[type="checkbox"]:hover + .indicator3,
-.option4 input[type="checkbox"]:focus + .indicator4,
-.option4 input[type="checkbox"]:hover + .indicator4,
-.option5 input[type="checkbox"]:focus + .indicator5,
-.option5 input[type="checkbox"]:hover + .indicator5 {
+.checkbox-option input[type="checkbox"]:focus + .checkbox-indicator,
+.checkbox-option input[type="checkbox"]:hover + .checkbox-indicator {
+  /*width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");*/
+  opacity: 1;
+/*  background-repeat: no-repeat;*/
+  cursor: pointer;
+}
+.checkbox-option input[type="checkbox"]:checked + .checkbox-indicator {
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
+  opacity: 0.6;
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.option1 input[type="checkbox"]:checked + .indicator1,
-.option2 input[type="checkbox"]:checked + .indicator2,
-.option3 input[type="checkbox"]:checked + .indicator3,
-.option4 input[type="checkbox"]:checked + .indicator4,
-.option5 input[type="checkbox"]:checked + .indicator5 {
+.checkbox-option input[type="checkbox"]:checked:hover + .checkbox-indicator {
+  opacity: 1;
+}
+.checkbox-option input[type="checkbox"]:active + .checkbox-indicator {
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
-  filter: opacity(0.8);
+  opacity: 1;
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.option1 input[type="checkbox"]:disabled + .indicator1,
-.option2 input[type="checkbox"]:disabled + .indicator2,
-.option3 input[type="checkbox"]:disabled + .indicator3,
-.option4 input[type="checkbox"]:disabled + .indicator4,
-.option5 input[type="checkbox"]:disabled + .indicator5 {
+.checkbox-option input[type="checkbox"]:disabled + .checkbox-indicator {
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
@@ -1581,6 +1579,7 @@ border: solid 2px #ffffff;
 border-radius: 20px;
 background: rgba(255,255,255, 0.3);
 color: #ffffff;
+margin-top: 22px; /*-чтоб кнопка не расползалась на всю высоту строки-*/
 }
 input[type=submit]:hover,
 input[type=submit]:focus {
