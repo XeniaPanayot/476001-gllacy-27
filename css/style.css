@@ -678,6 +678,9 @@ input[type="text"]:focus {
 .catalog-item {
   width: 280px;
 }
+.catalog-item {
+  margin-bottom: 100px;
+}
 
 .bestseller-text,
 .catalog-text {
@@ -694,7 +697,7 @@ input[type="text"]:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .item-card {
@@ -794,6 +797,11 @@ input[type="text"]:focus {
 .bestseller-item:focus .item-background {
   display: block;
   z-index: 2;
+}
+.catalog-item:hover,
+.catalog-item:focus {
+  position: relative;
+  z-index: 5;
 }
 /*---------------FEATURES-----------------*/
 .features-container {
