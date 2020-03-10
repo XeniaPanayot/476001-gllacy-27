@@ -75,7 +75,16 @@ h3 {
 }
 
 
-
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="text"]:hover,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+}
 
 
 /* --------- NAVIGATION -------------*/
@@ -195,6 +204,8 @@ h3 {
   color: #ffffff;
   text-align: center;
 }
+
+/*----SEARCH-------*/
 .user-menu-search {
   position: relative;
 }
@@ -213,17 +224,37 @@ h3 {
 .search-button:focus path  {
   fill: #323232;
 }
+/*--------------SEARCH modal-------------*/
 .modal-search {
   position: absolute;
   top: 41px;
   right: -3px;
+  border: solid 1px rgba(178, 178, 178, 0.52);
 
-  display: none;
+  /*display: none;*/
+}
+.modal-search {
+  width: 341px;
+  background-color: #f8f7f3;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px 15px 20px 15px;
+}
+.modal-search-field {
+  width: 311px;
+  color: #999999;
+  border: solid 1px rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 10px;
+  padding: 15px;
 }
 .search-button:hover + .modal-search,
 .search-button:focus + .modal-search {
   display: block;
 }
+
 
 /*------------------LOGIN user menu------------------*/
 .user-menu-login {
@@ -306,12 +337,7 @@ h3 {
 .login-button:focus + .modal-login  {
   display: block;
 }
-input[type="email"]:hover,
-input[type="password"]:hover,
-input[type="email"]:focus,
-input[type="password"]:focus {
-  border: solid 2px rgba(154, 154, 154, 0.52);
-}
+
 /*--------------------CART user menu---------*/
 .user-menu-cart {
   position: relative;
@@ -640,7 +666,9 @@ input[type="password"]:focus {
   padding: 0 20px;
 }
 .bestsellers-list,
-.catalog-list {
+.catalog-list,
+.card-wrap2-content,
+.card-wrap1-content {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -675,8 +703,16 @@ input[type="password"]:focus {
   list-style: none;
   position: relative;
 }
-
+.card-wrap1-content {
+  position: relative;
+  z-index: 3;
+}
+.card-wrap2-content {
+  position: absolute;
+  z-index: 4;
+}
 .bestseller-card .item-image::before {
+/*---бейдж Хит на главной странице-----*/
   content: "";
   height: 67px;
   width: 67px;
@@ -727,6 +763,7 @@ input[type="password"]:focus {
   font-weight: bold;
   margin-left: 42px;
   margin-top: 340px;
+  cursor: pointer;
 
   display: none;
 }
@@ -1153,6 +1190,10 @@ color: #e84d37;
 .modal-feedback textarea {
   width: 428px;
   margin-bottom: 23px;
+}
+.modal-feedback textarea:hover,
+.modal-feedback textarea:focus {
+  border: solid 2px rgba(154, 154, 154, 0.52);
 }
 .feedback-submit-button {
   padding: 12px 24px 11px 24px;
@@ -1596,7 +1637,7 @@ https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html ----*/
 }
 /*--------------FILTER Button----------------*/
 
-input[type=submit] {
+.filters-form input[type=submit] {
 width: 144px;
 border: solid 2px #ffffff;
 border-radius: 20px;
@@ -1604,12 +1645,12 @@ background: rgba(255,255,255, 0.3);
 color: #ffffff;
 margin-top: 22px; /*-чтоб кнопка не расползалась на всю высоту строки-*/
 }
-input[type=submit]:hover,
-input[type=submit]:focus {
+.filters-form input[type=submit]:hover,
+.filters-form input[type=submit]:focus {
   background-color: #ffffff;
   color: #323232;
 }
-input[type=submit]:active {
+.filters-form input[type=submit]:active {
   box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
   color: #323232;
