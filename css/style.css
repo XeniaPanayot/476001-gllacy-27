@@ -1311,12 +1311,7 @@ border-radius: 50%;
   display: flex;
   flex-direction: column;
 }
-.filter-sorter label {
-  display: block;
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
+
 .filter-sorter select {
   /* Hide default arrow */
 appearance: none;
@@ -1354,119 +1349,58 @@ appearance: none;
 }
 
 /*-------------------RANGE Filter------------------*/
+.filter-range-wrap {
+  position: relative;
+  width: 220px;
+  height: 37px;
+  border-radius: 20px;
+  background: rgba(255,255,255, 0.3);
+}
 
-/*=== We need two range inputs inside a wrapper. They both have the same minimum and maximum value.
-<fieldset> cannot be a flex or grid container.To go around this, we use the following ARIA equivalent <div aria-labelledby="range-price">.
+.range-bar {
+  position: absolute;
+  top: 19px;
+  left: 23px;
 
-Option2: https://mikejolley.com/2019/08/02/building-a-cross-browser-compatible-multi-handle-range-slider/
-Option3: http://danielstern.ca/range.css/#/---*/
+  width: 176px;
+  height: 4px;
+  opacity: 0.5;
+  background-color: #f8f7f4;
+}
+.range-thumb1,
+.range-thumb2 {
 
-/*---- USING https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
-https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html ----*/
-    input[type=range] {
-      -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-      width: 100%; /* Specific width is required for Firefox. */
-      background: transparent; /* Otherwise white in Chrome */
-    }
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+  border: solid 9px #ffffff;
+}
+.range-thumb1 {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}
 
-    input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-    }
-
-    input[type=range]:focus {
-      outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-    }
-
-    input[type=range]::-ms-track {
-      width: 100%;
-      cursor: pointer;
-
-      /* Hides the slider so custom styles can be added */
-      background: transparent;
-      border-color: transparent;
-      color: transparent;
-    }
-    /* Special styling for WebKit/Blink */
-    input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      border: 10px solid #ffffff;
-      height: 22px;
-      width: 22px;
-      border-radius: 50px;
-      background: #849d8f;
-      cursor: pointer;
-      margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-    }
-
-    /* All the same stuff for Firefox */
-    input[type=range]::-moz-range-thumb {
-      border: 10px solid #ffffff;
-      height: 22px;
-      width: 22px;
-      border-radius: 50px;
-      background: #849d8f;
-      cursor: pointer;
-    }
-
-    /* All the same stuff for IE */
-    input[type=range]::-ms-thumb {
-      border: 10px solid #ffffff;
-      height: 22px;
-      width: 22px;
-      border-radius: 50px;
-      background: #849d8f;
-      cursor: pointer;
-    }
-
-    input[type=range]::-webkit-slider-runnable-track {
-      width: 100%;
-      height: 4px;
-      cursor: pointer;
-      background: #f8f7f4;
-    }
-
-    input[type=range]:focus::-webkit-slider-runnable-track {
-      background: #f8f7f4;
-    }
-
-    input[type=range]::-moz-range-track {
-      width: 100%;
-      height: 4px;
-      cursor: pointer;
-      background: #f8f7f4;
-    }
-
-    input[type=range]::-ms-track {
-      width: 100%;
-      height: 4px;
-      cursor: pointer;
-      background: #f8f7f4;
-    }
-    input[type=range]::-ms-fill-lower {
-      background: #d1dad3;
-    }
-    input[type=range]:focus::-ms-fill-lower {
-      background: #d1dad3;
-    }
-    input[type=range]::-ms-fill-upper {
-      background: #d1dad3;
-    }
-    input[type=range]:focus::-ms-fill-upper {
-      background: #d1dad3;
-    }
+.range-thumb2 {
+  position: absolute;
+  top: 10px;
+  left: 133px;
+}
 /*-------------FILTER  Radio -----------------*/
 /*----In html: <label class="labelclass"><input type="radio" class="visually-hidden"><span class="customized-indicator"></span>an option<label>;
 ---CSS selector for the hidden element: .labelclass input[type="radio"]
 ---CSS selector for the new element: .customized-indicator;
 ---flex container with justify-content: space around (absolutely positioned radiobuttons)---*/
 .radio-filter-label,
-.checkbox-filter-label {
+.checkbox-filter-label,
+.range-filter-label,
+.filter-sorter label {
+  margin: 0; /* для обнуления  марджинов у range-filter-label-----*/
   font-size: 14px;
   line-height: 16px;
   display: block;
   margin-bottom: 6px;
   padding-left: 11px;
-  cursor: pointer;
 }
 
 .radio-filter {

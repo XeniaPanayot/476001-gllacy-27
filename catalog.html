@@ -110,9 +110,9 @@
              <label for="sorter">Сортировка:</label>
              <select name="sort" id="sorter">
               <option value="popular">По популярности</option>
-              <option value="">Сначала недорогие</option>
-              <option value="">Сначала дорогие</option>
-              <option value="">По жирности</option>
+              <option value="cheap">Сначала недорогие</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="fat-content">По жирности</option>
              </select>
             </div>
         <!--    <div class="filter-range range-wrap" role="group" aria-labelledby="range-price">
@@ -122,7 +122,7 @@
              <label for="range-price2" class="visually-hidden">Стоимость до:</label>
              <input type="range" name="price-range" value="400" min="100" max="500" id="range-price2">
            </div> --->
-           <div class="range-wrap" role="group" aria-labelledby="range-price">
+        <!-- <div class="range-wrap" role="group" aria-labelledby="range-price">
                 <div class="range-label" id="range-price">Цена: 100 руб. – 500 руб.</div>
                 <div class="filter-range">
                 <label for="range-price1" class="visually-hidden">Стоимость от:</label>
@@ -131,13 +131,21 @@
                 <input type="range" name="price-range" value="400" min="250" max="500" id="range-price2">
 
               </div>
-              </div>
+              </div>  --->
+          <div class="filter-range">
+              <p class="range-filter-label">Цена: 100 руб. – 500 руб.</p>
+              <div class="filter-range-wrap">
+              <div class="range-bar"></div>
+              <div class="range-thumb1"></div>
+              <div class="range-thumb2"></div>
+            </div>
+            </div>
+
+
 
           <div class="filter-radio" role="radiogroup">
           <label for="fat-choice" class="radio-filter-label">Жирность:</label>
-
           <div class="radio-filter" id="fat-choice">
-
           <label class="radio-choice1">
           <input type="radio" name="fat" value="0%" id="fat-choice1" class="visually-hidden">
           <span class="radio-indicator1"></span>
