@@ -48,6 +48,8 @@ body {
 
  text-align: center;
  vertical-align: middle;
+
+ cursor: pointer;
 }
 a {
   text-underline-position: under;
@@ -231,7 +233,7 @@ input[type="text"]:focus {
   right: -3px;
   border: solid 1px rgba(178, 178, 178, 0.52);
 
-  /*display: none;*/
+  display: none;
 }
 .modal-search {
   width: 341px;
@@ -239,6 +241,7 @@ input[type="text"]:focus {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   padding: 20px 15px 20px 15px;
+  cursor: pointer;
 }
 .modal-search-field {
   width: 311px;
@@ -297,7 +300,6 @@ input[type="text"]:focus {
 }
 /*problem with :hover: the black text doesn't syncronize with the white background of the button, if cursor is not exactly on the text, the whole button is white. Solved by combining them .login-button:hover .login-text*/
 .modal-login {
-  /*position: relative; I needed it designing the html, but for positioning I need position: absolute*/
   position: absolute;
   top: 41px;
   right: 1px;
@@ -334,7 +336,8 @@ input[type="text"]:focus {
 }
 
 .login-button:hover + .modal-login,
-.login-button:focus + .modal-login  {
+.login-button:focus + .modal-login,
+.login-button:hover + .modal-login  {
   display: block;
 }
 
@@ -1237,6 +1240,11 @@ color: #e84d37;
   border-radius: 10px;
   padding: 15px;
 }
+.modal-search input[type="search"]:hover,
+.modal-search input[type="search"]:focus {
+  padding: 14px; /*-- чтоб не прыгали --*/
+}
+
 /*-------PAGINATION ------------------*/
 .pagination-container {
   display: flex;
@@ -1258,7 +1266,7 @@ color: #e84d37;
 
 .pagination-list li:first-child::before {
   content: "";
-  display: inline-block;
+  display: block;
   position: absolute;
   background-image: url(../img/icon-right-small.svg);
 
@@ -1266,20 +1274,20 @@ color: #e84d37;
   height: 20px;
   background-repeat: no-repeat;
   transform: rotate(180deg);
-  left: -7px;
-  top: -3px;
+  left: -27px;
+  top: -4px;
 }
 .pagination-list li:last-child::after {
   content: "";
-  display: inline-block;
+  display: block;
   position: absolute;
   background-image: url("../img/icon-right-small0.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   left: 170px;
-    top: 3px;
-        cursor: pointer;
+  top: 3px;
+  cursor: pointer;
 }
 .pagination a:hover,
 .pagination a:focus {
@@ -1295,11 +1303,12 @@ border-radius: 50%;
   border-radius: 50%;
 }
 .pagination-list li:first-child:hover::before,
-.pagination-list li:first-child:focus::before {
-  background: red;
-}
-.pagination-arrow {
-  opacity: 0;
+.pagination-list li:first-child:focus-within::before,
+.pagination-list li:first-child:focus::before,
+.pagination-list li:last-child:hover::after,
+.pagination-list li:last-child:focus-within::after,
+.pagination-list li:last-child:focus::after {
+  outline: inherit;
 }
 
 /*------------FILTERS ---------------------*/
