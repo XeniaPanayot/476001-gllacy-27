@@ -667,9 +667,7 @@ input[type="text"]:focus {
   padding: 0 20px;
 }
 .bestsellers-list,
-.catalog-list,
-.card-wrap2-content,
-.card-wrap1-content {
+.catalog-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -678,9 +676,12 @@ input[type="text"]:focus {
 .bestseller-item,
 .catalog-item {
   width: 268px;
+  min-height: 280px;
 }
 .catalog-item {
-  margin-bottom: 100px;
+  margin-bottom: 83px;
+  margin-right: 18px;
+  position: relative;
 }
 
 .bestseller-text,
@@ -698,10 +699,17 @@ input[type="text"]:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 84px;
+  margin-bottom: 46px;
 }
-
-.item-card {
+.item-card-wrap1 {
+  position: relative;
+  z-index: 3;
+}
+.item-card-wrap2 {
+  position: absolute;
+  z-index: 4;
+}
+/*.item-card {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -714,7 +722,7 @@ input[type="text"]:focus {
 .card-wrap2-content {
   position: absolute;
   z-index: 4;
-}
+}*/
 .bestseller-card .item-image::before {
 /*---бейдж Хит на главной странице-----*/
   content: "";
@@ -726,6 +734,8 @@ input[type="text"]:focus {
 }
 
 .item-image {
+  position: absolute;
+  z-index: 4; /*image shouldnt be covered by the item-background*/
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -753,20 +763,22 @@ input[type="text"]:focus {
   max-width: 260px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-top: 271px;
+  padding-left: 6px;
 }
 
 .item-price {
   position: absolute;
   top: 210px;
+  z-index: 5;
 }
 .item-card-button {
-  padding: 12px 15px 12px 15px;
+  padding: 8px 13px 13px 17px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  margin-left: 42px;
-  margin-top: 340px;
+  margin-left: 46px;
+  margin-top: 338px;
   cursor: pointer;
 
   display: none;
@@ -779,14 +791,15 @@ input[type="text"]:focus {
 }
 
 .item-background {
-  position:absolute;
-  width: 280px;
-  height: 405px;
+  position: absolute;
+  width: 292px;
+  height: 406px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  /*background-color: #9bafa3;*/ /*background-color is supposed to change matching the slide color, so I'm making it with opacity*/
-  border-radius: 10px;
-  background:rgba(255,255,255, 0.3);
-
+    /* background-color: #9bafa3; */
+  border-radius: 4px;
+  background: rgba(255,255,255, 0.3);
+  top: -5px;
+  left: -10px;
   display: none;
 }
 .catalog-item:hover .item-background,
@@ -970,14 +983,29 @@ input[type="text"]:focus {
   justify-content: space-between;
 }
 /*-----------------Footer-----------------*/
-.footer-container {
-  width: 1154px;
-  border-top: solid 1px #a9bbb1;
 
-  padding: 18px 22px 25px 24px;
+.footer-container {
   display: flex;
-  justify-content: space-between;
+  width: 1101px;
+  border-top: solid 1px #a9bbb1;
+  padding: 15px 0 25px 0px; /* padding-top differs for the sections in the Footer, here is the minimum fitting the COPYRIGHT section only---*/
+  margin-left: 19px;
 }
+
+.social {
+  width: 395px;
+  padding-top: 18px;
+}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+/*----------SOCIAL in Footer -------------*/
+.social-item {
+  padding-right: 11px;
+}
+
 .social-list,
 .documents-column {
   list-style: none;
@@ -998,17 +1026,24 @@ input[type="text"]:focus {
   opacity: 0.6;
   border: solid 3px #dae2de;
 }
+/*-------------DOCUMENTS in Footer -----------*/
+.footer-documents {
+  width: 550px;
+  padding-top: 13px;
+  padding-left: 77px;
+}
 .documents-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 390px;
+  max-width: 390px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 .documents-list li {
   height: min-content;
+  padding-bottom: 4px;
 }
 .documents-list a {
   color: #ffffff;
@@ -1038,18 +1073,26 @@ color: #e84d37;
 .documents-suppliers::before {
   content: "";
   position: absolute;
-  left: -17px;
-  top: 2px;
+  left: -21px;
+  top: 4px;
   width: 15px;
   height: 13px;
   background-image: url("../img/heart.svg");
 }
 
+/*===== COPYRIGHT in Footer---------*/
+.copyright {
+  width: 198px;
+}
+.copyright a {
+  padding-left: 54px;
+}
 .copyright-text {
   color: #fefefe;
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
 }
 .copyright-name {
@@ -1063,7 +1106,7 @@ color: #e84d37;
 .copyright-text:active {
 color: #e84d37;
 }
-/*----------------Крошки ------------------*/
+
 
 /*-------------MODAL popouts--------------------*/
 .login-submit-button {
@@ -1077,32 +1120,6 @@ color: #e84d37;
 
 
 
-.social {
-  width: 420px;
-}
-.social-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 15px;
-}
-/*---- alternative for links
-.twitter {
-  background-image: url("../img/twitter.svg");
-}
-.instagram {
-  background-image: url("../img/instagram.svg");
-}
-.facebook {
-  background-image: url("img/fb.svg");
-}
-.vkontakte {
-  background-image: url("../img/vk.svg");
-}
-  background-repeat: no-repeat;
-*/
-.social-item {
-  padding-right: 17px;
-}
 
 
 /*---------MODAL Elements--------------*/
@@ -1244,11 +1261,14 @@ color: #e84d37;
   justify-content: flex-end;
 }
 .pagination-list {
+
+  position: relative;
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-      position: relative;
+
+  margin-bottom: 34px;
 }
 
 .pagination a {
@@ -1267,7 +1287,7 @@ color: #e84d37;
   height: 20px;
   background-repeat: no-repeat;
   transform: rotate(180deg);
-  left: -27px;
+  left: -35px;
   top: -4px;
 }
 .pagination-list li:last-child::after {
@@ -1294,6 +1314,9 @@ border-radius: 50%;
   color: #323232;
   background-color: #ffffff;
   border-radius: 50%;
+}
+.pagination-list li:nth-last-child(2) {
+  padding-right: 17px;
 }
 .pagination-list li:first-child:hover::before,
 .pagination-list li:first-child:focus-within::before,
