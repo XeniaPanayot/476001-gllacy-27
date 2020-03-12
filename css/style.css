@@ -66,7 +66,7 @@ a {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 35px;
   line-height: 30px;
   margin: 0;
 }
@@ -95,7 +95,7 @@ input[type="text"]:focus {
 }
 .nav-menu {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 21px;
   display: flex;
 }
 .logo {
@@ -112,15 +112,14 @@ input[type="text"]:focus {
 
 .site-menu {
   width: 60%;
-  padding: 30px 20px 20px 15px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 19px;
-  padding-left: 11px;
+  margin-top: 21px;
+  margin-left: 10px;
 }
 .site-menu > li {
-  padding-right: 6px;
 }
+
 .user-menu {
   width: 40%;
   display: flex;
@@ -151,7 +150,10 @@ input[type="text"]:focus {
 .submenu a {
   line-height: 18px;
   color: #ffffff;
-  padding: 9px 10px 10px 12px;
+  /*padding: 9px 10px 10px 12px;*/
+}
+.site-menu a {
+ padding: 3px 12px 8px 11px;
 }
 .submenu a {
   display: block;
@@ -202,7 +204,7 @@ input[type="text"]:focus {
   background-color: #ededed;
 }
 .active > a {
-  padding: 9px 10px 10px 12px;
+ padding: 3px 12px 8px 11px;
   border-radius: 20px;
   background-color: #d07058;
   text-decoration: none;
@@ -355,13 +357,17 @@ input[type="text"]:focus {
   background-size: 17px 17px;
 }
 .contact {
-  display: block;
   min-height: 55px;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .contact-telephone {
   color: #ffffff;
   font-size: 22px;
-  line-height: 24px;
+  line-height: 30px;
   text-decoration: none;
 }
 .contact-telephone:hover,
@@ -370,6 +376,16 @@ input[type="text"]:focus {
 }
 .contact-telephone:active {
   color: #e84d37;
+}
+.contact-inner-page {
+  position: absolute;
+  left: 1000px;
+  top: 61px;
+  width: 200px;
+}
+.contact-inner-page span {
+  font-size: 14px;
+  margin-left: 17px;
 }
 .modal-cart {
   position: absolute;
@@ -438,9 +454,8 @@ input[type="text"]:focus {
 .cart-full:focus + .modal-cart {
  display: block;
 }
-.contact {
-  font-size: 14px;
-}
+
+
 /*-----------SLIDER --------------------*/
 .slider {
   position: relative;
@@ -626,7 +641,7 @@ input[type="text"]:focus {
 .breadcrumbs li {
   display: inline-block;
   vertical-align: bottom;
-  padding-right: 20px;
+  padding-right: 3px;
 }
 .breadcrumbs a,
 .breadcrumbs li:last-child {
@@ -1057,12 +1072,7 @@ color: #e84d37;
 
 /*=======temporary OUTLINES & SIZES=========*/
 
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-end;
-}
+
 
 
 
@@ -1302,6 +1312,7 @@ border-radius: 50%;
 .filter-sorter {
   display: flex;
   flex-direction: column;
+  margin-right: 14px;
 }
 
 .filter-sorter select {
@@ -1394,15 +1405,18 @@ appearance: none;
   margin-bottom: 6px;
   padding-left: 11px;
 }
-
+.filter-range {
+  margin-right: 14px;
+  margin-bottom: 17px;
+}
 .radio-filter {
   display: flex;
-  width: 415px;
+  width: 393px;
   border-radius: 20px;
   background: rgba(255,255,255, 0.3);
   color: #ffffff;
   justify-content: space-around;
-  padding: 14px 1px 12px 14px;
+  padding: 9px 1px 11px 21px;
 }
 
 .radio-choice1,
@@ -1412,6 +1426,17 @@ appearance: none;
   position: relative;
   font-size: medium;
 }
+.radio-choice1 {
+  margin-left: 24px;
+  margin-right: 49px;
+}
+.radio-choice2 {
+  margin-right: 51px;
+}
+.radio-choice3 {
+  margin-right: 51px;
+}
+
 .radio-choice1 input[type="radio"] + .radio-indicator1,
 .radio-choice2 input[type="radio"] + .radio-indicator2,
 .radio-choice3 input[type="radio"] + .radio-indicator3,
@@ -1434,11 +1459,11 @@ appearance: none;
 
 .radio-choice3 input[type="radio"] + .radio-indicator3 {
   top: 0;
-  right: 60px;
+  right: 62px;
 }
 .radio-choice4 input[type="radio"] + .radio-indicator4 {
   top: 0;
-  right: 85px;
+  right: 87px;
 }
 .radio-choice1 input[type="radio"] {
   top: 2px;
@@ -1484,12 +1509,14 @@ appearance: none;
 
 .checkbox-filter {
   display: flex;
-  width: 703px;
+  width: 690px;
   border-radius: 20px;
   background: rgba(255,255,255, 0.3);
   color: #ffffff;
   justify-content: space-around;
-  padding: 15px 2px 11px 10px;
+  padding: 9px 1px 8px 12px;
+  margin-bottom: 39px;
+  margin-right: 13px;
 }
 
 .checkbox-option {
@@ -1501,30 +1528,30 @@ appearance: none;
 }
 /*------ Положение нового чекбокса относительно лейбла, option1 -1ый элемент-- */
 .option1 input[type="checkbox"] + .indicator1 {
-  right: 100px;
-  top: -2px;
+  right: 98px;
+  top: -3px;
 }
 .option2 input[type="checkbox"] + .indicator2 {
-  right: 156px;
-  top: -2px;
+  right: 158px;
+  top: -3px;
 }
 .option3 input[type="checkbox"] + .indicator3 {
-  right: 61px;
-  top: -2px;
+  right: 67px;
+  top: -3px;
 }
 .option4 input[type="checkbox"] + .indicator4 {
-  right: 61px;
-  top: -2px;
+  right: 67px;
+  top: -3px;
 }
 .option5 input[type="checkbox"] + .indicator5 {
-  right: 59px;
-  top: -2px;
+  right: 69px;
+  top: -3px;
 }
 
 .checkbox-indicator {
   position: absolute;
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 24px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.7;
@@ -1577,7 +1604,8 @@ border: solid 2px #ffffff;
 border-radius: 20px;
 background: rgba(255,255,255, 0.3);
 color: #ffffff;
-margin-top: 22px; /*-чтоб кнопка не расползалась на всю высоту строки-*/
+margin-top: 22px;
+margin-bottom: 38px; /*-чтоб кнопка не расползалась на всю высоту строки-*/
 }
 .filters-form input[type=submit]:hover,
 .filters-form input[type=submit]:focus {
