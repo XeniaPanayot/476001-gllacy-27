@@ -703,7 +703,7 @@ input[type="text"]:focus {
 .breadcrumbs {
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 7px;
   /*display: flex;*/
 }
 .breadcrumbs li {
@@ -726,13 +726,14 @@ input[type="text"]:focus {
 }
 /*-----------GOODS section--------------*/
 .catalog-heading {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 .catalog-container,
 .filters-container,
 .heading-container {
   width: 1160px;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
+  padding-left: 17px;
 }
 .bestsellers-list,
 .catalog-list {
@@ -743,12 +744,11 @@ input[type="text"]:focus {
 
 .bestseller-item,
 .catalog-item {
-  width: 268px;
+  width: 280px;
   min-height: 280px;
 }
 .catalog-item {
   margin-bottom: 83px;
-  margin-right: 18px;
   position: relative;
 }
 
@@ -773,7 +773,12 @@ input[type="text"]:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.bestsellers-list {
   margin-bottom: 83px;
+}
+.catalog-list {
+  margin-bottom: 42px;
 }
 .item-card-wrap1 {
   position: relative;
@@ -822,16 +827,16 @@ input[type="text"]:focus {
 .item-text {
   display: block;
   line-height: 22px;
-  max-width: 260px;
+  max-width: 254px;
   text-align: center;
   color: #ffffff;
-  margin-top: 279px;
+  margin-top: 277px;
   padding-left: 12px;
 }
 
 .item-price {
   position: absolute;
-  top: 210px;
+  top: 205px;
   z-index: 5;
 }
 .item-card-button {
@@ -881,7 +886,7 @@ input[type="text"]:focus {
 }
 /*---------------FEATURES-----------------*/
 .features-container {
-  width: 1112px; /* 1152px of the container width minus paddings that add 50px to the total width*/
+  width: 1114px; /* 1160px of the container width minus paddings */
   background-image: url("../img/waffer-background.jpg");
   border-radius: 15px;
   padding: 24px 30px 0px 22px;
@@ -892,7 +897,7 @@ input[type="text"]:focus {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .features-container,
@@ -905,18 +910,16 @@ input[type="text"]:focus {
 .features {
   display: flex;
   flex-wrap: wrap;
-}
-
-.features-item {
-  display: block;
-  width: 550px;
-}
-
-.features {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.features-item {
+  display: block;
+  width: 556px;
+}
+
 .features-text_icecream,
 .features-text_eco,
 .features-text_cow,
@@ -924,9 +927,9 @@ input[type="text"]:focus {
   margin: 0;
   padding: 0;
   position: relative;
-  margin-left: 55px;
-  margin-bottom: 25px;
-  padding-right: 30px;
+  margin-left: 57px;
+  margin-bottom: 23px;
+  padding-right: 7px;
 }
 .features-text_icecream::before,
 .features-text_eco::before,
@@ -955,9 +958,8 @@ input[type="text"]:focus {
 .news {
   border-radius: 20px;
   background-image: url("../img/Strawberry_background.jpg");
-  background-position-y: 38%;
-  background-position-x: 17%;
-
+  background-position-y: 39%;
+  background-position-x: 16%;
 }
 .news-title {
   font-size: 16px;
@@ -986,10 +988,11 @@ input[type="text"]:focus {
 }
 /*NB!!! add paddinds to width for the actual sizes*/
 .news {
-  padding: 26px 20px 10px 20px;
+  padding: 23px 20px 10px 20px;
 }
 .news-title {
   margin: 0;
+  margin-bottom: 3px;
 }
 .news-item {
   display: block;
@@ -999,7 +1002,7 @@ input[type="text"]:focus {
 
 .subscribe-wrapper {
   min-height: 220px;
-  width: 560px;
+  width: 572px;
 
   position: relative;
   background-image: url("../img/subscribe-background.png");
@@ -1011,8 +1014,8 @@ input[type="text"]:focus {
   top: 5px;
   width: 507px;
   background-color: #f8f7f4;
-  border-radius: 20px;
-  padding: 33px 18px 38px 18px;
+  border-radius: 13px;
+  padding: 29px 25px 36px 18px;
 }
 .subscribe-text {
   color: #5a5a5a;
@@ -1023,21 +1026,23 @@ input[type="text"]:focus {
 .submit-subscribe-button {
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 18px 10px 18px;
+  padding: 7px 18px 12px 19px;
 }
 
 .subscribe-text {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
+  line-height: 22px;
 }
 .subscribe-email {
 }
 .subscribe-email-input {
-  width: 354px;
-  height: 44px;
-  padding-left: 14px;
+  width: 350px;
+  height: 39px;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: bold;
+  padding-left: 14px;
 }
 .subscribe-form {
   display: flex;
@@ -1046,24 +1051,36 @@ input[type="text"]:focus {
 }
 /*-----------------Footer-----------------*/
 
-.footer-container {
+.footer-container-inner {
   display: flex;
   width: 1101px;
   border-top: solid 1px #a9bbb1;
-  padding: 15px 0 25px 0px; /* padding-top differs for the sections in the Footer, here is the minimum fitting the COPYRIGHT section only---*/
-  margin-left: 19px;
+ /* padding-top differs for the sections in the Footer, here is the minimum fitting the COPYRIGHT section only---*/
+  padding: 17px 0px 16px 0px;
+}
+.footer-container-index {
+  display: flex;
+  width: 1160px;
+  padding: 2px 1px 7px 1px;
 }
 
-.social {
+/*----------SOCIAL in Footer -------------*/
+
+.footer-container-inner .social {
   width: 395px;
   padding-top: 18px;
+  margin-left: 19px;
+}
+.footer-container-index .social {
+  width: 346px;
+  padding-top: 18px;
+  margin-left: 4px;
 }
 .social-list {
   display: flex;
   flex-wrap: wrap;
   padding-top: 15px;
 }
-/*----------SOCIAL in Footer -------------*/
 .social-item {
   padding-right: 11px;
 }
@@ -1090,9 +1107,9 @@ input[type="text"]:focus {
 }
 /*-------------DOCUMENTS in Footer -----------*/
 .footer-documents {
-  width: 550px;
-  padding-top: 13px;
-  padding-left: 77px;
+  width: 457px;
+  padding-top: 16px;
+  padding-left: 80px;
 }
 .documents-list {
   list-style: none;
@@ -1147,7 +1164,7 @@ color: #e84d37;
   width: 198px;
 }
 .copyright a {
-  padding-left: 54px;
+  padding-left: 73px;
 }
 .copyright-text {
   color: #fefefe;
@@ -1170,23 +1187,13 @@ color: #e84d37;
 }
 
 
-/*-------------MODAL popouts--------------------*/
-
-
-/*=======temporary OUTLINES & SIZES=========*/
-
-
-
-
-
-
-
 
 /*---------MODAL Elements--------------*/
 .map {
   background-image: url("../img/map.jpg");
-  background-position: center;
   background-size: cover; /*is it ok??---*/
+  background-position-x: 7px;
+  background-position-y: -124px;
   margin-bottom: 15px;
 }
 .map-container{
@@ -1196,18 +1203,15 @@ color: #e84d37;
 }
 .modal-address {
   position: absolute;
-  top: 50px;
-  right: 24px;
+  top: 63px;
+    right: 7px;
   background-color: #fefdfc;
   color: #323232;
   width: 252px;
   border-radius: 10px;
-  padding: 30px 25px 30px 25px;
+  padding: 30px 25px 33px 25px;
 }
-.modal-address span {
-  display: block; /*comment---*/
 
-}
 .modal-text {
   margin: 0;
   display: block;
@@ -1215,21 +1219,27 @@ color: #e84d37;
   line-height: 20px;
   max-width: 158px;
 }
-.modal-address b {
+.modal-address-location {
+  display: block;
   font-size: 18px;
   line-height: 24px;
-  display: block;
-}
-.modal-address-location {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 .modal-telephone-order {
-  margin-bottom: 12px;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
 }
 .modal-telephone {
-  margin-bottom: 10px;
+  font-size: 18px;
+line-height: 22px;
+  margin-bottom: 3px;
 }
 .modal-address-open {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
   margin-bottom: 26px;
 }
 .modal-address-button {
@@ -1237,7 +1247,16 @@ color: #e84d37;
   color: #fefefe;
 }
 
-
+.modal-address::before {
+  content: "";
+  position: absolute;
+  top: 76px;
+  right: 828px;
+  width: 80px;
+  height: 140px;
+  background-image: url(../img/pin.svg);
+  background-repeat: no-repeat;
+}
 /*------------MODAL feedback ----------------*/
 .modal-feedback {
   position: relative;
@@ -1398,7 +1417,7 @@ border-radius: 50%;
 .filter-sorter {
   display: flex;
   flex-direction: column;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 .filter-sorter select {
@@ -1488,8 +1507,8 @@ appearance: none;
   font-size: 14px;
   line-height: 16px;
   display: block;
-  margin-bottom: 6px;
-  padding-left: 11px;
+  margin-bottom: 5px;
+  padding-left: 17px;
 }
 .filter-range {
   margin-right: 14px;
@@ -1514,10 +1533,10 @@ appearance: none;
 }
 .radio-choice1 {
   margin-left: 24px;
-  margin-right: 49px;
+  margin-right: 39px;
 }
 .radio-choice2 {
-  margin-right: 51px;
+  margin-right: 33px;
 }
 .radio-choice3 {
   margin-right: 51px;
@@ -1540,16 +1559,16 @@ appearance: none;
 }
 .radio-choice2 input[type="radio"] + .radio-indicator2 {
   top: 0;
-  right: 60px;
+  right: 62px;
 }
 
 .radio-choice3 input[type="radio"] + .radio-indicator3 {
   top: 0;
-  right: 62px;
+  right: 54px;
 }
 .radio-choice4 input[type="radio"] + .radio-indicator4 {
   top: 0;
-  right: 87px;
+  right: 99px;
 }
 .radio-choice1 input[type="radio"] {
   top: 2px;
