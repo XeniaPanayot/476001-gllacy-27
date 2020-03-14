@@ -98,8 +98,11 @@ input[type="search"]:focus,
 input[type="text"]:focus {
   border: solid 2px rgba(154, 154, 154, 0.52);
 }
-
-
+ /*---to backup custom images---*/
+/*img {
+  max-width: 100%;
+  height: auto;
+}*/
 /* --------- NAVIGATION -------------*/
 .nav-container {
   width: 1160px;
@@ -271,7 +274,7 @@ input[type="text"]:focus {
 }
 .user-menu-search:hover .modal-search,
 .user-menu-search:focus .modal-search,
-.user-menu-search:active  .modal-search {
+.user-menu-search:active .modal-search {
   display: block;
 }
 
@@ -279,7 +282,7 @@ input[type="text"]:focus {
 /*------------------LOGIN user menu------------------*/
 .user-menu-login {
   position: relative;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
 }
 .login-button {
   display:flex;
@@ -1329,8 +1332,12 @@ line-height: 22px;
   background-color: #ffffff;
   font-size: 14px;
   line-height: 24px;
+  font-weight: bold;
   border-radius: 10px;
   padding: 15px;
+}
+.modal-search-field placeholder {
+  font-weight: 400;
 }
 .modal-search input[type="search"]:hover,
 .modal-search input[type="search"]:focus {
