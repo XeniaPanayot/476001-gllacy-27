@@ -382,6 +382,8 @@ input[type="text"]:focus {
 .user-menu-login:focus .modal-login,
 .user-menu-login:active .modal-login {
   display: block;
+  position: absolute;
+  z-index: 3;
 }
 
 
@@ -453,6 +455,7 @@ input[type="text"]:focus {
   left: 962px;
   top: 73px;
   width: 200px;
+  z-index: 0;
 }
 .contact-inner-page span {
   font-size: 14px;
