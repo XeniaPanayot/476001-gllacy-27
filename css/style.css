@@ -782,10 +782,11 @@ input[type="text"]:focus {
 .item-card-wrap2 {
   position: absolute;
   z-index: 4;
+  width: 270px;
 }
 
 /*---бейдж Хит на главной странице-----*/
-.bestseller-card .item-image::before {
+.bestseller-item .item-image::before {
   content: "";
   height: 67px;
   width: 67px;
