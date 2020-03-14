@@ -129,8 +129,7 @@ input[type="text"]:focus {
   margin-top: 21px;
   margin-left: 10px;
 }
-.site-menu > li {
-}
+
 
 .user-menu {
   width: 40%;
@@ -162,10 +161,9 @@ input[type="text"]:focus {
 .submenu a {
   line-height: 18px;
   color: #ffffff;
-  /*padding: 9px 10px 10px 12px;*/
 }
 .site-menu a {
- padding: 3px 12px 8px 11px;
+ padding: 5px 15px 7px 12px;
 }
 .submenu a {
   display: block;
@@ -205,7 +203,7 @@ input[type="text"]:focus {
 .site-menu > li > a:active {
   border-radius: 20px;
   width: 143px;
-  padding: 9px 10px 10px 12px;
+  padding: 5px 15px 7px 12px;
   color: #323232;
   text-decoration: none;
   background-color: #f7f6f3;
@@ -216,7 +214,7 @@ input[type="text"]:focus {
   background-color: #ededed;
 }
 .active > a {
- padding: 3px 12px 8px 11px;
+  5px 15px 7px 12px;
   border-radius: 20px;
   background-color: #d07058;
   text-decoration: none;
@@ -449,8 +447,8 @@ input[type="text"]:focus {
 }
 .contact-inner-page {
   position: absolute;
-  left: 1000px;
-  top: 61px;
+  left: 962px;
+  top: 73px;
   width: 200px;
 }
 .contact-inner-page span {
@@ -758,6 +756,12 @@ input[type="text"]:focus {
 .catalog-text {
   color: #ffffff;
 }
+.item-name a:hover,
+.item-name a:focus,
+.item-name a:active {
+  color: #ffbc9e;
+}
+
 .item-price-number,
 .catalog-price {
   font-size: 45px;
@@ -769,7 +773,7 @@ input[type="text"]:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 46px;
+  margin-bottom: 83px;
 }
 .item-card-wrap1 {
   position: relative;
@@ -779,22 +783,9 @@ input[type="text"]:focus {
   position: absolute;
   z-index: 4;
 }
-/*.item-card {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-}
-.card-wrap1-content {
-  position: relative;
-  z-index: 3;
-}
-.card-wrap2-content {
-  position: absolute;
-  z-index: 4;
-}*/
-.bestseller-card .item-image::before {
+
 /*---бейдж Хит на главной странице-----*/
+.bestseller-card .item-image::before {
   content: "";
   height: 67px;
   width: 67px;
