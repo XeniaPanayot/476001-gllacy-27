@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +14,8 @@ body {
   background-image: url("../img/Slider-icecream_1.png");
   background-repeat: no-repeat;
   background-position: top center;
+
+  -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
 
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
@@ -42,8 +46,10 @@ body {
 
  border: none;
  border-radius: 20px;
+ background-image: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
  background-image: linear-gradient(to top, #e74a35, #f26843);
- box-shadow: 0px 2px 2px 0 #ac1000;
+ -webkit-box-shadow: 0px 2px 2px 0 #ac1000;
+         box-shadow: 0px 2px 2px 0 #ac1000;
 
  text-align: center;
  vertical-align: middle;
@@ -111,6 +117,8 @@ img {
 .nav-menu {
   width: 100%;
   margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .logo {
@@ -127,8 +135,11 @@ img {
 
 .site-menu {
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 21px;
   margin-left: 10px;
 }
@@ -136,9 +147,14 @@ img {
 
 .user-menu {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 
   padding-top: 13px;
   padding-right: 15px;
@@ -156,7 +172,9 @@ img {
   top: 35px;
   width: 143px;
 
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+          box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 5px;
 }
@@ -215,11 +233,12 @@ img {
   text-align: center;
 }
 .site-menu > li > a:active  {
-  box-shadow: inset 0px 2px 1px 0 #696969;
+  -webkit-box-shadow: inset 0px 2px 1px 0 #696969;
+          box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
 }
 .active > a {
-  5px 15px 7px 12px;
+  padding: 5px 15px 7px 12px;
   border-radius: 20px;
   background-color: #d07058;
   text-decoration: none;
@@ -254,7 +273,8 @@ img {
   right: -3px;
   width: 341px;
   background-color: #f8f7f3;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   padding: 20px 15px 20px 15px;
   cursor: pointer;
@@ -299,6 +319,8 @@ img {
   margin-bottom: 12px;
 }
 .login-button {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   width: 93px;
   border-radius: 20px;
@@ -332,7 +354,8 @@ img {
 }
 .login-button:hover .login-text,
 .login-button:focus .login-text {
-  filter: invert(1);
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 /*problem with :hover: the black text doesn't syncronize with the white background of the button, if cursor is not exactly on the text, the whole button is white. Solved by combining them .login-button:hover .login-text*/
 .modal-login {
@@ -341,10 +364,12 @@ img {
   right: -1px;
   width: 241px;
   background-color: #f8f7f3;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 20px 17px 22px 19px;
   border-radius: 10px;
  display: none;
+ z-index: 3
 }
 .modal-login::before {
   content: "";
@@ -445,11 +470,18 @@ img {
   min-height: 55px;
 }
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
-  align-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
 }
 .contact-telephone {
   color: #ffffff;
@@ -482,7 +514,8 @@ img {
   z-index: 5;
   width: 539px;
   background-color: #f8f7f3;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   padding: 20px 12px 20px 12px;
   display: none;
@@ -561,9 +594,16 @@ img {
 }
 
 .slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .slide {
   display: none;
@@ -591,8 +631,10 @@ img {
     text-decoration: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
     background-color: #f26843;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
     background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+            box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 44px;
     border: none;
     cursor: pointer;
@@ -605,19 +647,23 @@ img {
 }
 .slide-button:hover,
 .slide-button:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+  -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+          box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slide-button:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+  -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+          box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slider-controls {
   position: absolute;
   bottom: 19px;
-  left: 44px
+  left: 44px;
   z-index: 20;
 
   font-size: 0;
@@ -668,8 +714,12 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -709,11 +759,14 @@ img {
 }
 .bonus-button:hover,
 .bonus-button:focus {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f58569), to(#f58569));
   background-image: linear-gradient(to top, #f58569, #f58569);
 }
 .bonus-button:active {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f26843), to(#e74a35));
   background-image: linear-gradient(to top, #f26843, #e74a35);
-  box-shadow:  inset 0px 2px 2px 0 #942718;;
+  -webkit-box-shadow:  inset 0px 2px 2px 0 #942718;
+          box-shadow:  inset 0px 2px 2px 0 #942718;;
 }
 /*--------------BREADCRUMBS---------------*/
 /*-- Problem to align items: links and no-links behave differently in flex container. Solved by display:inline-block for li(!!!!!) of the ul. Vertical align: bottom.  ---*/
@@ -790,9 +843,14 @@ img {
 }
 .bestsellers-list,
 .catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .bestsellers-list {
   margin-bottom: 83px;
@@ -881,7 +939,8 @@ img {
   position: absolute;
   width: 292px;
   height: 406px;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
     /* background-color: #9bafa3; */
   border-radius: 4px;
   background: rgba(255,255,255, 0.3);
@@ -903,6 +962,17 @@ img {
 .catalog-item:focus {
   position: relative;
   z-index: 5;
+}
+.item-card-button:hover,
+.item-card-button:focus {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f58569), to(#f58569));
+  background-image: linear-gradient(to top, #f58569, #f58569);
+}
+.item-card-button:active {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f26843), to(#e74a35));
+  background-image: linear-gradient(to top, #f26843, #e74a35);
+  -webkit-box-shadow:  inset 0px 2px 2px 0 #942718;
+          box-shadow:  inset 0px 2px 2px 0 #942718;;
 }
 /*---------------FEATURES-----------------*/
 .features-container {
@@ -928,8 +998,11 @@ img {
   line-height: 1.4;
 }
 .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -999,8 +1072,12 @@ img {
 .marketing-container {
   /*width: 1152px;*/
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .news {
 /* NOOOOOO height for blocks with text*/
@@ -1049,6 +1126,17 @@ img {
   padding: 7px 18px 12px 19px;
 }
 
+.submit-subscribe-button:hover,
+.submit-subscribe-button:focus {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f58569), to(#f58569));
+  background-image: linear-gradient(to top, #f58569, #f58569);
+}
+.submit-subscribe-button:active {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f26843), to(#e74a35));
+  background-image: linear-gradient(to top, #f26843, #e74a35);
+  -webkit-box-shadow:  inset 0px 2px 2px 0 #942718;
+          box-shadow:  inset 0px 2px 2px 0 #942718;;
+}
 .subscribe-text {
   margin: 0;
   margin-bottom: 35px;
@@ -1065,13 +1153,20 @@ img {
   padding-left: 14px;
 }
 .subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*-----------------Footer-----------------*/
 
 .footer-container-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1101px;
   border-top: solid 1px #a9bbb1;
@@ -1079,6 +1174,8 @@ img {
   padding: 17px 0px 16px 0px;
 }
 .footer-container-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1160px;
   padding: 2px 1px 7px 1px;
@@ -1097,8 +1194,11 @@ img {
   margin-left: 4px;
 }
 .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 15px;
 }
 .social-item {
@@ -1136,11 +1236,17 @@ img {
   margin: 0;
   padding: 0;
   max-width: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 .documents-list li {
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   padding-bottom: 4px;
 }
@@ -1266,7 +1372,17 @@ line-height: 22px;
   padding: 6px 28px 11px 28px;
   color: #fefefe;
 }
-
+.modal-address-button:hover,
+.modal-address-button:focus {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f58569), to(#f58569));
+  background-image: linear-gradient(to top, #f58569, #f58569);
+}
+.modal-address-button:active {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f26843), to(#e74a35));
+  background-image: linear-gradient(to top, #f26843, #e74a35);
+  -webkit-box-shadow:  inset 0px 2px 2px 0 #942718;
+          box-shadow:  inset 0px 2px 2px 0 #942718;;
+}
 .modal-address::before {
   content: "";
   position: absolute;
@@ -1282,7 +1398,8 @@ line-height: 22px;
   position: relative;
   width: 479px;
   background-color: #f8f7f3;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   padding: 18px 25px 23px 23px;
 }
@@ -1322,6 +1439,17 @@ line-height: 22px;
   padding: 12px 24px 11px 24px;
   margin-left: 300px;
 }
+.feedback-submit-button:hover,
+.feedback-submit-button:focus {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f58569), to(#f58569));
+  background-image: linear-gradient(to top, #f58569, #f58569);
+}
+.feedback-submit-button:active {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f26843), to(#e74a35));
+  background-image: linear-gradient(to top, #f26843, #e74a35);
+  -webkit-box-shadow:  inset 0px 2px 2px 0 #942718;
+          box-shadow:  inset 0px 2px 2px 0 #942718;;
+}
 .modal-close {
   border: 0;
   cursor: pointer;
@@ -1338,12 +1466,18 @@ line-height: 22px;
 
 /*-------PAGINATION ------------------*/
 .pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .pagination-list {
 
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 0;
@@ -1367,7 +1501,8 @@ line-height: 22px;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   left: -35px;
   top: -4px;
 }
@@ -1410,12 +1545,20 @@ border-radius: 50%;
 
 /*------------FILTERS ---------------------*/
 .filters-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .filter-sorter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-right: 16px;
 }
 
@@ -1514,12 +1657,15 @@ appearance: none;
   margin-bottom: 17px;
 }
 .radio-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 393px;
   border-radius: 20px;
   background: rgba(255,255,255, 0.3);
   color: #ffffff;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 9px 1px 11px 21px;
 }
 
@@ -1612,12 +1758,15 @@ appearance: none;
 }
 
 .checkbox-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 690px;
   border-radius: 20px;
   background: rgba(255,255,255, 0.3);
   color: #ffffff;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 9px 1px 8px 12px;
   margin-bottom: 39px;
   margin-right: 13px;
@@ -1696,7 +1845,8 @@ appearance: none;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
-  filter: opacity(0.4);
+  -webkit-filter: opacity(0.4);
+          filter: opacity(0.4);
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -1717,7 +1867,8 @@ margin-bottom: 38px; /*-чтоб кнопка не расползалась на
   color: #323232;
 }
 .filters-form input[type=submit]:active {
-  box-shadow: inset 0px 2px 1px 0 #696969;
+  -webkit-box-shadow: inset 0px 2px 1px 0 #696969;
+          box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
   color: #323232;
 }
