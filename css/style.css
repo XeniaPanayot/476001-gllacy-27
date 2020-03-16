@@ -207,9 +207,11 @@ img {
 .submenu a:hover,
 .submenu a:focus {
   background-color: #fbded7;
+  color: #323232;
 }
 .submenu a:active {
   background-color: #f6b5a5;
+  color: #323232;
 }
 .submenu li:first-child a:hover,
 .submenu li:first-child a:focus {
@@ -251,7 +253,10 @@ img {
   color: #ffffff;
   text-align: center;
 }
-
+.submenu .current-page {
+  background-color: #d07058;
+  color: #ffffff;
+}
 /*----SEARCH-------*/
 .user-menu-search {
   position: relative;
@@ -1647,6 +1652,9 @@ appearance: none;
 ---flex container with justify-content: space around (absolutely positioned radiobuttons)---*/
 .filters-form h3 {
   font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 14px;
 }
 .radio-filter-label,
 .checkbox-filter-label,
