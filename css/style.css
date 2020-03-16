@@ -1635,6 +1635,9 @@ appearance: none;
 ---CSS selector for the hidden element: .labelclass input[type="radio"]
 ---CSS selector for the new element: .customized-indicator;
 ---flex container with justify-content: space around (absolutely positioned radiobuttons)---*/
+.filters-form h3 {
+  font-weight: 400;
+}
 .radio-filter-label,
 .checkbox-filter-label,
 .range-filter-label,
@@ -1816,8 +1819,8 @@ appearance: none;
   cursor: pointer;
 }
 .checkbox-option input[type="checkbox"]:checked + .checkbox-indicator {
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 24px;
   background-image: url("../img/checkbox-on.svg");
   opacity: 0.6;
   background-repeat: no-repeat;
@@ -1828,16 +1831,16 @@ appearance: none;
   opacity: 1;
 }
 .checkbox-option input[type="checkbox"]:active + .checkbox-indicator {
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 24px;
   background-image: url("../img/checkbox-on.svg");
   opacity: 1;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .checkbox-option input[type="checkbox"]:disabled + .checkbox-indicator {
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 24px;
   background-image: url("../img/checkbox-off.svg");
   -webkit-filter: opacity(0.4);
           filter: opacity(0.4);
