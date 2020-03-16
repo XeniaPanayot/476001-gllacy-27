@@ -1318,13 +1318,14 @@ color: #e84d37;
 }
 .map-container{
   position: relative;
-  height: 430px;
+  min-height: 430px;
   width: 1200px;
+  margin: 0 auto;
 }
 .modal-address {
   position: absolute;
   top: 63px;
-    right: 7px;
+  right: 7px;
   background-color: #fefdfc;
   color: #323232;
   width: 252px;
