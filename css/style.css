@@ -930,8 +930,7 @@ img {
 
   cursor: pointer;
 
-  /*display: none;*/
-
+  display: none;
 }
 
 .bestseller-item:hover .item-card-button,
