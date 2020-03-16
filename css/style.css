@@ -1425,9 +1425,18 @@ line-height: 22px;
   width: 428px;
   margin-bottom: 23px;
 }
+.modal-feedback-name:hover,
+.modal-feedback-email:hover,
+.modal-feedback-name:focus,
+.modal-feedback-email:focus {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+  padding: 14px;
+}
+
 .modal-feedback textarea:hover,
 .modal-feedback textarea:focus {
   border: solid 2px rgba(154, 154, 154, 0.52);
+  padding: 14px;
 }
 .feedback-submit-button {
   padding: 12px 24px 11px 24px;
