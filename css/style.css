@@ -174,8 +174,9 @@ img {
 .submenu {
   /* display: none; */
   position: absolute;
-  top: 35px;
-  width: 143px;
+  top: 30px;
+  left: -6px;
+  min-width: 143px;
   z-index: 3;
 
   -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -368,14 +369,14 @@ img {
 /*problem with :hover: the black text doesn't syncronize with the white background of the button, if cursor is not exactly on the text, the whole button is white. Solved by combining them .login-button:hover .login-text*/
 .modal-login {
   position: absolute;
-  top: 35px;
-  right: -1px;
-  width: 241px;
+  top: 38px;
+  right: -2px;
+  min-width: 241px;
   background-color: #f8f7f3;
   -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  padding: 20px 17px 22px 19px;
-  border-radius: 10px;
+  padding: 20px 17px 28px 19px;
+  border-radius: 5px;
  /*display: none;*/
  z-index: 3
 }
@@ -391,20 +392,32 @@ img {
 
 .modal-login input {
   width: 220px;
-    color: #999999;
-    border: solid 1px rgba(178, 178, 178, 0.52);
-    background-color: #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 24px;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 17px;
+  color: #999999;
+  border: solid 1px rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  border-radius: 4px;
 }
-.modal-login input:hover,
-.modal-login input:focus {
+.modal-login-email {
+  padding: 7px 5px 10px 13px;
+  margin-bottom: 17px;
+}
+.modal-login-password {
+  font-size: 18px;
+  padding: 9px 5px 10px 14px;
+  margin-bottom: 20px;
+}
+.modal-login-email:hover,
+.modal-login-email:focus {
   border: solid 2px rgba(178, 178, 178, 0.52);
-  padding: 9px;
+  padding: 6px 4px 9px 12px;
+}
+.modal-login-password:hover,
+.modal-login-password:focus {
+  border: solid 2px rgba(178, 178, 178, 0.52);
+  padding: 8px 4px 9px 13px;
 }
 .modal-login a {
   display: block;
@@ -420,7 +433,7 @@ img {
 .login-submit-button {
   position: absolute;
   left: 20px;
-  top: 149px;
+  top: 147px;
   padding: 11px 25px 10px 25px;
   cursor: pointer;
 }
@@ -729,7 +742,7 @@ img {
 }
 .bonus-text {
   font-size: 18px;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
 }
 .bonus-raspberry {
   width: 567px;
@@ -753,8 +766,9 @@ img {
 }
 
 .bonus-button {
-  padding: 11px 20px 11px 20px;
+  padding: 11px 22px 11px 22px;
   float: right;
+  margin-right: -8px;
 }
 .bonus-button:hover,
 .bonus-button:focus {
@@ -1335,8 +1349,8 @@ color: #e84d37;
 }
 .modal-address {
   position: absolute;
-  top: 63px;
-  right: 7px;
+  top: 69px;
+  right: 35px;
   background-color: #fefdfc;
   color: #323232;
   width: 252px;
