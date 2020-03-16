@@ -330,7 +330,7 @@ img {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  width: 93px;
+  min-width: 93px;
   border-radius: 20px;
   border: none;
   color: #ffffff;
@@ -864,7 +864,10 @@ img {
 .item-card-wrap2 {
   position: absolute;
   z-index: 4;
+
   width: 270px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*---бейдж Хит на главной странице-----*/
@@ -908,7 +911,7 @@ img {
   text-align: center;
   color: #ffffff;
   margin-top: 277px;
-  padding-left: 12px;
+  /*padding-left: 12px;*/
 }
 
 .item-price {
@@ -917,16 +920,20 @@ img {
   z-index: 5;
 }
 .item-card-button {
+  width: 200px;
   padding: 8px 13px 13px 17px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  margin-left: 46px;
-  margin-top: 338px;
+  margin-top: 10px;
+  align-self: center;
+
   cursor: pointer;
 
-  display: none;
+  /*display: none;*/
+
 }
+
 .bestseller-item:hover .item-card-button,
 .bestseller-item:focus .item-card-button,
 .catalog-item:hover .item-card-button,
@@ -937,7 +944,7 @@ img {
 .item-background {
   position: absolute;
   width: 292px;
-  height: 406px;
+  min-height: 405px;
   -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
     /* background-color: #9bafa3; */
