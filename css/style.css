@@ -797,10 +797,7 @@ img {
 .bonus-button {
   text-decoration: none;
   padding: 11px 10px 11px 13px;
-  margin-left: 355px;
-}
-.bonus-chockolate .bonus-button {
-  margin-left: 330px;
+  margin-left: auto;
 }
 .bonus-button:hover,
 .bonus-button:focus {
@@ -1715,6 +1712,7 @@ appearance: none;
   font-size: 14px;
   line-height: 16px;
   padding-left: 14px;
+  margin-bottom: 8px;
 }
 .radio-filter-label,
 .checkbox-filter-label,
@@ -1739,8 +1737,7 @@ appearance: none;
   border-radius: 20px;
   background: rgba(255,255,255, 0.3);
   color: #ffffff;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+
   padding: 9px 1px 11px 21px;
 }
 
@@ -1753,13 +1750,13 @@ appearance: none;
 }
 .radio-choice1 {
   margin-left: 24px;
-  margin-right: 39px;
+  margin-right: 51px;
 }
 .radio-choice2 {
-  margin-right: 33px;
+  margin-right: 51px;
 }
 .radio-choice3 {
-  margin-right: 51px;
+  margin-right: 49px;
 }
 
 .radio-choice1 input[type="radio"] + .radio-indicator1,
@@ -1774,21 +1771,21 @@ appearance: none;
   cursor: pointer;
 }
 .radio-choice1 input[type="radio"] + .radio-indicator1 {
-  top: 0;
+  top: -1px;
   right: 30px;
 }
 .radio-choice2 input[type="radio"] + .radio-indicator2 {
-  top: 0;
+  top: -1px;
   right: 62px;
 }
 
 .radio-choice3 input[type="radio"] + .radio-indicator3 {
-  top: 0;
-  right: 54px;
+  top: -1px;
+  right: 64px;
 }
 .radio-choice4 input[type="radio"] + .radio-indicator4 {
-  top: 0;
-  right: 99px;
+  top: -1px;
+  right: 87px;
 }
 .radio-choice1 input[type="radio"] {
   top: 2px;
@@ -1828,21 +1825,18 @@ appearance: none;
   border: solid 3px #b5c4bc;
 }
 /*-------------FILTER Checkboxes-------------*/
-.checkbox-filter label{
-  text-transform: lowercase;
-}
 
 .checkbox-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 690px;
+  width: 684px;
   border-radius: 20px;
   background: rgba(255,255,255, 0.3);
   color: #ffffff;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 9px 1px 8px 12px;
+  padding: 7px 1px 10px 22px;
   margin-bottom: 39px;
   margin-right: 13px;
 }
@@ -1850,30 +1844,32 @@ appearance: none;
 .checkbox-option {
   position: relative;
   font-size: medium;
+  text-transform: lowercase;
+  margin-left: 5px;
 }
 .checkbox-option input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
 }
 /*------ Положение нового чекбокса относительно лейбла, option1 -1ый элемент-- */
 .option1 input[type="checkbox"] + .indicator1 {
-  right: 98px;
-  top: -3px;
+  right: 107px;
+  top: -2px;
 }
 .option2 input[type="checkbox"] + .indicator2 {
-  right: 158px;
-  top: -3px;
+  right: 162px;
+  top: -2px;
 }
 .option3 input[type="checkbox"] + .indicator3 {
   right: 67px;
-  top: -3px;
+  top: -2px;
 }
 .option4 input[type="checkbox"] + .indicator4 {
-  right: 67px;
-  top: -3px;
+  right: 64px;
+  top: -2px;
 }
 .option5 input[type="checkbox"] + .indicator5 {
-  right: 69px;
-  top: -3px;
+  right: 61px;
+  top: -2px;
 }
 
 .checkbox-indicator {
