@@ -264,11 +264,15 @@ img {
   margin-bottom: 7px;
 }
 .search-button {
+  display: block;
+
   border-radius: 50%;
   width: 33px;
   height: 33px;
   border: none;
   background:rgba(255,255,255, 0.3);
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .search-button:hover,
 .search-button:focus {
@@ -328,10 +332,9 @@ img {
   margin-bottom: 12px;
 }
 .login-button {
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  min-width: 93px;
+  display: block;
+  text-decoration: none;
+  min-width: 60px;
   border-radius: 20px;
   border: none;
   color: #ffffff;
@@ -339,7 +342,7 @@ img {
   line-height: 16px;
   font-weight: 500;
   background: rgba(255,255,255, 0.3);
-  padding: 9px 17px 14px 39px;
+  padding: 9px 17px 14px 34px;
   text-align: left;
 
   cursor: pointer;
@@ -355,7 +358,7 @@ img {
   background-image: url("../img/login_icon.png");
   background-repeat: no-repeat;
   left: -25px;
-  top: -2px;
+  top: 0px;
 }
 .login-button:hover,
 .login-button:focus {
@@ -524,12 +527,12 @@ img {
   top: 41px;
   right: 1px;
   z-index: 5;
-  width: 539px;
+  width: 526px;
   background-color: #f8f7f3;
   -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
-  padding: 20px 12px 20px 12px;
+  padding: 3px 12px 22px 2px;
   /*display: none;*/
 }
 .modal-cart-table {
@@ -540,18 +543,21 @@ img {
 .modal-cart-table td {
   /*border: solid 1px red; /*temporary!!!!!*/
   padding: 10px 0;
+
 }
 .close {
+  width: 40px;
   background-image: url("../img/cross-small.svg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
 }
 .modal-cart-table td:nth-child(2) {
-  width: 50px;
+  width: 39px;
 }
 .modal-cart-table td:nth-child(3) {
-  width: 224px;
+  width: 210px;
+  padding-top: 15px 1px 12px 1px;
 }
 .modal-cart-table td:nth-child(4) {
   text-align: right;
@@ -560,6 +566,7 @@ img {
 .modal-cart-table td:last-child {
   width: 77px;
   text-align: right;
+  padding-right: 22px;
 }
 
 .cart_item,
@@ -571,6 +578,9 @@ img {
 }
 .cart_item_price {
   opacity: 0.3;
+}
+.modal-cart-table .cart-total-cost {
+  padding: 16px 3px 1px 1px;
 }
 .cart_total-text,
 .cart_total {
@@ -767,8 +777,7 @@ img {
 
 .bonus-button {
   padding: 11px 22px 11px 22px;
-  float: right;
-  margin-right: -8px;
+  margin-left: 300px;
 }
 .bonus-button:hover,
 .bonus-button:focus {
@@ -866,7 +875,7 @@ img {
           justify-content: space-between;
 }
 .bestsellers-list {
-  margin-bottom: 83px;
+  margin-bottom: 81px;
 }
 .catalog-list {
   margin-bottom: 42px;
@@ -938,13 +947,14 @@ img {
   padding: 8px 13px 13px 17px;
   font-size: 18px;
   line-height: 24px;
+  text-decoration: none;
   font-weight: bold;
   margin-top: 10px;
   align-self: center;
 
   cursor: pointer;
 
-  display: none;
+  /*display: none;*/
 }
 
 .bestseller-item:hover .item-card-button,
@@ -999,7 +1009,7 @@ img {
   background-image: url("../img/waffer-background.jpg");
   border-radius: 15px;
   padding: 24px 30px 0px 22px;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 }
 
 .about-glaccy {
@@ -1349,8 +1359,8 @@ color: #e84d37;
 }
 .modal-address {
   position: absolute;
-  top: 69px;
-  right: 35px;
+  top: 61px;
+  right: 34px;
   background-color: #fefdfc;
   color: #323232;
   width: 252px;
