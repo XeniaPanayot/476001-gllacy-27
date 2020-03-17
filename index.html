@@ -15,7 +15,7 @@
   <div class="site-wrapper">
 
     <header class="main-header">
-      <div class="container">
+      <div class="container nav-container">
       <nav class="nav-menu">
         <a><img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси" class="logo"></a>
         <ul class="site-menu">
@@ -49,7 +49,7 @@
             <div class="modal-login">
              <form class="login" action="index.html" method="post">
              <h2 class="visually-hidden">Вход в личный кабинет</h2>
-             <input type="email" name="email" placeholder="email@example.com" aria-label="Ваша элетронная почта для входа в личный кабинет" class="modal-login-email"><br>
+             <input type="email" name="email" placeholder="email@example.com" aria-label="Ваша элетронная почта для входа в личный кабинет" class="modal-login-email">
              <input type="password" name="password" placeholder="&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;" aria-label="Ваш пароль для входа в личный кабинет" class="modal-login-password">
 
              <button type="submit" name="login-submit" class="button login-submit-button">Войти</button>
@@ -62,8 +62,10 @@
           <li><a href="#" class="cart"><span class="cart-text_empty">Пусто</span></a></li>
         </ul>
       </nav>
-      <div class="contact"><span>С 10 до 20, ежедневно</span><br>
-      <a href="tel:88124502525" class="contact-telephone">8 812 450-25-25</a></div>
+      <div class="contact contact-index">
+        <p>С 10 до 20, ежедневно</p>
+        <a href="tel:88124502525" class="contact-telephone">8 812 450-25-25</a>
+      </div>
       </div>
       </header>
        <section class="slider">
@@ -221,7 +223,7 @@
             <span class="modal-telephone-order">Для заказов по телефону:</span>
             <b class="modal-telephone">8 812 450-25-25</b>
             <span class="modal-address-open">(с 10 до 20 ежедневно)</span>
-            <a href="#" class="button modal-address-button">Форма обратной связи</a> 
+            <a href="#" class="button modal-address-button">Форма обратной связи</a>
           </div>
         </div>
         </section>
@@ -245,7 +247,7 @@
           </ul>
         </div>
         <div class="copyright">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy logo"></a><br>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy logo"></a>
             <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-text">Сделано в <span class="copyright-name">HTML Academy </span>&copy; 2019</a>
           </div>
         </div>
@@ -257,9 +259,7 @@
       <h2>Мы обязательно вам ответим!</h2>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <input type="text" class="modal-feedback-name" name="feedback_name" placeholder="Имя Фамилия" aria-label="Ваше имя">
-      <br>
       <input type="email" class="modal-feedback-email" name="feedback_email" placeholder="email@example.com" aria-label="Ваша электронная почта">
-      <br>
       <textarea name="feedback_text" rows="5" cols="80" placeholder="В свободной форме" aria-label="Поле для ввода сообщения"></textarea>
       <input type="submit" class="button feedback-submit-button" name="feedback-submit" value="Отправить">
      </form>
