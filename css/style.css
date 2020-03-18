@@ -1450,6 +1450,7 @@ line-height: 22px;
   -webkit-box-shadow:  inset 0px 2px 2px 0 #942718;
           box-shadow:  inset 0px 2px 2px 0 #942718;;
 }
+
 .modal-address::before {
   content: "";
   position: absolute;
@@ -1469,6 +1470,7 @@ line-height: 22px;
           box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   padding: 18px 25px 23px 23px;
+
 }
 .modal-feedback h2 {
   display: block;
@@ -1537,6 +1539,7 @@ line-height: 22px;
   height: 17px;
   background-image: url("../img/cross-big.svg");
   background-size: 17px 17px;
+  background-color: #f8f7f3; /*for Safari*/
 }
 
 
@@ -1658,7 +1661,6 @@ fieldset {
 }
 
 .filter-sorter select {
- position: relative; /*--to make ::after ---*/
   /* Hide default arrow */
 appearance: none;
 -webkit-appearance: none;
@@ -1671,6 +1673,13 @@ appearance: none;
   text-transform: lowercase;
   padding: 10px 39px 9px 16px;
   border-radius: 20px;
+  border: none; /* for Safari*/
+}
+ /*for Safari*/
+.select-wrapper {
+ position: relative;
+ width: 195px;
+ border: none;
 }
 .filter-sorter::after:hover,
 .filter-sorter::after:focus  {
@@ -1684,7 +1693,7 @@ appearance: none;
   /* Positioning for the custom arrow */
   position: absolute;
   right: 12px;
-  top: 33px;
+  bottom: 10px;
   pointer-events: none;
 }
 
