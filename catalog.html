@@ -106,26 +106,26 @@
            <form class="filters-form" action="index.html" method="post">
             <h2 class="visually-hidden">Фильтр товаров</h2>
 
-            <div class="filter-sorter"> <!--problem with padding and hiding the default arrow-->
-             <label for="sorter">Сортировка:</label>
-             <select name="sort" id="sorter">
+            <fieldset class="filter-sorter"> <!--problem with padding and hiding the default arrow-->
+             <legend>Сортировка:</legend>
+             <select name="sort">
               <option value="popular">По популярности</option>
               <option value="cheap">Сначала недорогие</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="fat-content">По жирности</option>
              </select>
-            </div>
-          <div class="filter-range">
-              <p class="range-filter-label">Цена: 100 руб. – 500 руб.</p>
+           </fieldset>
+          <fieldset class="filter-range">
+              <legend class="range-filter-label">Цена: 100 руб. – 500 руб.</legend>
               <div class="filter-range-wrap">
               <div class="range-bar"></div>
               <div class="range-thumb1"></div>
               <div class="range-thumb2"></div>
             </div>
-            </div>
+          </fieldset>
 
-          <div class="filter-radio" role="radiogroup">
-          <h3>Жирность:</h3>
+          <fieldset class="filter-radio" role="radiogroup">
+          <legend>Жирность:</legend>
           <div class="radio-filter">
           <label class="radio-choice1">
           <input type="radio" name="fat" value="0%" id="fat-choice1" class="visually-hidden">
@@ -144,10 +144,10 @@
           <span class="radio-indicator4"></span>
           выше 30&#37;</label>
         </div>
-      </div>
+      </fieldset>
 
-      <div class="filter-checkbox">
-        <h3>Наполнители:</h3>
+      <fieldset class="filter-checkbox">
+        <legend>Наполнители:</legend>
          <div class="checkbox-filter">
           <label class="checkbox-option option1">
           <input type="checkbox" name="filler" value="chocolate" id="choco-filler" class="visually-hidden">
@@ -170,10 +170,10 @@
           <span class="checkbox-indicator indicator5"></span>
           Джемы</label>
          </div>
-        </div>
+       </fieldset>
       <input type="submit" name="submit-filter" value="Применить">
     </form>
-        </div>
+  </fieldset>
         </section>
         <section>
           <div class="container catalog-container">

@@ -1622,30 +1622,49 @@ border-radius: 50%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.filter-sorter {
-  display: -webkit-box;
+fieldset {
+/*  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 16px;
+          flex-direction: column;*/
+/*  overflow: hidden;*/
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.filter-sorter,
+.filter-range  {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.filter-sorter legend,
+.filter-range legend,
+.filter-radio legend,
+.filter-checkbox legend {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 15px;
+  margin-bottom: 5px;
 }
 
 .filter-sorter select {
+ position: relative; /*--to make ::after ---*/
   /* Hide default arrow */
 appearance: none;
 -webkit-appearance: none;
 -moz-appearance: none;
 /* Cosmetics for the select box */
-  width: 194px;
+  width: 195px;
   background: #a9bab0;
   color: #ffffff;
   font-size: 16px;
   text-transform: lowercase;
-  position: relative; /*--to make ::after ---*/
-  padding: 11px 53px 9px 12px;
+  padding: 10px 39px 9px 16px;
   border-radius: 20px;
 }
 .filter-sorter::after:hover,
@@ -1653,19 +1672,14 @@ appearance: none;
   color: black;
 }
 /* [CUSTOM ARROW] */
-.filter-sorter {
-  overflow: hidden;
-  position: relative;
-}
 .filter-sorter:after {
   /* [HTML symbol you want to use] */
   content: "\25bc";
   color: #ffffff;
   /* Positioning for the custom arrow */
   position: absolute;
-  right: 10px;
-  top: 35px;
-  text-align: center;
+  right: 12px;
+  top: 33px;
   pointer-events: none;
 }
 
@@ -1712,22 +1726,16 @@ appearance: none;
 ---CSS selector for the hidden element: .labelclass input[type="radio"]
 ---CSS selector for the new element: .customized-indicator;
 ---flex container with justify-content: space around (absolutely positioned radiobuttons)---*/
-.filters-form h3 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  padding-left: 14px;
-  margin-bottom: 8px;
-}
-.radio-filter-label,
+
+
 .checkbox-filter-label,
-.range-filter-label,
+
 .filter-sorter label {
-  margin: 0; /* для обнуления  марджинов у range-filter-label-----*/
+  margin: 0; /* для обнуления  марджинов -----*/
   font-size: 14px;
   line-height: 16px;
   display: block;
-  margin-bottom: 5px;
+
   padding-left: 17px;
 }
 .filter-range {
