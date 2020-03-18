@@ -471,8 +471,8 @@ img {
 .cart:focus {
   background-color: #f8f7f4;
 }
-.cart:hover .cart-text_empty,
-.cart:focus .cart-text_empty {
+.cart:hover .cart-text-empty,
+.cart:focus .cart-text-empty {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
@@ -481,10 +481,10 @@ img {
   color: #323232;
 }
 .cart-text,
-.cart-text_empty {
+.cart-text-empty {
   position: relative;
 }
-.cart-text_empty::before {
+.cart-text-empty::before {
   content: "";
   height: 17px;
   width: 17px;
@@ -593,21 +593,21 @@ img {
   padding-right: 22px;
 }
 
-.cart_item,
-.cart_item_amount,
-.cart_item_total {
+.cart-item,
+.cart-item-amount,
+.cart-item-total {
   color: #323232;
   font-size: 13px;
   line-height: 16px;
 }
-.cart_item_price {
+.cart-item-price {
   opacity: 0.3;
 }
 .modal-cart-table .cart-total-cost {
   padding: 16px 3px 1px 1px;
 }
-.cart_total-text,
-.cart_total {
+.cart-total-text,
+.cart-total {
   color: #323232;
   font-size: 15px;
   line-height: 18px;
@@ -705,14 +705,15 @@ img {
   -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
           box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
-
+.controls-container {
+  position: relative;
+}
 .slider-controls {
   position: absolute;
-  bottom: 19px;
-  left: 44px;
-  z-index: 20;
-
+  bottom: -193px;
+  left: -1px;
   font-size: 0;
+  z-index: 20;
 }
 .slider-controls label {
   display: inline-block;
@@ -803,7 +804,7 @@ img {
 
 .bonus-button {
   text-decoration: none;
-  padding: 11px 10px 11px 13px;
+  padding: 11px 20px 11px 20px;
   margin-left: auto;
 }
 .bonus-button:hover,
@@ -1075,10 +1076,10 @@ img {
   width: 565px;
 }
 
-.features-text_icecream,
-.features-text_eco,
-.features-text_cow,
-.features-text_thermo {
+.features-text-icecream,
+.features-text-eco,
+.features-text-cow,
+.features-text-thermo {
   margin: 0;
   padding: 0;
   position: relative;
@@ -1086,10 +1087,10 @@ img {
   margin-bottom: 23px;
   padding-right: 7px;
 }
-.features-text_icecream::before,
-.features-text_eco::before,
-.features-text_cow::before,
-.features-text_thermo::before {
+.features-text-icecream::before,
+.features-text-eco::before,
+.features-text-cow::before,
+.features-text-thermo::before {
   content: "";
   position: absolute;
   left: -56px;
@@ -1097,16 +1098,16 @@ img {
   width: 49px;
   height: 49px;
 }
-.features-text_icecream::before {
+.features-text-icecream::before {
   background-image: url("../img/ice-cream.svg");
 }
-.features-text_eco::before  {
+.features-text-eco::before  {
   background-image: url("../img/eco.svg");
 }
-.features-text_cow::before {
+.features-text-cow::before {
   background-image: url("../img/cow.svg");
 }
-.features-text_thermo::before {
+.features-text-thermo::before {
   background-image: url("../img/thermometer.svg");
 }
 /*---------------NEWS-----------------*/
@@ -1293,7 +1294,7 @@ img {
 }
 /*-------------DOCUMENTS in Footer -----------*/
 .footer-documents {
-  width: 464px;
+  width: 536px;
   padding-top: 16px;
   padding-left: 80px;
 }
@@ -1352,29 +1353,25 @@ color: #e84d37;
 }
 
 /*===== COPYRIGHT in Footer---------*/
-.copyright {
-  width: 198px;
-}
-.copyright a {
-  padding-left: 73px;
-}
-.copyright-text {
+
+.copyright p {
+  margin: 0;
   color: #fefefe;
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
-  white-space: nowrap;
   cursor: pointer;
 }
 .copyright-name {
-  text-decoration: underline;
-  text-underline-position: below;
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
 }
-.copyright-text:hover,
-.copyright-text:focus {
+.copyright a:hover,
+.copyright a:focus {
   color: #ffbc9e;
 }
-.copyright-text:active {
+.copyright a:active {
 color: #e84d37;
 }
 
@@ -1669,6 +1666,7 @@ appearance: none;
 -moz-appearance: none;
 /* Cosmetics for the select box */
   width: 195px;
+  height: 37px;
   background: #a9bab0;
   color: #ffffff;
   font-size: 16px;
@@ -1676,11 +1674,14 @@ appearance: none;
   padding: 10px 39px 9px 16px;
   border-radius: 20px;
   border: none; /* for Safari*/
+  box-shadow: none; /*for IE*/
+  cursor: pointer;
 }
  /*for Safari*/
 .select-wrapper {
  position: relative;
  width: 195px;
+ height: 37px;
  border: none;
 }
 .filter-sorter::after:hover,
