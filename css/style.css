@@ -778,11 +778,13 @@ img {
 }
 .bonus-raspberry {
   width: 567px;
+  background-color: #930f37;
   background-image: url("../img/raspberry.jpg");
   background-position-x: -51px;
-    background-position-y: -95px;
+  background-position-y: -95px;
 }
 .bonus-chockolate {
+  background-color: #5f3b24;
   background-image: url("../img/chockolate.jpg");
 }
 .bonus-raspberry,
@@ -1110,6 +1112,7 @@ img {
 /*---------------NEWS-----------------*/
 .news {
   border-radius: 20px;
+  background-color: #ffffff;
   background-image: url("../img/strawberry_background.jpg");
   background-position-y: 39%;
   background-position-x: 16%;
@@ -1162,10 +1165,9 @@ img {
   color: #e84d37
 }
 .subscribe-wrapper {
+  position: relative;
   min-height: 220px;
   width: 572px;
-
-  position: relative;
   background-image: url("../img/subscribe-background.png");
   background-repeat: no-repeat;
 }
