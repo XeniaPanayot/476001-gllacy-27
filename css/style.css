@@ -146,8 +146,8 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 21px;
-  margin-left: 10px;
+  margin-top: 15px;
+  margin-left: 13px;
 }
 
 
@@ -192,9 +192,47 @@ img {
   line-height: 18px;
   color: #ffffff;
 }
-.site-menu a {
+.site-menu-item {
  padding: 5px 15px 7px 12px;
+ line-height: 18px;
+    color: #ffffff;
+
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
 }
+
+.menu-item1::after {
+    display: block;
+    position: absolute;
+    width: 60px;
+    left: 13px;
+    bottom: 6px;
+    content: "";
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+.menu-item2::after {
+    display: block;
+    position: absolute;
+    width: 143px;
+    left: 13px;
+    bottom: 6px;
+    content: "";
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+.menu-item3::after {
+    display: block;
+    position: absolute;
+    width: 93px;
+    left: 13px;
+    bottom: 6px;
+    content: "";
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
 .submenu a {
   display: block;
   font-size: 14px;
@@ -237,8 +275,8 @@ img {
 .site-menu > li > a:focus,
 .site-menu > li > a:active {
   border-radius: 20px;
-  width: 143px;
-  padding: 5px 15px 7px 12px;
+  /*width: 143px;
+  padding: 5px 15px 7px 12px;*/
   color: #323232;
   text-decoration: none;
   background-color: #f7f6f3;
@@ -587,10 +625,17 @@ img {
 .modal-cart-table {
   width: 100%;
   border-collapse: collapse;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
   margin-bottom: 16px; /*measuring from the line*/
 }
 .modal-cart-table td {
-  /*border: solid 1px red; /*temporary!!!!!*/
+  /*border: solid 1px red; /*temporary*/
   padding: 10px 0;
 
 }
@@ -858,6 +903,10 @@ img {
   display: inline-block;
   vertical-align: bottom;
   padding-right: 3px;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
 }
 .breadcrumbs a,
 .breadcrumbs li:last-child {
