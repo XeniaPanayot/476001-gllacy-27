@@ -1,5 +1,7 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
   margin: 0;
   padding: 0;
@@ -576,9 +578,16 @@ img {
   min-width: 200px;
 }
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .contact p,
 .contact-inner-page p {
@@ -860,8 +869,13 @@ img {
 }
 .bonus-raspberry,
 .bonus-chockolate {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 518px;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -995,8 +1009,13 @@ img {
   z-index: 4;
 
   width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*---бейдж Хит на главной странице-----*/
@@ -1058,7 +1077,9 @@ img {
   text-decoration: none;
   font-weight: bold;
   margin-top: 10px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 
   cursor: pointer;
 
@@ -1747,7 +1768,8 @@ appearance: none;
   padding: 10px 39px 9px 16px;
   border-radius: 20px;
   border: none; /* for Safari*/
-  box-shadow: none; /*for IE*/
+  -webkit-box-shadow: none;
+          box-shadow: none; /*for IE*/
   cursor: pointer;
 }
  /*for Safari*/
