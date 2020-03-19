@@ -197,11 +197,13 @@ img {
 .site-menu-item {
  padding: 5px 15px 7px 12px;
  line-height: 18px;
-    color: #ffffff;
+  color: #ffffff;
 
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-decoration: none;
+
 }
 
 .menu-item1::after {
@@ -765,6 +767,7 @@ img {
     cursor: pointer;
     width: 278px;
     display: inline-block;
+    vertical-align: middle;
     text-align: center;
     margin-left: -14px;
     padding-top: 8px;
@@ -796,6 +799,7 @@ img {
 }
 .slider-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 17px;
   height: 17px;
   margin-right: 8px;
