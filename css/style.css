@@ -15,7 +15,9 @@ body {
   background-color: #849d8f;
   background-image: url("../img/slider-icecream_1.png");
   background-repeat: no-repeat;
-  background-position: top center;
+  /*background-position: top center;*/
+  background-position-x: 95px;
+  background-position-y: top;
 
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
 
@@ -120,7 +122,7 @@ img {
 }
 .nav-menu {
   width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,7 +710,7 @@ img {
 .slider {
   position: relative;
   min-height: 210px;
-  margin-bottom: 41px;
+  margin-bottom: 43px;
   padding-top: 295px;
   text-align: center;
   color: #ffffff;
@@ -941,7 +943,7 @@ img {
 }
 /*-----------GOODS section--------------*/
 .catalog-heading {
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 .catalog-container,
 .filters-container,
@@ -1008,7 +1010,7 @@ img {
 }
 .item-card-wrap2 {
   position: absolute;
-  top: 283px;
+  top: 279px;
   text-align: center;
   z-index: 4;
 
@@ -1070,7 +1072,7 @@ img {
 
 .item-price {
   position: absolute;
-  top: 212px;
+  top: 205px;
   z-index: 5;
 }
 .item-card-button {
@@ -1142,7 +1144,7 @@ img {
   background-image: url("../img/waffer-background.jpg");
   border-radius: 15px;
   padding: 26px 0px 0px 9px;
-  margin-bottom: 47px;
+  margin-bottom: 44px;
 }
 
 .about-glaccy {
@@ -1289,7 +1291,7 @@ img {
 .submit-subscribe-button {
   font-size: 18px;
   line-height: 24px;
-  padding: 7px 18px 12px 19px;
+  padding: 10px 18px 12px 19px;
 }
 
 .submit-subscribe-button:hover,
@@ -1354,9 +1356,9 @@ img {
   margin-left: 19px;
 }
 .footer-container-index .social {
-  width: 346px;
+  width: 340px;
   padding-top: 18px;
-  margin-left: 4px;
+  margin-left: 9px;
 }
 .social-list {
   display: -webkit-box;
@@ -1393,6 +1395,11 @@ img {
 /*-------------DOCUMENTS in Footer -----------*/
 .footer-documents {
   width: 532px;
+  padding-top: 16px;
+  padding-left: 80px;
+}
+.footer-container-index .footer-documents {
+  width: 536px;
   padding-top: 16px;
   padding-left: 80px;
 }
@@ -1451,7 +1458,10 @@ color: #e84d37;
 }
 
 /*===== COPYRIGHT in Footer---------*/
-
+.copyright-logo {
+  display: block;
+  margin-bottom: 5px;
+}
 .copyright p {
   margin: 0;
   color: #fefefe;
@@ -1521,14 +1531,14 @@ color: #e84d37;
 }
 .modal-telephone {
   font-size: 18px;
-line-height: 22px;
+  line-height: 22px;
   margin-bottom: 3px;
 }
 .modal-address-open {
   display: block;
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 .modal-address-button {
   display: block;
@@ -1568,6 +1578,7 @@ line-height: 22px;
   border-radius: 10px;
   padding: 18px 25px 23px 23px;
 
+  display: none;
 }
 .modal-feedback h2 {
   display: block;
@@ -1625,7 +1636,7 @@ line-height: 22px;
   -webkit-box-shadow:  inset 0px 2px 2px 0 #942718;
           box-shadow:  inset 0px 2px 2px 0 #942718;;
 }
-.modal-close {
+.modal-feedback-close {
   border: 0;
   cursor: pointer;
 
@@ -1638,7 +1649,9 @@ line-height: 22px;
   background-size: 17px 17px;
   background-color: #f8f7f3; /*for Safari*/
 }
-
+.modal-feedback-show {
+  display: block;
+}
 
 /*-------PAGINATION ------------------*/
 .pagination-container {
