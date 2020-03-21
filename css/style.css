@@ -2000,14 +2000,14 @@ appearance: none;
       justify-content: space-around;
   padding: 7px 1px 10px 22px;
   margin-bottom: 39px;
-  margin-right: 13px;
+  margin-right: 8px;
 }
 
 .checkbox-option {
   position: relative;
   font-size: medium;
   text-transform: lowercase;
-  margin-left: 5px;
+  margin-left: -3px;
 }
 .checkbox-option input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
