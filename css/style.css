@@ -921,6 +921,7 @@ img {
   text-decoration: none;
   padding: 11px 20px 11px 26px;
   margin-left: auto;
+  width: 100%;
 }
 .bonus-raspberry .bonus-button {
   max-width: 170px;
