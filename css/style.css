@@ -2,6 +2,8 @@
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
   margin: 0;
   padding: 0;
@@ -423,7 +425,9 @@ img {
 .login-button:focus .login-text {
   -webkit-filter: invert(1);
           filter: invert(1);
+  color: #323232;
 }
+
 .modal-login {
   position: absolute;
   top: 38px;
@@ -529,6 +533,11 @@ img {
 .cart:focus .cart-text-empty {
   -webkit-filter: invert(1);
           filter: invert(1);
+
+}
+/*for IE11*/
+.cart:hover .cart-text-empty::before {
+  background-image: url("../img/basket-black.svg");
 }
 .cart:hover .cart-text,
 .cart:focus .cart-text {
@@ -900,6 +909,12 @@ img {
   padding: 11px 20px 11px 26px;
   margin-left: auto;
 }
+.bonus-raspberry .bonus-button {
+  max-width: 170px;
+}
+.bonus-chockolate .bonus-button {
+  max-width: 190px;
+}
 .bonus-button:hover,
 .bonus-button:focus {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f58569), to(#f58569));
@@ -1162,7 +1177,8 @@ img {
   border-radius: 15px;
   padding: 23px 4px 8px 20px;
   margin-bottom: 38px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .about-glaccy {
@@ -1278,7 +1294,17 @@ img {
 .news-item {
   display: block;
   width: 290px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
   margin-bottom: 70px;
+
 }
 .news-item:hover,
 .news-item:focus,
@@ -1808,6 +1834,9 @@ appearance: none;
   -webkit-box-shadow: none;
           box-shadow: none; /*for IE*/
   cursor: pointer;
+}
+.filter-sorter select::-ms-expand {
+    display: none;
 }
  /*for Safari*/
 .select-wrapper {
