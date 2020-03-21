@@ -701,6 +701,9 @@ img {
   padding: 11px 13px 11px 14px;
   margin-left: 355px;
 }
+.cart-full {
+  display: none;
+}
 .cart-full:hover + .modal-cart,
 .cart-full:focus + .modal-cart {
  display: block;
