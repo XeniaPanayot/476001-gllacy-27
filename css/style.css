@@ -176,7 +176,7 @@ img {
 }
 .submenu {
   position: absolute;
-  top: 30px;
+  top: 36px;
   left: -6px;
   min-width: 143px;
   z-index: 3;
@@ -279,7 +279,7 @@ img {
   background-color: #ededed;
 }
 .active > a {
-  padding: 5px 15px 7px 12px;
+  padding: 5px 13px 9px 13px;
   border-radius: 20px;
   background-color: #d07058;
   text-decoration: none;
@@ -585,10 +585,11 @@ img {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.14;
+/*  line-height: 1.14;*/
   letter-spacing: normal;
   text-align: right;
   color: #ffffff;
+  margin-bottom: 2px;
 }
 
 .contact-telephone {
@@ -597,7 +598,7 @@ img {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.09;
+/*  line-height: 1.09;*/
   letter-spacing: normal;
   text-align: right;
   color: #ffffff;
@@ -624,7 +625,7 @@ img {
 }
 .modal-cart {
   position: absolute;
-  top: 41px;
+  top: 37px;
   right: 1px;
   z-index: 5;
   width: 526px;
@@ -632,7 +633,7 @@ img {
   -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
-  padding: 3px 12px 22px 2px;
+  padding: 8px 12px 22px 2px;
   display: none;
 }
 .modal-cart-table {
@@ -645,7 +646,7 @@ img {
   letter-spacing: normal;
   text-align: left;
   color: #323232;
-  margin-bottom: 16px; /*measuring from the line*/
+  margin-bottom: 21px; /*measuring from the line*/
 }
 .modal-cart-table td {
   /*border: solid 1px red; /*temporary*/
@@ -1072,6 +1073,13 @@ img {
   top: 205px;
   z-index: 5;
 }
+.catalog-item .item-price {
+  position: absolute;
+  top: 208px;
+  left: -3px;
+  z-index: 5;
+}
+
 .item-card-button {
   min-width: 195px;
   padding: 8px 1px 13px 1px;
@@ -1660,8 +1668,6 @@ color: #e84d37;
       -ms-flex-pack: end;
           justify-content: flex-end;
 
-  margin-left: 909px;
-  width: 230px;
 }
 .pagination-list {
 
@@ -1672,7 +1678,7 @@ color: #e84d37;
   list-style: none;
   margin: 0;
   padding: 0;
-
+  margin-right: 10px;
   margin-bottom: 34px;
 }
 
