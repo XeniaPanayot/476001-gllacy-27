@@ -165,7 +165,7 @@ img {
           justify-content: flex-end;
 
   padding-top: 14px;
-  margin-right: 3px;
+  margin-right: 20px;
 }
 
 .user-menu li {
@@ -987,6 +987,16 @@ img {
   font-size: 45px;
   line-height: 45px;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
 }
 .bestsellers-list,
 .catalog-list {
