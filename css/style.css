@@ -412,20 +412,33 @@ img {
   position: absolute;
   width: 33px;
   height: 20px;
-  background-image: url("../img/login_icon.png");
+  background-image: url("../img/login-nav.svg");
   background-repeat: no-repeat;
   left: -25px;
   top: 0px;
+}
+
+.login-button:hover .login-text::before,
+.login-button:focus .login-text::before  {
+  background-image: url("../img/login_nav-black.svg");
+  background-repeat: no-repeat;
+}
+
+.login-button:hover .login-text,
+.login-button:focus .login-text {
+
+  color: #323232;
 }
 .login-button:hover,
 .login-button:focus {
   background-color: #f8f7f4;
 }
-.login-button:hover .login-text,
+
+/*.login-button:hover .login-text,
 .login-button:focus .login-text {
   -webkit-filter: invert(1);
           filter: invert(1);
-}
+}*/
 
 .modal-login {
   position: absolute;
@@ -530,14 +543,14 @@ img {
 }
 .cart:hover .cart-text-empty,
 .cart:focus .cart-text-empty {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-}
-
-.cart:hover .cart-text,
-.cart:focus .cart-text {
   color: #323232;
 }
+/*.cart:hover .cart-text-empty,
+.cart:focus .cart-text-empty {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}*/
+
 .cart-text,
 .cart-text-empty {
   position: relative;
@@ -551,6 +564,11 @@ img {
   background-image: url("../img/basket.svg");
   background-size: 17px 17px;
 }
+.cart:hover .cart-text-empty::before {
+  background-image: url("../img/basket_black.svg");
+  background-size: 17px 17px;
+}
+
 .cart-text::before {
   content: "";
   height: 17px;
