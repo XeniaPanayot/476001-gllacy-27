@@ -581,12 +581,26 @@ img {
 .contact p,
 .contact-inner-page p {
   margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
 }
 
 .contact-telephone {
-  color: #ffffff;
+  font-family: Roboto;
   font-size: 22px;
-  line-height: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.09;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
   text-decoration: none;
 }
 .contact-telephone:hover,
@@ -598,9 +612,10 @@ img {
 }
 .contact-inner-page {
   position: absolute;
-  left: 1003px;
-  top: 70px;
-  min-width: 200px;
+  left: 975px;
+  top: 65px;
+  min-width: 170px;
+  text-align: right;
   z-index: 0;
 }
 .contact-inner-page span {
@@ -932,7 +947,7 @@ img {
 .catalog-container,
 .filters-container,
 .heading-container {
-  padding-left: 17px;
+  /*padding-left: 17px;*/
 }
 .bestsellers-list,
 .catalog-list {
@@ -984,7 +999,7 @@ img {
   margin-bottom: 81px;
 }
 .catalog-list {
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 .item-card-wrap1 {
   position: relative;
@@ -1335,7 +1350,6 @@ img {
 .footer-container-inner .social {
   width: 339px;
   padding-top: 18px;
-  margin-left: 19px;
 }
 .footer-container-index .social {
   width: 344px;
@@ -1375,8 +1389,8 @@ img {
 }
 /*-------------DOCUMENTS in Footer -----------*/
 .footer-documents {
-  width: 532px;
-  padding-top: 16px;
+  width: 538px;
+  padding-top: 15px;
   padding-left: 80px;
 }
 .footer-container-index .footer-documents {
@@ -1645,6 +1659,9 @@ color: #e84d37;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+
+  margin-left: 909px;
+  width: 230px;
 }
 .pagination-list {
 
