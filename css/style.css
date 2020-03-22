@@ -1199,8 +1199,8 @@ img {
 .features-container {
   background-image: url("../img/waffer-background.jpg");
   border-radius: 15px;
-  padding: 25px 4px 5px 20px;
-  margin-bottom: 40px;
+  padding: 23px 4px 1px 20px;
+  margin-bottom: 46px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
