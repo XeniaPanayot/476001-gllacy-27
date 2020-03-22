@@ -729,8 +729,12 @@ img {
   padding: 11px 13px 11px 14px;
   margin-left: 355px;
 }
-.cart-full:hover {
+.cart-full,
+.cart-full:hover,
+.cart-full:focus,
+.cart-full:active {
  color: #323232;
+ background-color: #f8f7f4;
 }
 .cart-full:hover + .modal-cart,
 .cart-full:focus + .modal-cart {
