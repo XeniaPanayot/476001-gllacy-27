@@ -128,7 +128,7 @@ img {
   display: flex;
 }
 .logo {
-  width: 181px;
+  width: 160px;
   height: auto;
 }
 .logo-inner {
@@ -144,19 +144,19 @@ img {
 }
 
 .site-menu {
-  width: 60%;
+  width: 707px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 15px;
-  margin-left: 13px;
+  margin-top: 18px;
+  margin-left: 7px;
 }
 
 
 .user-menu {
-  width: 40%;
+  width: 274px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,8 +166,7 @@ img {
       -ms-flex-pack: end;
           justify-content: flex-end;
 
-  padding-top: 14px;
-  margin-right: 20px;
+  margin-top: 14px;
 }
 
 .user-menu li {
@@ -178,8 +177,8 @@ img {
 }
 .submenu {
   position: absolute;
-  top: 36px;
-  left: -6px;
+  top: 33px;
+  left: -7px;
   min-width: 143px;
   z-index: 3;
 
@@ -578,9 +577,7 @@ img {
   background-image: url("../img/basket-red.svg");
   background-size: 17px 17px;
 }
-.nav-container {
-  position: relative;
-} /*--to position .contact*/
+
 .contact-index {
   position: absolute;
   z-index: 1;
@@ -874,7 +871,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -924,10 +921,10 @@ img {
   width: 100%;
 }
 .bonus-raspberry .bonus-button {
-  max-width: 170px;
+  max-width: 119px;
 }
 .bonus-chockolate .bonus-button {
-  max-width: 190px;
+  max-width: 145px;
 }
 .bonus-button:hover,
 .bonus-button:focus {
@@ -1189,8 +1186,8 @@ img {
 .features-container {
   background-image: url("../img/waffer-background.jpg");
   border-radius: 15px;
-  padding: 23px 4px 8px 20px;
-  margin-bottom: 38px;
+  padding: 25px 4px 5px 20px;
+  margin-bottom: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
