@@ -127,12 +127,15 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+.nav-menu-inner {
+  margin-bottom: 19px;
+}
 .logo {
   width: 160px;
   height: auto;
 }
 .logo-inner {
-  width: 177px;
+  width: 157px;
   height: auto;
 }
 .site-menu,
@@ -153,10 +156,13 @@ img {
   margin-top: 18px;
   margin-left: 7px;
 }
-
+.nav-menu-inner .site-menu {
+  margin-top: 14px;
+  margin-left: 11px;
+}
 
 .user-menu {
-  width: 274px;
+  width: 277px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,6 +542,9 @@ img {
   background:rgba(255,255,255, 0.3);
   padding: 8px 17px 8px 43px;
 }
+.cart-inner {
+  padding-right: 30px;
+}
 .cart:hover,
 .cart:focus {
   background-color: #f8f7f4;
@@ -573,7 +582,7 @@ img {
   height: 17px;
   width: 17px;
   position: absolute;
-  left: -21px;
+  left: -29px;
   background-image: url("../img/basket-red.svg");
   background-size: 17px 17px;
 }
@@ -720,8 +729,8 @@ img {
   padding: 11px 13px 11px 14px;
   margin-left: 355px;
 }
-.cart-full {
-  display: none;
+.cart-full:hover {
+ color: #323232;
 }
 .cart-full:hover + .modal-cart,
 .cart-full:focus + .modal-cart {
@@ -921,10 +930,10 @@ img {
   width: 100%;
 }
 .bonus-raspberry .bonus-button {
-  max-width: 119px;
+  max-width: 120px;
 }
 .bonus-chockolate .bonus-button {
-  max-width: 145px;
+  max-width: 146px;
 }
 .bonus-button:hover,
 .bonus-button:focus {
@@ -1512,7 +1521,7 @@ color: #e84d37;
 
 /*===== COPYRIGHT in Footer---------*/
 .copyright {
-  width: 190px;
+  width: 192px;
 }
 .copyright-logo {
   display: block;
@@ -1589,6 +1598,7 @@ color: #e84d37;
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 3px;
+  text-decoration: none;
 }
 .modal-address-open {
   display: block;
@@ -1601,6 +1611,7 @@ color: #e84d37;
   color: #fefefe;
   text-decoration: none;
   padding: 9px 28px 11px 28px;
+  min-width: 201px;
 }
 .modal-address-button:hover,
 .modal-address-button:focus {
